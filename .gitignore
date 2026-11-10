@@ -4,7 +4,7 @@ references/
 seminar/
 
 # generated
-runs/
+/runs/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/

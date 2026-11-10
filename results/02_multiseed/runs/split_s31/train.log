@@ -1,0 +1,2592 @@
+device cuda
+KFold(n_splits=10, random_state=None, shuffle=False)
+test_index : 0 ~ 19
+len X_test : 20
+len X_train : 179
+1th epoch,
+	training loss: 0.40943
+	val loss: 0.25789
+	val auc-roc: 0.54657
+	epoch time: 4.403
+2th epoch,
+	training loss: 0.35070
+	val loss: 0.26178
+	val auc-roc: 0.53769
+	epoch time: 3.982
+3th epoch,
+	training loss: 0.33799
+	val loss: 0.25626
+	val auc-roc: 0.55604
+	epoch time: 3.771
+4th epoch,
+	training loss: 0.33383
+	val loss: 0.25688
+	val auc-roc: 0.56217
+	epoch time: 3.808
+5th epoch,
+	training loss: 0.32940
+	val loss: 0.25496
+	val auc-roc: 0.56843
+	epoch time: 3.877
+6th epoch,
+	training loss: 0.32587
+	val loss: 0.25377
+	val auc-roc: 0.57669
+	epoch time: 3.849
+7th epoch,
+	training loss: 0.32243
+	val loss: 0.25210
+	val auc-roc: 0.58844
+	epoch time: 3.871
+8th epoch,
+	training loss: 0.31926
+	val loss: 0.25040
+	val auc-roc: 0.60293
+	epoch time: 3.883
+9th epoch,
+	training loss: 0.31627
+	val loss: 0.24876
+	val auc-roc: 0.62066
+	epoch time: 3.912
+10th epoch,
+	training loss: 0.31347
+	val loss: 0.24728
+	val auc-roc: 0.63465
+	epoch time: 3.914
+11th epoch,
+	training loss: 0.31085
+	val loss: 0.24601
+	val auc-roc: 0.64404
+	epoch time: 3.911
+12th epoch,
+	training loss: 0.30840
+	val loss: 0.24499
+	val auc-roc: 0.65010
+	epoch time: 3.885
+13th epoch,
+	training loss: 0.30610
+	val loss: 0.24420
+	val auc-roc: 0.65446
+	epoch time: 3.859
+14th epoch,
+	training loss: 0.30392
+	val loss: 0.24363
+	val auc-roc: 0.65802
+	epoch time: 3.839
+15th epoch,
+	training loss: 0.30182
+	val loss: 0.24324
+	val auc-roc: 0.66179
+	epoch time: 3.848
+16th epoch,
+	training loss: 0.29977
+	val loss: 0.24299
+	val auc-roc: 0.66520
+	epoch time: 3.831
+17th epoch,
+	training loss: 0.29774
+	val loss: 0.24283
+	val auc-roc: 0.66797
+	epoch time: 3.823
+18th epoch,
+	training loss: 0.29573
+	val loss: 0.24275
+	val auc-roc: 0.67086
+	epoch time: 3.808
+19th epoch,
+	training loss: 0.29372
+	val loss: 0.24272
+	val auc-roc: 0.67247
+	epoch time: 3.820
+20th epoch,
+	training loss: 0.29171
+	val loss: 0.24273
+	val auc-roc: 0.67324
+	epoch time: 3.803
+21th epoch,
+	training loss: 0.28970
+	val loss: 0.24278
+	val auc-roc: 0.67355
+	epoch time: 3.801
+22th epoch,
+	training loss: 0.28768
+	val loss: 0.24285
+	val auc-roc: 0.67373
+	epoch time: 3.795
+23th epoch,
+	training loss: 0.28566
+	val loss: 0.24294
+	val auc-roc: 0.67402
+	epoch time: 3.813
+24th epoch,
+	training loss: 0.28364
+	val loss: 0.24306
+	val auc-roc: 0.67479
+	epoch time: 3.824
+25th epoch,
+	training loss: 0.28163
+	val loss: 0.24321
+	val auc-roc: 0.67609
+	epoch time: 3.812
+26th epoch,
+	training loss: 0.27962
+	val loss: 0.24342
+	val auc-roc: 0.67707
+	epoch time: 3.810
+27th epoch,
+	training loss: 0.27763
+	val loss: 0.24369
+	val auc-roc: 0.67752
+	epoch time: 3.840
+28th epoch,
+	training loss: 0.27565
+	val loss: 0.24404
+	val auc-roc: 0.67751
+	epoch time: 3.820
+29th epoch,
+	training loss: 0.27368
+	val loss: 0.24448
+	val auc-roc: 0.67719
+	epoch time: 3.825
+30th epoch,
+	training loss: 0.27172
+	val loss: 0.24503
+	val auc-roc: 0.67663
+	epoch time: 3.848
+31th epoch,
+	training loss: 0.26979
+	val loss: 0.24570
+	val auc-roc: 0.67519
+	epoch time: 3.832
+32th epoch,
+	training loss: 0.26788
+	val loss: 0.24651
+	val auc-roc: 0.67319
+	epoch time: 4.064
+33th epoch,
+	training loss: 0.26598
+	val loss: 0.24747
+	val auc-roc: 0.67010
+	epoch time: 3.838
+34th epoch,
+	training loss: 0.26411
+	val loss: 0.24859
+	val auc-roc: 0.66631
+	epoch time: 3.820
+35th epoch,
+	training loss: 0.26226
+	val loss: 0.24987
+	val auc-roc: 0.66149
+	epoch time: 3.824
+36th epoch,
+	training loss: 0.26043
+	val loss: 0.25134
+	val auc-roc: 0.65596
+	epoch time: 3.814
+37th epoch,
+	training loss: 0.25860
+	val loss: 0.25302
+	val auc-roc: 0.65023
+	epoch time: 3.825
+38th epoch,
+	training loss: 0.25677
+	val loss: 0.25491
+	val auc-roc: 0.64472
+	epoch time: 3.847
+39th epoch,
+	training loss: 0.25494
+	val loss: 0.25704
+	val auc-roc: 0.63897
+	epoch time: 3.836
+40th epoch,
+	training loss: 0.25310
+	val loss: 0.25943
+	val auc-roc: 0.63321
+	epoch time: 3.855
+41th epoch,
+	training loss: 0.25125
+	val loss: 0.26212
+	val auc-roc: 0.62783
+	epoch time: 3.817
+42th epoch,
+	training loss: 0.24938
+	val loss: 0.26513
+	val auc-roc: 0.62300
+	epoch time: 3.824
+43th epoch,
+	training loss: 0.24751
+	val loss: 0.26852
+	val auc-roc: 0.61863
+	epoch time: 3.815
+44th epoch,
+	training loss: 0.24564
+	val loss: 0.27235
+	val auc-roc: 0.61400
+	epoch time: 3.826
+45th epoch,
+	training loss: 0.24380
+	val loss: 0.27670
+	val auc-roc: 0.60964
+	epoch time: 3.831
+46th epoch,
+	training loss: 0.24200
+	val loss: 0.28165
+	val auc-roc: 0.60616
+	epoch time: 3.832
+47th epoch,
+	training loss: 0.24030
+	val loss: 0.28737
+	val auc-roc: 0.60337
+	epoch time: 3.835
+48th epoch,
+	training loss: 0.23874
+	val loss: 0.29402
+	val auc-roc: 0.60071
+	epoch time: 3.823
+49th epoch,
+	training loss: 0.23742
+	val loss: 0.30189
+	val auc-roc: 0.59882
+	epoch time: 3.830
+50th epoch,
+	training loss: 0.23656
+	val loss: 0.31147
+	val auc-roc: 0.59744
+	epoch time: 3.816
+----------
+Train Finished.
+Training time: 192.81s
+The best epoch: 19
+The best val loss: 0.24272172152996063
+The best auc-roc: 0.6724710309017906
+test_index : 20 ~ 39
+len X_test : 20
+len X_train : 179
+1th epoch,
+	training loss: 0.38643
+	val loss: 0.35065
+	val auc-roc: 0.52112
+	epoch time: 3.847
+2th epoch,
+	training loss: 0.33439
+	val loss: 0.34050
+	val auc-roc: 0.53694
+	epoch time: 3.831
+3th epoch,
+	training loss: 0.32564
+	val loss: 0.33898
+	val auc-roc: 0.55048
+	epoch time: 3.837
+4th epoch,
+	training loss: 0.32193
+	val loss: 0.33780
+	val auc-roc: 0.56130
+	epoch time: 3.835
+5th epoch,
+	training loss: 0.31819
+	val loss: 0.33661
+	val auc-roc: 0.57039
+	epoch time: 3.849
+6th epoch,
+	training loss: 0.31489
+	val loss: 0.33557
+	val auc-roc: 0.57592
+	epoch time: 3.827
+7th epoch,
+	training loss: 0.31166
+	val loss: 0.33463
+	val auc-roc: 0.58123
+	epoch time: 3.842
+8th epoch,
+	training loss: 0.30856
+	val loss: 0.33382
+	val auc-roc: 0.58863
+	epoch time: 3.829
+9th epoch,
+	training loss: 0.30557
+	val loss: 0.33314
+	val auc-roc: 0.59492
+	epoch time: 3.849
+10th epoch,
+	training loss: 0.30271
+	val loss: 0.33259
+	val auc-roc: 0.59970
+	epoch time: 3.839
+11th epoch,
+	training loss: 0.30003
+	val loss: 0.33215
+	val auc-roc: 0.60325
+	epoch time: 3.835
+12th epoch,
+	training loss: 0.29753
+	val loss: 0.33181
+	val auc-roc: 0.60707
+	epoch time: 3.845
+13th epoch,
+	training loss: 0.29523
+	val loss: 0.33152
+	val auc-roc: 0.61087
+	epoch time: 3.823
+14th epoch,
+	training loss: 0.29310
+	val loss: 0.33123
+	val auc-roc: 0.61434
+	epoch time: 3.832
+15th epoch,
+	training loss: 0.29109
+	val loss: 0.33091
+	val auc-roc: 0.61677
+	epoch time: 3.834
+16th epoch,
+	training loss: 0.28916
+	val loss: 0.33054
+	val auc-roc: 0.61843
+	epoch time: 3.828
+17th epoch,
+	training loss: 0.28724
+	val loss: 0.33014
+	val auc-roc: 0.61968
+	epoch time: 4.032
+18th epoch,
+	training loss: 0.28536
+	val loss: 0.32973
+	val auc-roc: 0.62099
+	epoch time: 3.802
+19th epoch,
+	training loss: 0.28351
+	val loss: 0.32932
+	val auc-roc: 0.62257
+	epoch time: 3.826
+20th epoch,
+	training loss: 0.28166
+	val loss: 0.32895
+	val auc-roc: 0.62447
+	epoch time: 3.838
+21th epoch,
+	training loss: 0.27980
+	val loss: 0.32865
+	val auc-roc: 0.62678
+	epoch time: 3.838
+22th epoch,
+	training loss: 0.27794
+	val loss: 0.32842
+	val auc-roc: 0.62859
+	epoch time: 3.843
+23th epoch,
+	training loss: 0.27606
+	val loss: 0.32825
+	val auc-roc: 0.63024
+	epoch time: 3.836
+24th epoch,
+	training loss: 0.27416
+	val loss: 0.32815
+	val auc-roc: 0.63134
+	epoch time: 3.863
+25th epoch,
+	training loss: 0.27225
+	val loss: 0.32813
+	val auc-roc: 0.63239
+	epoch time: 3.847
+26th epoch,
+	training loss: 0.27031
+	val loss: 0.32820
+	val auc-roc: 0.63338
+	epoch time: 3.832
+27th epoch,
+	training loss: 0.26836
+	val loss: 0.32834
+	val auc-roc: 0.63437
+	epoch time: 3.832
+28th epoch,
+	training loss: 0.26638
+	val loss: 0.32858
+	val auc-roc: 0.63531
+	epoch time: 3.826
+29th epoch,
+	training loss: 0.26437
+	val loss: 0.32894
+	val auc-roc: 0.63683
+	epoch time: 3.820
+30th epoch,
+	training loss: 0.26233
+	val loss: 0.32941
+	val auc-roc: 0.63789
+	epoch time: 3.839
+31th epoch,
+	training loss: 0.26027
+	val loss: 0.33002
+	val auc-roc: 0.63868
+	epoch time: 3.810
+32th epoch,
+	training loss: 0.25818
+	val loss: 0.33082
+	val auc-roc: 0.63975
+	epoch time: 3.820
+33th epoch,
+	training loss: 0.25608
+	val loss: 0.33176
+	val auc-roc: 0.64037
+	epoch time: 3.821
+34th epoch,
+	training loss: 0.25397
+	val loss: 0.33290
+	val auc-roc: 0.64092
+	epoch time: 3.806
+35th epoch,
+	training loss: 0.25186
+	val loss: 0.33433
+	val auc-roc: 0.64178
+	epoch time: 3.834
+36th epoch,
+	training loss: 0.24975
+	val loss: 0.33600
+	val auc-roc: 0.64184
+	epoch time: 3.816
+37th epoch,
+	training loss: 0.24764
+	val loss: 0.33808
+	val auc-roc: 0.64148
+	epoch time: 3.828
+38th epoch,
+	training loss: 0.24554
+	val loss: 0.34055
+	val auc-roc: 0.64079
+	epoch time: 3.817
+39th epoch,
+	training loss: 0.24342
+	val loss: 0.34352
+	val auc-roc: 0.63971
+	epoch time: 3.825
+40th epoch,
+	training loss: 0.24127
+	val loss: 0.34697
+	val auc-roc: 0.63812
+	epoch time: 3.831
+41th epoch,
+	training loss: 0.23907
+	val loss: 0.35097
+	val auc-roc: 0.63645
+	epoch time: 3.818
+42th epoch,
+	training loss: 0.23684
+	val loss: 0.35541
+	val auc-roc: 0.63484
+	epoch time: 3.836
+43th epoch,
+	training loss: 0.23456
+	val loss: 0.36053
+	val auc-roc: 0.63258
+	epoch time: 3.849
+44th epoch,
+	training loss: 0.23229
+	val loss: 0.36603
+	val auc-roc: 0.62995
+	epoch time: 3.835
+45th epoch,
+	training loss: 0.23005
+	val loss: 0.37243
+	val auc-roc: 0.62677
+	epoch time: 3.858
+46th epoch,
+	training loss: 0.22810
+	val loss: 0.37890
+	val auc-roc: 0.62343
+	epoch time: 3.853
+47th epoch,
+	training loss: 0.22666
+	val loss: 0.38620
+	val auc-roc: 0.61874
+	epoch time: 3.838
+48th epoch,
+	training loss: 0.22604
+	val loss: 0.40078
+	val auc-roc: 0.61372
+	epoch time: 3.841
+49th epoch,
+	training loss: 0.22757
+	val loss: 0.42051
+	val auc-roc: 0.60952
+	epoch time: 3.842
+50th epoch,
+	training loss: 0.24726
+	val loss: 0.41820
+	val auc-roc: 0.59942
+	epoch time: 3.848
+----------
+Train Finished.
+Training time: 384.74s
+The best epoch: 25
+The best val loss: 0.32812967896461487
+The best auc-roc: 0.6323922598510744
+test_index : 40 ~ 59
+len X_test : 20
+len X_train : 179
+1th epoch,
+	training loss: 0.39128
+	val loss: 0.34186
+	val auc-roc: 0.55842
+	epoch time: 3.822
+2th epoch,
+	training loss: 0.33841
+	val loss: 0.33100
+	val auc-roc: 0.60814
+	epoch time: 3.821
+3th epoch,
+	training loss: 0.32898
+	val loss: 0.32746
+	val auc-roc: 0.62414
+	epoch time: 3.833
+4th epoch,
+	training loss: 0.32515
+	val loss: 0.32515
+	val auc-roc: 0.63548
+	epoch time: 3.809
+5th epoch,
+	training loss: 0.32118
+	val loss: 0.32309
+	val auc-roc: 0.64378
+	epoch time: 3.820
+6th epoch,
+	training loss: 0.31763
+	val loss: 0.32122
+	val auc-roc: 0.65021
+	epoch time: 3.829
+7th epoch,
+	training loss: 0.31416
+	val loss: 0.31951
+	val auc-roc: 0.65728
+	epoch time: 3.831
+8th epoch,
+	training loss: 0.31085
+	val loss: 0.31795
+	val auc-roc: 0.66462
+	epoch time: 3.828
+9th epoch,
+	training loss: 0.30772
+	val loss: 0.31655
+	val auc-roc: 0.67216
+	epoch time: 3.834
+10th epoch,
+	training loss: 0.30479
+	val loss: 0.31532
+	val auc-roc: 0.67935
+	epoch time: 3.831
+11th epoch,
+	training loss: 0.30209
+	val loss: 0.31428
+	val auc-roc: 0.68575
+	epoch time: 3.856
+12th epoch,
+	training loss: 0.29962
+	val loss: 0.31342
+	val auc-roc: 0.69177
+	epoch time: 3.830
+13th epoch,
+	training loss: 0.29734
+	val loss: 0.31275
+	val auc-roc: 0.69641
+	epoch time: 3.843
+14th epoch,
+	training loss: 0.29518
+	val loss: 0.31225
+	val auc-roc: 0.70019
+	epoch time: 3.848
+15th epoch,
+	training loss: 0.29310
+	val loss: 0.31190
+	val auc-roc: 0.70376
+	epoch time: 3.829
+16th epoch,
+	training loss: 0.29104
+	val loss: 0.31168
+	val auc-roc: 0.70666
+	epoch time: 3.849
+17th epoch,
+	training loss: 0.28900
+	val loss: 0.31155
+	val auc-roc: 0.70925
+	epoch time: 3.869
+18th epoch,
+	training loss: 0.28696
+	val loss: 0.31151
+	val auc-roc: 0.71122
+	epoch time: 3.830
+19th epoch,
+	training loss: 0.28492
+	val loss: 0.31154
+	val auc-roc: 0.71306
+	epoch time: 3.834
+20th epoch,
+	training loss: 0.28286
+	val loss: 0.31164
+	val auc-roc: 0.71443
+	epoch time: 3.842
+21th epoch,
+	training loss: 0.28081
+	val loss: 0.31182
+	val auc-roc: 0.71513
+	epoch time: 3.817
+22th epoch,
+	training loss: 0.27875
+	val loss: 0.31209
+	val auc-roc: 0.71563
+	epoch time: 3.834
+23th epoch,
+	training loss: 0.27668
+	val loss: 0.31246
+	val auc-roc: 0.71595
+	epoch time: 3.826
+24th epoch,
+	training loss: 0.27459
+	val loss: 0.31296
+	val auc-roc: 0.71555
+	epoch time: 3.824
+25th epoch,
+	training loss: 0.27249
+	val loss: 0.31360
+	val auc-roc: 0.71526
+	epoch time: 3.840
+26th epoch,
+	training loss: 0.27037
+	val loss: 0.31440
+	val auc-roc: 0.71485
+	epoch time: 3.825
+27th epoch,
+	training loss: 0.26822
+	val loss: 0.31535
+	val auc-roc: 0.71420
+	epoch time: 3.824
+28th epoch,
+	training loss: 0.26606
+	val loss: 0.31648
+	val auc-roc: 0.71321
+	epoch time: 3.842
+29th epoch,
+	training loss: 0.26387
+	val loss: 0.31778
+	val auc-roc: 0.71254
+	epoch time: 3.831
+30th epoch,
+	training loss: 0.26168
+	val loss: 0.31922
+	val auc-roc: 0.71154
+	epoch time: 3.830
+31th epoch,
+	training loss: 0.25948
+	val loss: 0.32076
+	val auc-roc: 0.71032
+	epoch time: 3.848
+32th epoch,
+	training loss: 0.25730
+	val loss: 0.32235
+	val auc-roc: 0.70872
+	epoch time: 3.849
+33th epoch,
+	training loss: 0.25513
+	val loss: 0.32405
+	val auc-roc: 0.70673
+	epoch time: 3.842
+34th epoch,
+	training loss: 0.25299
+	val loss: 0.32588
+	val auc-roc: 0.70491
+	epoch time: 3.853
+35th epoch,
+	training loss: 0.25088
+	val loss: 0.32798
+	val auc-roc: 0.70328
+	epoch time: 3.841
+36th epoch,
+	training loss: 0.24880
+	val loss: 0.33046
+	val auc-roc: 0.70165
+	epoch time: 3.829
+37th epoch,
+	training loss: 0.24677
+	val loss: 0.33337
+	val auc-roc: 0.70017
+	epoch time: 3.851
+38th epoch,
+	training loss: 0.24479
+	val loss: 0.33682
+	val auc-roc: 0.69875
+	epoch time: 3.841
+39th epoch,
+	training loss: 0.24288
+	val loss: 0.34116
+	val auc-roc: 0.69769
+	epoch time: 4.098
+40th epoch,
+	training loss: 0.24111
+	val loss: 0.34679
+	val auc-roc: 0.69666
+	epoch time: 3.814
+41th epoch,
+	training loss: 0.23963
+	val loss: 0.35486
+	val auc-roc: 0.69593
+	epoch time: 3.813
+42th epoch,
+	training loss: 0.23891
+	val loss: 0.36808
+	val auc-roc: 0.69515
+	epoch time: 3.848
+43th epoch,
+	training loss: 0.24079
+	val loss: 0.39453
+	val auc-roc: 0.69349
+	epoch time: 3.811
+44th epoch,
+	training loss: 0.25408
+	val loss: 0.44304
+	val auc-roc: 0.69207
+	epoch time: 3.813
+45th epoch,
+	training loss: 0.28590
+	val loss: 0.34577
+	val auc-roc: 0.68192
+	epoch time: 3.829
+46th epoch,
+	training loss: 0.26494
+	val loss: 0.34128
+	val auc-roc: 0.68876
+	epoch time: 3.821
+47th epoch,
+	training loss: 0.23780
+	val loss: 0.33681
+	val auc-roc: 0.69721
+	epoch time: 3.821
+48th epoch,
+	training loss: 0.23648
+	val loss: 0.34132
+	val auc-roc: 0.69425
+	epoch time: 3.850
+49th epoch,
+	training loss: 0.23399
+	val loss: 0.34384
+	val auc-roc: 0.69169
+	epoch time: 3.845
+50th epoch,
+	training loss: 0.23204
+	val loss: 0.34701
+	val auc-roc: 0.69026
+	epoch time: 3.827
+----------
+Train Finished.
+Training time: 576.72s
+The best epoch: 18
+The best val loss: 0.311506986618042
+The best auc-roc: 0.7112247333951585
+test_index : 60 ~ 79
+len X_test : 20
+len X_train : 179
+1th epoch,
+	training loss: 0.44451
+	val loss: 0.32263
+	val auc-roc: 0.40721
+	epoch time: 3.829
+2th epoch,
+	training loss: 0.34365
+	val loss: 0.31688
+	val auc-roc: 0.43744
+	epoch time: 3.843
+3th epoch,
+	training loss: 0.33091
+	val loss: 0.31386
+	val auc-roc: 0.47974
+	epoch time: 3.844
+4th epoch,
+	training loss: 0.32751
+	val loss: 0.30826
+	val auc-roc: 0.50624
+	epoch time: 3.821
+5th epoch,
+	training loss: 0.32397
+	val loss: 0.30505
+	val auc-roc: 0.54021
+	epoch time: 3.842
+6th epoch,
+	training loss: 0.32083
+	val loss: 0.30214
+	val auc-roc: 0.57223
+	epoch time: 3.824
+7th epoch,
+	training loss: 0.31780
+	val loss: 0.29962
+	val auc-roc: 0.59508
+	epoch time: 3.819
+8th epoch,
+	training loss: 0.31488
+	val loss: 0.29734
+	val auc-roc: 0.61204
+	epoch time: 3.827
+9th epoch,
+	training loss: 0.31208
+	val loss: 0.29526
+	val auc-roc: 0.62685
+	epoch time: 3.799
+10th epoch,
+	training loss: 0.30940
+	val loss: 0.29337
+	val auc-roc: 0.64164
+	epoch time: 3.811
+11th epoch,
+	training loss: 0.30686
+	val loss: 0.29166
+	val auc-roc: 0.65370
+	epoch time: 3.830
+12th epoch,
+	training loss: 0.30448
+	val loss: 0.29010
+	val auc-roc: 0.66383
+	epoch time: 3.833
+13th epoch,
+	training loss: 0.30227
+	val loss: 0.28869
+	val auc-roc: 0.67246
+	epoch time: 3.822
+14th epoch,
+	training loss: 0.30024
+	val loss: 0.28743
+	val auc-roc: 0.68033
+	epoch time: 3.822
+15th epoch,
+	training loss: 0.29836
+	val loss: 0.28630
+	val auc-roc: 0.68885
+	epoch time: 3.849
+16th epoch,
+	training loss: 0.29660
+	val loss: 0.28532
+	val auc-roc: 0.69785
+	epoch time: 3.847
+17th epoch,
+	training loss: 0.29493
+	val loss: 0.28445
+	val auc-roc: 0.70591
+	epoch time: 3.812
+18th epoch,
+	training loss: 0.29330
+	val loss: 0.28370
+	val auc-roc: 0.71262
+	epoch time: 3.870
+19th epoch,
+	training loss: 0.29170
+	val loss: 0.28304
+	val auc-roc: 0.71823
+	epoch time: 3.844
+20th epoch,
+	training loss: 0.29010
+	val loss: 0.28247
+	val auc-roc: 0.72289
+	epoch time: 3.861
+21th epoch,
+	training loss: 0.28850
+	val loss: 0.28197
+	val auc-roc: 0.72716
+	epoch time: 3.863
+22th epoch,
+	training loss: 0.28688
+	val loss: 0.28155
+	val auc-roc: 0.73057
+	epoch time: 3.821
+23th epoch,
+	training loss: 0.28525
+	val loss: 0.28119
+	val auc-roc: 0.73296
+	epoch time: 3.830
+24th epoch,
+	training loss: 0.28362
+	val loss: 0.28089
+	val auc-roc: 0.73490
+	epoch time: 3.837
+25th epoch,
+	training loss: 0.28198
+	val loss: 0.28064
+	val auc-roc: 0.73610
+	epoch time: 3.841
+26th epoch,
+	training loss: 0.28033
+	val loss: 0.28045
+	val auc-roc: 0.73770
+	epoch time: 3.837
+27th epoch,
+	training loss: 0.27868
+	val loss: 0.28031
+	val auc-roc: 0.73875
+	epoch time: 3.815
+28th epoch,
+	training loss: 0.27702
+	val loss: 0.28022
+	val auc-roc: 0.73961
+	epoch time: 3.812
+29th epoch,
+	training loss: 0.27536
+	val loss: 0.28018
+	val auc-roc: 0.74083
+	epoch time: 4.026
+30th epoch,
+	training loss: 0.27369
+	val loss: 0.28020
+	val auc-roc: 0.74173
+	epoch time: 3.846
+31th epoch,
+	training loss: 0.27202
+	val loss: 0.28027
+	val auc-roc: 0.74270
+	epoch time: 3.862
+32th epoch,
+	training loss: 0.27035
+	val loss: 0.28041
+	val auc-roc: 0.74382
+	epoch time: 3.814
+33th epoch,
+	training loss: 0.26868
+	val loss: 0.28062
+	val auc-roc: 0.74479
+	epoch time: 3.802
+34th epoch,
+	training loss: 0.26700
+	val loss: 0.28089
+	val auc-roc: 0.74539
+	epoch time: 3.841
+35th epoch,
+	training loss: 0.26532
+	val loss: 0.28123
+	val auc-roc: 0.74558
+	epoch time: 3.805
+36th epoch,
+	training loss: 0.26364
+	val loss: 0.28164
+	val auc-roc: 0.74580
+	epoch time: 3.809
+37th epoch,
+	training loss: 0.26195
+	val loss: 0.28211
+	val auc-roc: 0.74607
+	epoch time: 3.813
+38th epoch,
+	training loss: 0.26026
+	val loss: 0.28266
+	val auc-roc: 0.74633
+	epoch time: 3.816
+39th epoch,
+	training loss: 0.25856
+	val loss: 0.28328
+	val auc-roc: 0.74655
+	epoch time: 3.810
+40th epoch,
+	training loss: 0.25686
+	val loss: 0.28397
+	val auc-roc: 0.74665
+	epoch time: 3.827
+41th epoch,
+	training loss: 0.25515
+	val loss: 0.28473
+	val auc-roc: 0.74665
+	epoch time: 3.815
+42th epoch,
+	training loss: 0.25343
+	val loss: 0.28557
+	val auc-roc: 0.74668
+	epoch time: 3.820
+43th epoch,
+	training loss: 0.25170
+	val loss: 0.28651
+	val auc-roc: 0.74607
+	epoch time: 3.810
+44th epoch,
+	training loss: 0.24995
+	val loss: 0.28757
+	val auc-roc: 0.74540
+	epoch time: 3.804
+45th epoch,
+	training loss: 0.24817
+	val loss: 0.28878
+	val auc-roc: 0.74493
+	epoch time: 3.815
+46th epoch,
+	training loss: 0.24637
+	val loss: 0.29018
+	val auc-roc: 0.74417
+	epoch time: 3.803
+47th epoch,
+	training loss: 0.24455
+	val loss: 0.29182
+	val auc-roc: 0.74346
+	epoch time: 3.821
+48th epoch,
+	training loss: 0.24271
+	val loss: 0.29373
+	val auc-roc: 0.74272
+	epoch time: 3.820
+49th epoch,
+	training loss: 0.24084
+	val loss: 0.29597
+	val auc-roc: 0.74181
+	epoch time: 3.836
+50th epoch,
+	training loss: 0.23896
+	val loss: 0.29862
+	val auc-roc: 0.74054
+	epoch time: 3.833
+----------
+Train Finished.
+Training time: 768.33s
+The best epoch: 29
+The best val loss: 0.2801784574985504
+The best auc-roc: 0.7408285604848103
+test_index : 80 ~ 99
+len X_test : 20
+len X_train : 179
+1th epoch,
+	training loss: 0.38904
+	val loss: 0.50001
+	val auc-roc: 0.47351
+	epoch time: 3.851
+2th epoch,
+	training loss: 0.32617
+	val loss: 0.44552
+	val auc-roc: 0.48478
+	epoch time: 3.866
+3th epoch,
+	training loss: 0.31779
+	val loss: 0.44956
+	val auc-roc: 0.50600
+	epoch time: 3.868
+4th epoch,
+	training loss: 0.31288
+	val loss: 0.44290
+	val auc-roc: 0.52679
+	epoch time: 3.860
+5th epoch,
+	training loss: 0.30877
+	val loss: 0.44080
+	val auc-roc: 0.55347
+	epoch time: 3.861
+6th epoch,
+	training loss: 0.30501
+	val loss: 0.43755
+	val auc-roc: 0.57141
+	epoch time: 3.849
+7th epoch,
+	training loss: 0.30158
+	val loss: 0.43476
+	val auc-roc: 0.58830
+	epoch time: 3.861
+8th epoch,
+	training loss: 0.29847
+	val loss: 0.43230
+	val auc-roc: 0.60805
+	epoch time: 3.853
+9th epoch,
+	training loss: 0.29568
+	val loss: 0.43020
+	val auc-roc: 0.62794
+	epoch time: 3.864
+10th epoch,
+	training loss: 0.29318
+	val loss: 0.42854
+	val auc-roc: 0.64791
+	epoch time: 3.889
+11th epoch,
+	training loss: 0.29090
+	val loss: 0.42730
+	val auc-roc: 0.66544
+	epoch time: 3.876
+12th epoch,
+	training loss: 0.28878
+	val loss: 0.42635
+	val auc-roc: 0.67845
+	epoch time: 3.847
+13th epoch,
+	training loss: 0.28676
+	val loss: 0.42554
+	val auc-roc: 0.68708
+	epoch time: 3.838
+14th epoch,
+	training loss: 0.28477
+	val loss: 0.42472
+	val auc-roc: 0.69301
+	epoch time: 3.856
+15th epoch,
+	training loss: 0.28279
+	val loss: 0.42380
+	val auc-roc: 0.69801
+	epoch time: 3.855
+16th epoch,
+	training loss: 0.28081
+	val loss: 0.42274
+	val auc-roc: 0.70267
+	epoch time: 3.864
+17th epoch,
+	training loss: 0.27881
+	val loss: 0.42162
+	val auc-roc: 0.70693
+	epoch time: 3.840
+18th epoch,
+	training loss: 0.27683
+	val loss: 0.42049
+	val auc-roc: 0.70998
+	epoch time: 3.866
+19th epoch,
+	training loss: 0.27484
+	val loss: 0.41934
+	val auc-roc: 0.71234
+	epoch time: 3.836
+20th epoch,
+	training loss: 0.27285
+	val loss: 0.41832
+	val auc-roc: 0.71415
+	epoch time: 3.871
+21th epoch,
+	training loss: 0.27086
+	val loss: 0.41746
+	val auc-roc: 0.71573
+	epoch time: 3.859
+22th epoch,
+	training loss: 0.26886
+	val loss: 0.41687
+	val auc-roc: 0.71724
+	epoch time: 3.851
+23th epoch,
+	training loss: 0.26685
+	val loss: 0.41655
+	val auc-roc: 0.71835
+	epoch time: 3.839
+24th epoch,
+	training loss: 0.26484
+	val loss: 0.41653
+	val auc-roc: 0.71919
+	epoch time: 3.853
+25th epoch,
+	training loss: 0.26281
+	val loss: 0.41687
+	val auc-roc: 0.72021
+	epoch time: 3.838
+26th epoch,
+	training loss: 0.26077
+	val loss: 0.41758
+	val auc-roc: 0.72068
+	epoch time: 3.868
+27th epoch,
+	training loss: 0.25873
+	val loss: 0.41865
+	val auc-roc: 0.72078
+	epoch time: 3.857
+28th epoch,
+	training loss: 0.25669
+	val loss: 0.42002
+	val auc-roc: 0.72115
+	epoch time: 3.866
+29th epoch,
+	training loss: 0.25464
+	val loss: 0.42154
+	val auc-roc: 0.72148
+	epoch time: 3.857
+30th epoch,
+	training loss: 0.25261
+	val loss: 0.42316
+	val auc-roc: 0.72167
+	epoch time: 3.863
+31th epoch,
+	training loss: 0.25059
+	val loss: 0.42468
+	val auc-roc: 0.72193
+	epoch time: 3.868
+32th epoch,
+	training loss: 0.24858
+	val loss: 0.42616
+	val auc-roc: 0.72221
+	epoch time: 3.862
+33th epoch,
+	training loss: 0.24661
+	val loss: 0.42799
+	val auc-roc: 0.72266
+	epoch time: 3.888
+34th epoch,
+	training loss: 0.24469
+	val loss: 0.42979
+	val auc-roc: 0.72319
+	epoch time: 3.868
+35th epoch,
+	training loss: 0.24283
+	val loss: 0.43262
+	val auc-roc: 0.72375
+	epoch time: 3.853
+36th epoch,
+	training loss: 0.24106
+	val loss: 0.43659
+	val auc-roc: 0.72355
+	epoch time: 3.883
+37th epoch,
+	training loss: 0.23941
+	val loss: 0.44267
+	val auc-roc: 0.72303
+	epoch time: 3.853
+38th epoch,
+	training loss: 0.23792
+	val loss: 0.45302
+	val auc-roc: 0.72196
+	epoch time: 3.842
+39th epoch,
+	training loss: 0.23681
+	val loss: 0.47002
+	val auc-roc: 0.72022
+	epoch time: 3.852
+40th epoch,
+	training loss: 0.23675
+	val loss: 0.50505
+	val auc-roc: 0.71768
+	epoch time: 3.855
+41th epoch,
+	training loss: 0.24064
+	val loss: 0.59615
+	val auc-roc: 0.71214
+	epoch time: 3.859
+42th epoch,
+	training loss: 0.26563
+	val loss: 0.62642
+	val auc-roc: 0.70330
+	epoch time: 3.857
+43th epoch,
+	training loss: 0.29532
+	val loss: 0.40357
+	val auc-roc: 0.71793
+	epoch time: 3.869
+44th epoch,
+	training loss: 0.24783
+	val loss: 0.42552
+	val auc-roc: 0.69131
+	epoch time: 3.855
+45th epoch,
+	training loss: 0.23905
+	val loss: 0.41871
+	val auc-roc: 0.70173
+	epoch time: 4.078
+46th epoch,
+	training loss: 0.23457
+	val loss: 0.42259
+	val auc-roc: 0.70520
+	epoch time: 3.875
+47th epoch,
+	training loss: 0.23230
+	val loss: 0.42683
+	val auc-roc: 0.70637
+	epoch time: 3.866
+48th epoch,
+	training loss: 0.23018
+	val loss: 0.43157
+	val auc-roc: 0.70661
+	epoch time: 3.855
+49th epoch,
+	training loss: 0.22821
+	val loss: 0.43558
+	val auc-roc: 0.70671
+	epoch time: 3.869
+50th epoch,
+	training loss: 0.22640
+	val loss: 0.43987
+	val auc-roc: 0.70648
+	epoch time: 3.844
+----------
+Train Finished.
+Training time: 961.55s
+The best epoch: 24
+The best val loss: 0.4165288209915161
+The best auc-roc: 0.7191867202090009
+test_index : 100 ~ 119
+len X_test : 20
+len X_train : 179
+1th epoch,
+	training loss: 0.43884
+	val loss: 0.42213
+	val auc-roc: 0.46743
+	epoch time: 3.837
+2th epoch,
+	training loss: 0.34002
+	val loss: 0.39418
+	val auc-roc: 0.47844
+	epoch time: 3.832
+3th epoch,
+	training loss: 0.32760
+	val loss: 0.38704
+	val auc-roc: 0.50765
+	epoch time: 3.831
+4th epoch,
+	training loss: 0.32399
+	val loss: 0.38502
+	val auc-roc: 0.53697
+	epoch time: 3.838
+5th epoch,
+	training loss: 0.32040
+	val loss: 0.38222
+	val auc-roc: 0.55707
+	epoch time: 3.819
+6th epoch,
+	training loss: 0.31717
+	val loss: 0.38025
+	val auc-roc: 0.56850
+	epoch time: 3.828
+7th epoch,
+	training loss: 0.31404
+	val loss: 0.37855
+	val auc-roc: 0.57585
+	epoch time: 3.836
+8th epoch,
+	training loss: 0.31106
+	val loss: 0.37715
+	val auc-roc: 0.58148
+	epoch time: 3.830
+9th epoch,
+	training loss: 0.30817
+	val loss: 0.37603
+	val auc-roc: 0.58633
+	epoch time: 3.820
+10th epoch,
+	training loss: 0.30541
+	val loss: 0.37515
+	val auc-roc: 0.59081
+	epoch time: 3.813
+11th epoch,
+	training loss: 0.30277
+	val loss: 0.37450
+	val auc-roc: 0.59573
+	epoch time: 3.828
+12th epoch,
+	training loss: 0.30027
+	val loss: 0.37409
+	val auc-roc: 0.60170
+	epoch time: 3.841
+13th epoch,
+	training loss: 0.29792
+	val loss: 0.37390
+	val auc-roc: 0.60764
+	epoch time: 3.844
+14th epoch,
+	training loss: 0.29574
+	val loss: 0.37392
+	val auc-roc: 0.61366
+	epoch time: 3.817
+15th epoch,
+	training loss: 0.29369
+	val loss: 0.37414
+	val auc-roc: 0.61928
+	epoch time: 3.841
+16th epoch,
+	training loss: 0.29174
+	val loss: 0.37448
+	val auc-roc: 0.62416
+	epoch time: 3.854
+17th epoch,
+	training loss: 0.28987
+	val loss: 0.37491
+	val auc-roc: 0.62867
+	epoch time: 3.850
+18th epoch,
+	training loss: 0.28802
+	val loss: 0.37537
+	val auc-roc: 0.63248
+	epoch time: 3.860
+19th epoch,
+	training loss: 0.28619
+	val loss: 0.37585
+	val auc-roc: 0.63537
+	epoch time: 3.831
+20th epoch,
+	training loss: 0.28437
+	val loss: 0.37637
+	val auc-roc: 0.63694
+	epoch time: 3.831
+21th epoch,
+	training loss: 0.28255
+	val loss: 0.37690
+	val auc-roc: 0.63777
+	epoch time: 3.828
+22th epoch,
+	training loss: 0.28073
+	val loss: 0.37742
+	val auc-roc: 0.63813
+	epoch time: 3.823
+23th epoch,
+	training loss: 0.27889
+	val loss: 0.37793
+	val auc-roc: 0.63849
+	epoch time: 3.841
+24th epoch,
+	training loss: 0.27704
+	val loss: 0.37844
+	val auc-roc: 0.63912
+	epoch time: 3.829
+25th epoch,
+	training loss: 0.27519
+	val loss: 0.37897
+	val auc-roc: 0.63939
+	epoch time: 3.826
+26th epoch,
+	training loss: 0.27333
+	val loss: 0.37952
+	val auc-roc: 0.63955
+	epoch time: 3.830
+27th epoch,
+	training loss: 0.27147
+	val loss: 0.38011
+	val auc-roc: 0.63960
+	epoch time: 3.842
+28th epoch,
+	training loss: 0.26961
+	val loss: 0.38076
+	val auc-roc: 0.63903
+	epoch time: 3.842
+29th epoch,
+	training loss: 0.26775
+	val loss: 0.38149
+	val auc-roc: 0.63826
+	epoch time: 3.809
+30th epoch,
+	training loss: 0.26588
+	val loss: 0.38238
+	val auc-roc: 0.63710
+	epoch time: 3.848
+31th epoch,
+	training loss: 0.26402
+	val loss: 0.38338
+	val auc-roc: 0.63563
+	epoch time: 3.827
+32th epoch,
+	training loss: 0.26215
+	val loss: 0.38459
+	val auc-roc: 0.63370
+	epoch time: 3.819
+33th epoch,
+	training loss: 0.26028
+	val loss: 0.38602
+	val auc-roc: 0.63195
+	epoch time: 3.835
+34th epoch,
+	training loss: 0.25840
+	val loss: 0.38769
+	val auc-roc: 0.63010
+	epoch time: 3.826
+35th epoch,
+	training loss: 0.25653
+	val loss: 0.38962
+	val auc-roc: 0.62823
+	epoch time: 3.846
+36th epoch,
+	training loss: 0.25465
+	val loss: 0.39178
+	val auc-roc: 0.62615
+	epoch time: 3.817
+37th epoch,
+	training loss: 0.25276
+	val loss: 0.39412
+	val auc-roc: 0.62437
+	epoch time: 3.821
+38th epoch,
+	training loss: 0.25087
+	val loss: 0.39667
+	val auc-roc: 0.62255
+	epoch time: 3.861
+39th epoch,
+	training loss: 0.24897
+	val loss: 0.39956
+	val auc-roc: 0.62067
+	epoch time: 4.038
+40th epoch,
+	training loss: 0.24705
+	val loss: 0.40265
+	val auc-roc: 0.61905
+	epoch time: 3.832
+41th epoch,
+	training loss: 0.24510
+	val loss: 0.40580
+	val auc-roc: 0.61725
+	epoch time: 3.844
+42th epoch,
+	training loss: 0.24313
+	val loss: 0.40903
+	val auc-roc: 0.61595
+	epoch time: 3.817
+43th epoch,
+	training loss: 0.24109
+	val loss: 0.41244
+	val auc-roc: 0.61487
+	epoch time: 3.841
+44th epoch,
+	training loss: 0.23903
+	val loss: 0.41599
+	val auc-roc: 0.61357
+	epoch time: 3.818
+45th epoch,
+	training loss: 0.23691
+	val loss: 0.41983
+	val auc-roc: 0.61193
+	epoch time: 3.839
+46th epoch,
+	training loss: 0.23477
+	val loss: 0.42400
+	val auc-roc: 0.61058
+	epoch time: 3.828
+47th epoch,
+	training loss: 0.23260
+	val loss: 0.42852
+	val auc-roc: 0.60888
+	epoch time: 3.831
+48th epoch,
+	training loss: 0.23041
+	val loss: 0.43301
+	val auc-roc: 0.60722
+	epoch time: 3.848
+49th epoch,
+	training loss: 0.22820
+	val loss: 0.43794
+	val auc-roc: 0.60546
+	epoch time: 3.810
+50th epoch,
+	training loss: 0.22596
+	val loss: 0.44363
+	val auc-roc: 0.60393
+	epoch time: 3.814
+----------
+Train Finished.
+Training time: 1153.41s
+The best epoch: 13
+The best val loss: 0.3738992512226105
+The best auc-roc: 0.6076442547485033
+test_index : 120 ~ 139
+len X_test : 20
+len X_train : 179
+1th epoch,
+	training loss: 0.41673
+	val loss: 0.30448
+	val auc-roc: 0.51001
+	epoch time: 3.827
+2th epoch,
+	training loss: 0.34275
+	val loss: 0.30218
+	val auc-roc: 0.52311
+	epoch time: 3.825
+3th epoch,
+	training loss: 0.33323
+	val loss: 0.29742
+	val auc-roc: 0.54374
+	epoch time: 3.831
+4th epoch,
+	training loss: 0.32873
+	val loss: 0.29814
+	val auc-roc: 0.55339
+	epoch time: 3.833
+5th epoch,
+	training loss: 0.32457
+	val loss: 0.29686
+	val auc-roc: 0.55776
+	epoch time: 3.839
+6th epoch,
+	training loss: 0.32086
+	val loss: 0.29637
+	val auc-roc: 0.56109
+	epoch time: 3.853
+7th epoch,
+	training loss: 0.31740
+	val loss: 0.29545
+	val auc-roc: 0.56495
+	epoch time: 3.833
+8th epoch,
+	training loss: 0.31411
+	val loss: 0.29455
+	val auc-roc: 0.56823
+	epoch time: 3.836
+9th epoch,
+	training loss: 0.31098
+	val loss: 0.29371
+	val auc-roc: 0.57046
+	epoch time: 3.828
+10th epoch,
+	training loss: 0.30802
+	val loss: 0.29299
+	val auc-roc: 0.57210
+	epoch time: 3.825
+11th epoch,
+	training loss: 0.30521
+	val loss: 0.29244
+	val auc-roc: 0.57314
+	epoch time: 3.840
+12th epoch,
+	training loss: 0.30255
+	val loss: 0.29209
+	val auc-roc: 0.57346
+	epoch time: 3.814
+13th epoch,
+	training loss: 0.30005
+	val loss: 0.29195
+	val auc-roc: 0.57397
+	epoch time: 3.828
+14th epoch,
+	training loss: 0.29768
+	val loss: 0.29204
+	val auc-roc: 0.57429
+	epoch time: 3.836
+15th epoch,
+	training loss: 0.29540
+	val loss: 0.29236
+	val auc-roc: 0.57461
+	epoch time: 3.825
+16th epoch,
+	training loss: 0.29318
+	val loss: 0.29291
+	val auc-roc: 0.57501
+	epoch time: 3.830
+17th epoch,
+	training loss: 0.29101
+	val loss: 0.29366
+	val auc-roc: 0.57530
+	epoch time: 3.844
+18th epoch,
+	training loss: 0.28887
+	val loss: 0.29457
+	val auc-roc: 0.57569
+	epoch time: 3.837
+19th epoch,
+	training loss: 0.28675
+	val loss: 0.29556
+	val auc-roc: 0.57658
+	epoch time: 3.860
+20th epoch,
+	training loss: 0.28467
+	val loss: 0.29663
+	val auc-roc: 0.57724
+	epoch time: 3.879
+21th epoch,
+	training loss: 0.28260
+	val loss: 0.29774
+	val auc-roc: 0.57799
+	epoch time: 3.880
+22th epoch,
+	training loss: 0.28057
+	val loss: 0.29888
+	val auc-roc: 0.57899
+	epoch time: 3.851
+23th epoch,
+	training loss: 0.27857
+	val loss: 0.30004
+	val auc-roc: 0.57982
+	epoch time: 3.826
+24th epoch,
+	training loss: 0.27659
+	val loss: 0.30121
+	val auc-roc: 0.58063
+	epoch time: 3.870
+25th epoch,
+	training loss: 0.27461
+	val loss: 0.30238
+	val auc-roc: 0.58151
+	epoch time: 3.848
+26th epoch,
+	training loss: 0.27266
+	val loss: 0.30356
+	val auc-roc: 0.58221
+	epoch time: 3.839
+27th epoch,
+	training loss: 0.27070
+	val loss: 0.30474
+	val auc-roc: 0.58282
+	epoch time: 3.847
+28th epoch,
+	training loss: 0.26875
+	val loss: 0.30593
+	val auc-roc: 0.58363
+	epoch time: 3.839
+29th epoch,
+	training loss: 0.26681
+	val loss: 0.30712
+	val auc-roc: 0.58428
+	epoch time: 3.851
+30th epoch,
+	training loss: 0.26487
+	val loss: 0.30835
+	val auc-roc: 0.58469
+	epoch time: 3.840
+31th epoch,
+	training loss: 0.26294
+	val loss: 0.30963
+	val auc-roc: 0.58503
+	epoch time: 3.827
+32th epoch,
+	training loss: 0.26099
+	val loss: 0.31096
+	val auc-roc: 0.58529
+	epoch time: 3.838
+33th epoch,
+	training loss: 0.25903
+	val loss: 0.31234
+	val auc-roc: 0.58594
+	epoch time: 3.837
+34th epoch,
+	training loss: 0.25705
+	val loss: 0.31375
+	val auc-roc: 0.58655
+	epoch time: 3.836
+35th epoch,
+	training loss: 0.25505
+	val loss: 0.31525
+	val auc-roc: 0.58743
+	epoch time: 3.847
+36th epoch,
+	training loss: 0.25304
+	val loss: 0.31685
+	val auc-roc: 0.58848
+	epoch time: 3.815
+37th epoch,
+	training loss: 0.25100
+	val loss: 0.31852
+	val auc-roc: 0.58946
+	epoch time: 3.849
+38th epoch,
+	training loss: 0.24892
+	val loss: 0.32026
+	val auc-roc: 0.59050
+	epoch time: 3.845
+39th epoch,
+	training loss: 0.24684
+	val loss: 0.32208
+	val auc-roc: 0.59164
+	epoch time: 4.056
+40th epoch,
+	training loss: 0.24473
+	val loss: 0.32403
+	val auc-roc: 0.59249
+	epoch time: 3.858
+41th epoch,
+	training loss: 0.24259
+	val loss: 0.32615
+	val auc-roc: 0.59330
+	epoch time: 3.850
+42th epoch,
+	training loss: 0.24042
+	val loss: 0.32849
+	val auc-roc: 0.59410
+	epoch time: 3.840
+43th epoch,
+	training loss: 0.23824
+	val loss: 0.33117
+	val auc-roc: 0.59472
+	epoch time: 3.841
+44th epoch,
+	training loss: 0.23609
+	val loss: 0.33428
+	val auc-roc: 0.59514
+	epoch time: 3.844
+45th epoch,
+	training loss: 0.23408
+	val loss: 0.33726
+	val auc-roc: 0.59566
+	epoch time: 3.813
+46th epoch,
+	training loss: 0.23249
+	val loss: 0.33956
+	val auc-roc: 0.59667
+	epoch time: 3.856
+47th epoch,
+	training loss: 0.23139
+	val loss: 0.34620
+	val auc-roc: 0.59776
+	epoch time: 3.843
+48th epoch,
+	training loss: 0.23398
+	val loss: 0.36366
+	val auc-roc: 0.59702
+	epoch time: 3.848
+49th epoch,
+	training loss: 0.27065
+	val loss: 0.34462
+	val auc-roc: 0.59779
+	epoch time: 3.840
+50th epoch,
+	training loss: 0.24431
+	val loss: 0.36234
+	val auc-roc: 0.59104
+	epoch time: 3.855
+----------
+Train Finished.
+Training time: 1345.72s
+The best epoch: 13
+The best val loss: 0.2919510304927826
+The best auc-roc: 0.5739745408496207
+test_index : 140 ~ 159
+len X_test : 20
+len X_train : 179
+1th epoch,
+	training loss: 0.41766
+	val loss: 0.30326
+	val auc-roc: 0.57766
+	epoch time: 3.833
+2th epoch,
+	training loss: 0.34113
+	val loss: 0.30333
+	val auc-roc: 0.60364
+	epoch time: 3.828
+3th epoch,
+	training loss: 0.33150
+	val loss: 0.29920
+	val auc-roc: 0.61785
+	epoch time: 3.827
+4th epoch,
+	training loss: 0.32766
+	val loss: 0.29743
+	val auc-roc: 0.63228
+	epoch time: 3.821
+5th epoch,
+	training loss: 0.32386
+	val loss: 0.29524
+	val auc-roc: 0.64054
+	epoch time: 3.830
+6th epoch,
+	training loss: 0.32052
+	val loss: 0.29364
+	val auc-roc: 0.64562
+	epoch time: 3.831
+7th epoch,
+	training loss: 0.31734
+	val loss: 0.29204
+	val auc-roc: 0.64822
+	epoch time: 3.824
+8th epoch,
+	training loss: 0.31433
+	val loss: 0.29070
+	val auc-roc: 0.65007
+	epoch time: 3.821
+9th epoch,
+	training loss: 0.31151
+	val loss: 0.28956
+	val auc-roc: 0.65162
+	epoch time: 3.853
+10th epoch,
+	training loss: 0.30887
+	val loss: 0.28863
+	val auc-roc: 0.65409
+	epoch time: 3.851
+11th epoch,
+	training loss: 0.30641
+	val loss: 0.28791
+	val auc-roc: 0.65693
+	epoch time: 3.806
+12th epoch,
+	training loss: 0.30412
+	val loss: 0.28739
+	val auc-roc: 0.66111
+	epoch time: 3.811
+13th epoch,
+	training loss: 0.30199
+	val loss: 0.28704
+	val auc-roc: 0.66447
+	epoch time: 3.863
+14th epoch,
+	training loss: 0.29998
+	val loss: 0.28686
+	val auc-roc: 0.66729
+	epoch time: 3.813
+15th epoch,
+	training loss: 0.29805
+	val loss: 0.28684
+	val auc-roc: 0.66989
+	epoch time: 3.811
+16th epoch,
+	training loss: 0.29617
+	val loss: 0.28696
+	val auc-roc: 0.67207
+	epoch time: 3.820
+17th epoch,
+	training loss: 0.29431
+	val loss: 0.28721
+	val auc-roc: 0.67383
+	epoch time: 3.822
+18th epoch,
+	training loss: 0.29245
+	val loss: 0.28757
+	val auc-roc: 0.67573
+	epoch time: 3.829
+19th epoch,
+	training loss: 0.29056
+	val loss: 0.28804
+	val auc-roc: 0.67722
+	epoch time: 3.832
+20th epoch,
+	training loss: 0.28867
+	val loss: 0.28860
+	val auc-roc: 0.67827
+	epoch time: 3.827
+21th epoch,
+	training loss: 0.28673
+	val loss: 0.28925
+	val auc-roc: 0.67855
+	epoch time: 3.832
+22th epoch,
+	training loss: 0.28479
+	val loss: 0.29001
+	val auc-roc: 0.67851
+	epoch time: 3.831
+23th epoch,
+	training loss: 0.28285
+	val loss: 0.29087
+	val auc-roc: 0.67840
+	epoch time: 3.819
+24th epoch,
+	training loss: 0.28092
+	val loss: 0.29183
+	val auc-roc: 0.67838
+	epoch time: 3.819
+25th epoch,
+	training loss: 0.27899
+	val loss: 0.29292
+	val auc-roc: 0.67801
+	epoch time: 3.835
+26th epoch,
+	training loss: 0.27706
+	val loss: 0.29414
+	val auc-roc: 0.67754
+	epoch time: 3.831
+27th epoch,
+	training loss: 0.27514
+	val loss: 0.29551
+	val auc-roc: 0.67689
+	epoch time: 3.835
+28th epoch,
+	training loss: 0.27322
+	val loss: 0.29703
+	val auc-roc: 0.67625
+	epoch time: 3.834
+29th epoch,
+	training loss: 0.27132
+	val loss: 0.29877
+	val auc-roc: 0.67559
+	epoch time: 3.832
+30th epoch,
+	training loss: 0.26944
+	val loss: 0.30069
+	val auc-roc: 0.67488
+	epoch time: 3.817
+31th epoch,
+	training loss: 0.26756
+	val loss: 0.30279
+	val auc-roc: 0.67414
+	epoch time: 3.813
+32th epoch,
+	training loss: 0.26570
+	val loss: 0.30510
+	val auc-roc: 0.67343
+	epoch time: 3.814
+33th epoch,
+	training loss: 0.26386
+	val loss: 0.30761
+	val auc-roc: 0.67262
+	epoch time: 3.831
+34th epoch,
+	training loss: 0.26201
+	val loss: 0.31026
+	val auc-roc: 0.67182
+	epoch time: 3.819
+35th epoch,
+	training loss: 0.26016
+	val loss: 0.31305
+	val auc-roc: 0.67096
+	epoch time: 3.819
+36th epoch,
+	training loss: 0.25831
+	val loss: 0.31597
+	val auc-roc: 0.66998
+	epoch time: 3.847
+37th epoch,
+	training loss: 0.25644
+	val loss: 0.31909
+	val auc-roc: 0.66908
+	epoch time: 3.846
+38th epoch,
+	training loss: 0.25459
+	val loss: 0.32239
+	val auc-roc: 0.66791
+	epoch time: 3.820
+39th epoch,
+	training loss: 0.25275
+	val loss: 0.32575
+	val auc-roc: 0.66716
+	epoch time: 3.815
+40th epoch,
+	training loss: 0.25088
+	val loss: 0.32925
+	val auc-roc: 0.66643
+	epoch time: 3.834
+41th epoch,
+	training loss: 0.24900
+	val loss: 0.33313
+	val auc-roc: 0.66563
+	epoch time: 3.809
+42th epoch,
+	training loss: 0.24712
+	val loss: 0.33693
+	val auc-roc: 0.66485
+	epoch time: 3.820
+43th epoch,
+	training loss: 0.24521
+	val loss: 0.34092
+	val auc-roc: 0.66438
+	epoch time: 3.812
+44th epoch,
+	training loss: 0.24326
+	val loss: 0.34521
+	val auc-roc: 0.66401
+	epoch time: 3.816
+45th epoch,
+	training loss: 0.24128
+	val loss: 0.34953
+	val auc-roc: 0.66356
+	epoch time: 3.825
+46th epoch,
+	training loss: 0.23932
+	val loss: 0.35422
+	val auc-roc: 0.66329
+	epoch time: 3.808
+47th epoch,
+	training loss: 0.23733
+	val loss: 0.35908
+	val auc-roc: 0.66295
+	epoch time: 3.845
+48th epoch,
+	training loss: 0.23539
+	val loss: 0.36408
+	val auc-roc: 0.66256
+	epoch time: 3.837
+49th epoch,
+	training loss: 0.23350
+	val loss: 0.36862
+	val auc-roc: 0.66235
+	epoch time: 3.825
+50th epoch,
+	training loss: 0.23171
+	val loss: 0.37355
+	val auc-roc: 0.66214
+	epoch time: 3.833
+----------
+Train Finished.
+Training time: 1537.10s
+The best epoch: 15
+The best val loss: 0.2868439853191376
+The best auc-roc: 0.6698871351283554
+test_index : 160 ~ 179
+len X_test : 20
+len X_train : 179
+1th epoch,
+	training loss: 0.37438
+	val loss: 0.37017
+	val auc-roc: 0.48641
+	epoch time: 3.846
+2th epoch,
+	training loss: 0.32857
+	val loss: 0.35522
+	val auc-roc: 0.53170
+	epoch time: 3.852
+3th epoch,
+	training loss: 0.32252
+	val loss: 0.35178
+	val auc-roc: 0.57511
+	epoch time: 3.865
+4th epoch,
+	training loss: 0.31953
+	val loss: 0.34841
+	val auc-roc: 0.61522
+	epoch time: 3.882
+5th epoch,
+	training loss: 0.31653
+	val loss: 0.34551
+	val auc-roc: 0.63819
+	epoch time: 3.882
+6th epoch,
+	training loss: 0.31372
+	val loss: 0.34282
+	val auc-roc: 0.65245
+	epoch time: 4.046
+7th epoch,
+	training loss: 0.31101
+	val loss: 0.34040
+	val auc-roc: 0.66274
+	epoch time: 3.855
+8th epoch,
+	training loss: 0.30839
+	val loss: 0.33826
+	val auc-roc: 0.67077
+	epoch time: 3.858
+9th epoch,
+	training loss: 0.30587
+	val loss: 0.33637
+	val auc-roc: 0.67765
+	epoch time: 3.860
+10th epoch,
+	training loss: 0.30346
+	val loss: 0.33477
+	val auc-roc: 0.68302
+	epoch time: 3.860
+11th epoch,
+	training loss: 0.30117
+	val loss: 0.33347
+	val auc-roc: 0.68794
+	epoch time: 3.869
+12th epoch,
+	training loss: 0.29898
+	val loss: 0.33248
+	val auc-roc: 0.69149
+	epoch time: 3.855
+13th epoch,
+	training loss: 0.29689
+	val loss: 0.33180
+	val auc-roc: 0.69348
+	epoch time: 3.853
+14th epoch,
+	training loss: 0.29488
+	val loss: 0.33142
+	val auc-roc: 0.69502
+	epoch time: 3.844
+15th epoch,
+	training loss: 0.29291
+	val loss: 0.33129
+	val auc-roc: 0.69672
+	epoch time: 3.849
+16th epoch,
+	training loss: 0.29095
+	val loss: 0.33139
+	val auc-roc: 0.69734
+	epoch time: 3.856
+17th epoch,
+	training loss: 0.28899
+	val loss: 0.33167
+	val auc-roc: 0.69785
+	epoch time: 3.857
+18th epoch,
+	training loss: 0.28702
+	val loss: 0.33211
+	val auc-roc: 0.69848
+	epoch time: 3.878
+19th epoch,
+	training loss: 0.28503
+	val loss: 0.33266
+	val auc-roc: 0.69850
+	epoch time: 3.852
+20th epoch,
+	training loss: 0.28303
+	val loss: 0.33333
+	val auc-roc: 0.69798
+	epoch time: 3.874
+21th epoch,
+	training loss: 0.28102
+	val loss: 0.33408
+	val auc-roc: 0.69676
+	epoch time: 3.845
+22th epoch,
+	training loss: 0.27901
+	val loss: 0.33492
+	val auc-roc: 0.69474
+	epoch time: 3.859
+23th epoch,
+	training loss: 0.27700
+	val loss: 0.33585
+	val auc-roc: 0.69147
+	epoch time: 3.856
+24th epoch,
+	training loss: 0.27499
+	val loss: 0.33691
+	val auc-roc: 0.68760
+	epoch time: 3.853
+25th epoch,
+	training loss: 0.27299
+	val loss: 0.33812
+	val auc-roc: 0.68403
+	epoch time: 3.860
+26th epoch,
+	training loss: 0.27099
+	val loss: 0.33948
+	val auc-roc: 0.68080
+	epoch time: 3.867
+27th epoch,
+	training loss: 0.26900
+	val loss: 0.34102
+	val auc-roc: 0.67784
+	epoch time: 3.852
+28th epoch,
+	training loss: 0.26702
+	val loss: 0.34271
+	val auc-roc: 0.67420
+	epoch time: 3.838
+29th epoch,
+	training loss: 0.26505
+	val loss: 0.34453
+	val auc-roc: 0.67031
+	epoch time: 3.841
+30th epoch,
+	training loss: 0.26309
+	val loss: 0.34650
+	val auc-roc: 0.66642
+	epoch time: 3.843
+31th epoch,
+	training loss: 0.26116
+	val loss: 0.34862
+	val auc-roc: 0.66293
+	epoch time: 3.837
+32th epoch,
+	training loss: 0.25924
+	val loss: 0.35081
+	val auc-roc: 0.65929
+	epoch time: 3.835
+33th epoch,
+	training loss: 0.25734
+	val loss: 0.35313
+	val auc-roc: 0.65581
+	epoch time: 3.850
+34th epoch,
+	training loss: 0.25545
+	val loss: 0.35551
+	val auc-roc: 0.65191
+	epoch time: 3.850
+35th epoch,
+	training loss: 0.25357
+	val loss: 0.35805
+	val auc-roc: 0.64882
+	epoch time: 3.846
+36th epoch,
+	training loss: 0.25170
+	val loss: 0.36075
+	val auc-roc: 0.64557
+	epoch time: 3.862
+37th epoch,
+	training loss: 0.24982
+	val loss: 0.36363
+	val auc-roc: 0.64151
+	epoch time: 3.843
+38th epoch,
+	training loss: 0.24794
+	val loss: 0.36671
+	val auc-roc: 0.63795
+	epoch time: 3.839
+39th epoch,
+	training loss: 0.24608
+	val loss: 0.37000
+	val auc-roc: 0.63466
+	epoch time: 3.845
+40th epoch,
+	training loss: 0.24420
+	val loss: 0.37343
+	val auc-roc: 0.63141
+	epoch time: 3.826
+41th epoch,
+	training loss: 0.24235
+	val loss: 0.37707
+	val auc-roc: 0.62790
+	epoch time: 3.840
+42th epoch,
+	training loss: 0.24050
+	val loss: 0.38087
+	val auc-roc: 0.62432
+	epoch time: 3.853
+43th epoch,
+	training loss: 0.23869
+	val loss: 0.38490
+	val auc-roc: 0.62080
+	epoch time: 3.841
+44th epoch,
+	training loss: 0.23695
+	val loss: 0.38912
+	val auc-roc: 0.61736
+	epoch time: 3.843
+45th epoch,
+	training loss: 0.23535
+	val loss: 0.39377
+	val auc-roc: 0.61347
+	epoch time: 3.866
+46th epoch,
+	training loss: 0.23406
+	val loss: 0.39849
+	val auc-roc: 0.60918
+	epoch time: 3.841
+47th epoch,
+	training loss: 0.23336
+	val loss: 0.40272
+	val auc-roc: 0.60538
+	epoch time: 3.837
+48th epoch,
+	training loss: 0.23425
+	val loss: 0.40619
+	val auc-roc: 0.60160
+	epoch time: 3.834
+49th epoch,
+	training loss: 0.24051
+	val loss: 0.40727
+	val auc-roc: 0.59715
+	epoch time: 3.848
+50th epoch,
+	training loss: 0.26438
+	val loss: 0.51984
+	val auc-roc: 0.60601
+	epoch time: 3.850
+----------
+Train Finished.
+Training time: 1729.94s
+The best epoch: 15
+The best val loss: 0.33129453659057617
+The best auc-roc: 0.696719263917717
+test_index : 180 ~ 198
+len X_test : 19
+len X_train : 180
+1th epoch,
+	training loss: 0.39524
+	val loss: 0.31883
+	val auc-roc: 0.48840
+	epoch time: 3.836
+2th epoch,
+	training loss: 0.33652
+	val loss: 0.31616
+	val auc-roc: 0.52333
+	epoch time: 3.839
+3th epoch,
+	training loss: 0.32921
+	val loss: 0.30922
+	val auc-roc: 0.55220
+	epoch time: 3.816
+4th epoch,
+	training loss: 0.32493
+	val loss: 0.30622
+	val auc-roc: 0.57957
+	epoch time: 3.814
+5th epoch,
+	training loss: 0.32152
+	val loss: 0.30314
+	val auc-roc: 0.60214
+	epoch time: 3.835
+6th epoch,
+	training loss: 0.31820
+	val loss: 0.30060
+	val auc-roc: 0.61684
+	epoch time: 3.836
+7th epoch,
+	training loss: 0.31518
+	val loss: 0.29861
+	val auc-roc: 0.62667
+	epoch time: 3.829
+8th epoch,
+	training loss: 0.31237
+	val loss: 0.29709
+	val auc-roc: 0.63336
+	epoch time: 3.840
+9th epoch,
+	training loss: 0.30977
+	val loss: 0.29599
+	val auc-roc: 0.63851
+	epoch time: 3.848
+10th epoch,
+	training loss: 0.30733
+	val loss: 0.29528
+	val auc-roc: 0.64211
+	epoch time: 3.866
+11th epoch,
+	training loss: 0.30503
+	val loss: 0.29490
+	val auc-roc: 0.64410
+	epoch time: 3.867
+12th epoch,
+	training loss: 0.30283
+	val loss: 0.29480
+	val auc-roc: 0.64493
+	epoch time: 3.840
+13th epoch,
+	training loss: 0.30071
+	val loss: 0.29493
+	val auc-roc: 0.64463
+	epoch time: 3.830
+14th epoch,
+	training loss: 0.29863
+	val loss: 0.29526
+	val auc-roc: 0.64381
+	epoch time: 3.853
+15th epoch,
+	training loss: 0.29660
+	val loss: 0.29575
+	val auc-roc: 0.64182
+	epoch time: 3.833
+16th epoch,
+	training loss: 0.29461
+	val loss: 0.29640
+	val auc-roc: 0.63944
+	epoch time: 3.811
+17th epoch,
+	training loss: 0.29265
+	val loss: 0.29717
+	val auc-roc: 0.63696
+	epoch time: 3.819
+18th epoch,
+	training loss: 0.29072
+	val loss: 0.29806
+	val auc-roc: 0.63408
+	epoch time: 3.818
+19th epoch,
+	training loss: 0.28882
+	val loss: 0.29905
+	val auc-roc: 0.63078
+	epoch time: 3.827
+20th epoch,
+	training loss: 0.28694
+	val loss: 0.30012
+	val auc-roc: 0.62706
+	epoch time: 3.844
+21th epoch,
+	training loss: 0.28507
+	val loss: 0.30126
+	val auc-roc: 0.62361
+	epoch time: 3.837
+22th epoch,
+	training loss: 0.28319
+	val loss: 0.30247
+	val auc-roc: 0.62005
+	epoch time: 3.830
+23th epoch,
+	training loss: 0.28132
+	val loss: 0.30373
+	val auc-roc: 0.61641
+	epoch time: 3.848
+24th epoch,
+	training loss: 0.27943
+	val loss: 0.30505
+	val auc-roc: 0.61290
+	epoch time: 3.847
+25th epoch,
+	training loss: 0.27753
+	val loss: 0.30640
+	val auc-roc: 0.60954
+	epoch time: 3.860
+26th epoch,
+	training loss: 0.27562
+	val loss: 0.30783
+	val auc-roc: 0.60645
+	epoch time: 3.854
+27th epoch,
+	training loss: 0.27368
+	val loss: 0.30935
+	val auc-roc: 0.60322
+	epoch time: 3.854
+28th epoch,
+	training loss: 0.27172
+	val loss: 0.31092
+	val auc-roc: 0.60020
+	epoch time: 3.887
+29th epoch,
+	training loss: 0.26975
+	val loss: 0.31260
+	val auc-roc: 0.59706
+	epoch time: 3.843
+30th epoch,
+	training loss: 0.26776
+	val loss: 0.31445
+	val auc-roc: 0.59474
+	epoch time: 3.853
+31th epoch,
+	training loss: 0.26575
+	val loss: 0.31641
+	val auc-roc: 0.59281
+	epoch time: 3.862
+32th epoch,
+	training loss: 0.26372
+	val loss: 0.31850
+	val auc-roc: 0.59159
+	epoch time: 3.847
+33th epoch,
+	training loss: 0.26168
+	val loss: 0.32074
+	val auc-roc: 0.59053
+	epoch time: 3.845
+34th epoch,
+	training loss: 0.25962
+	val loss: 0.32312
+	val auc-roc: 0.58953
+	epoch time: 3.840
+35th epoch,
+	training loss: 0.25756
+	val loss: 0.32579
+	val auc-roc: 0.58820
+	epoch time: 3.843
+36th epoch,
+	training loss: 0.25548
+	val loss: 0.32874
+	val auc-roc: 0.58668
+	epoch time: 3.865
+37th epoch,
+	training loss: 0.25341
+	val loss: 0.33194
+	val auc-roc: 0.58482
+	epoch time: 3.857
+38th epoch,
+	training loss: 0.25133
+	val loss: 0.33536
+	val auc-roc: 0.58239
+	epoch time: 3.844
+39th epoch,
+	training loss: 0.24924
+	val loss: 0.33890
+	val auc-roc: 0.58064
+	epoch time: 3.849
+40th epoch,
+	training loss: 0.24716
+	val loss: 0.34259
+	val auc-roc: 0.57885
+	epoch time: 3.838
+41th epoch,
+	training loss: 0.24505
+	val loss: 0.34696
+	val auc-roc: 0.57661
+	epoch time: 4.068
+42th epoch,
+	training loss: 0.24295
+	val loss: 0.35141
+	val auc-roc: 0.57501
+	epoch time: 3.853
+43th epoch,
+	training loss: 0.24088
+	val loss: 0.35574
+	val auc-roc: 0.57363
+	epoch time: 3.855
+44th epoch,
+	training loss: 0.23875
+	val loss: 0.36016
+	val auc-roc: 0.57255
+	epoch time: 3.858
+45th epoch,
+	training loss: 0.23660
+	val loss: 0.36623
+	val auc-roc: 0.57079
+	epoch time: 3.827
+46th epoch,
+	training loss: 0.23448
+	val loss: 0.37334
+	val auc-roc: 0.56843
+	epoch time: 3.851
+47th epoch,
+	training loss: 0.23240
+	val loss: 0.38174
+	val auc-roc: 0.56598
+	epoch time: 3.836
+48th epoch,
+	training loss: 0.23078
+	val loss: 0.38899
+	val auc-roc: 0.56388
+	epoch time: 3.849
+49th epoch,
+	training loss: 0.23080
+	val loss: 0.38298
+	val auc-roc: 0.56371
+	epoch time: 3.844
+50th epoch,
+	training loss: 0.23622
+	val loss: 0.37775
+	val auc-roc: 0.56926
+	epoch time: 3.851
+----------
+Train Finished.
+Training time: 1922.38s
+The best epoch: 12
+The best val loss: 0.29479947686195374
+The best auc-roc: 0.6449325907699387

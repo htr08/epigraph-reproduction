@@ -1,15 +1,16 @@
 # Phân tích kết quả chạy lại EpiGraph trên Kaggle
 
-Nguồn: `logs.txt` (log chạy notebook Kaggle) đối chiếu với paper *EpiGraph* (Sci Rep 2024, 14:27496), Table 1 và Table 3.
+Nguồn: `logs/01_reproduce_epigraph_kaggle.log` (log chạy notebook Kaggle 01) đối chiếu với paper *EpiGraph* (Sci Rep 2024, 14:27496), Table 1 và Table 3.
 
 ## 1. Cấu trúc log
 
 | Đoạn log | Nội dung |
 |---|---|
-| Dòng 1–17 | Cảnh báo debugger, clone repo, pip install (không quan trọng) |
-| Dòng 18–22 | Tìm file pkl, liệt kê 10 checkpoint `Best_GAT_*.pt`, sửa code cho tương thích phiên bản thư viện trên Kaggle |
-| Dòng 23–37 | **Lần 1:** inference bằng 10 checkpoint pretrained của tác giả |
-| Dòng 38–2619 | **Lần 2:** tự train lại, KFold 10 fold (179 train / 20 val mỗi fold), 50 epoch |
+| Dòng 1–12 | Cảnh báo debugger, clone repo (không quan trọng) |
+| Dòng 13–17 | Tìm file pkl, liệt kê 10 checkpoint `Best_GAT_*.pt`, pip install |
+| Dòng 18–22 | Vá code cho tương thích phiên bản thư viện trên Kaggle |
+| Dòng 23–27 | **Lần 1:** metric trên test set của 10 checkpoint pretrained của tác giả |
+| Dòng 28–2619 | **Lần 2:** tự train lại, KFold 10 fold (179 train / 20 val; fold 10: 180 / 19), 50 epoch |
 | Dòng 2620–2624 | Metric trên test set của 10 model vừa train |
 | Cuối log | Cảnh báo nbconvert (không quan trọng) |
 
@@ -28,7 +29,7 @@ Nguồn: `logs.txt` (log chạy notebook Kaggle) đối chiếu với paper *Epi
 - **So với baseline trong paper:** AUC-ROC 0.72 cao hơn GraphBepi (0.64) và ngang BepiPred-3.0 / DiscoTope-3.0 (0.71). F1, MCC, BACC xấp xỉ GraphBepi.
 - **AUC-PR thấp (0.22–0.23)** là bình thường vì bài toán mất cân bằng nặng (rất ít residue epitope); cần so với tỉ lệ dương, không so với 1.0.
 
-## 3. Kết quả từng fold (trên tập validation 20 antigen)
+## 3. Kết quả từng fold (trên tập validation 19–20 antigen)
 
 | Fold | Chỉ số test | Best epoch | Val loss | Val AUC-ROC |
 |---|---|---|---|---|
@@ -45,16 +46,16 @@ Nguồn: `logs.txt` (log chạy notebook Kaggle) đối chiếu với paper *Epi
 
 Val AUC trung bình ≈ **0.68**.
 
-**Val AUC là gì (theo `train.py`):** sau mỗi epoch, model được chạy trên 20 antigen bị giữ lại của fold đó (code gọi nhầm là `X_test`, thực chất là tập validation). Chỉ các residue bề mặt (`train_mask`) được tính. 20 antigen chia thành 3 batch (8 + 8 + 4); AUC-ROC được tính riêng cho từng batch rồi lấy trung bình 3 giá trị. Val loss tính tương tự. Hai số này dùng để chọn checkpoint, không phải kết quả cuối; paper không báo cáo chúng, kết quả cuối là test set ở mục 2.
+**Val AUC là gì (theo `train.py`):** sau mỗi epoch, model được chạy trên 20 antigen bị giữ lại của fold đó (19 antigen ở fold 10) (code gọi nhầm là `X_test`, thực chất là tập validation). Chỉ các residue bề mặt (`train_mask`) được tính. 20 antigen chia thành 3 batch (8 + 8 + 4; fold 10 là 8 + 8 + 3); AUC-ROC được tính riêng cho từng batch rồi lấy trung bình 3 giá trị. Val loss tính tương tự. Hai số này dùng để chọn checkpoint, không phải kết quả cuối; paper không báo cáo chúng, kết quả cuối là test set ở mục 2.
 
 ## 4. Nhận xét
 
-1. **Val AUC (0.68) thấp hơn test AUC (0.72) và dao động mạnh giữa các fold (0.63–0.76).** Mỗi fold chỉ có 20 antigen nên số đo nhiễu. Test cao hơn nhờ ensemble trung bình 10 model.
-2. **Overfit sớm.** Training loss giảm đều đến ~0.23 nhưng val loss tăng lại sau epoch ~12–17. Best epoch hầu hết chỉ 8–17 (ngoại lệ fold 6: 32).
+1. **Val AUC (0.68) thấp hơn test AUC (0.72) và dao động mạnh giữa các fold (0.63–0.76).** Mỗi fold chỉ có 19–20 antigen nên số đo nhiễu. Test cao hơn nhờ ensemble trung bình 10 model.
+2. **Overfit sớm ở loss.** Training loss xuống 0.22–0.26 ở epoch 50, trong khi val loss thấp nhất ở epoch 8–21 (9 fold; fold 6: epoch 32) rồi tăng lại, và cuối quá trình cao hơn mức thấp nhất ở cả 10 fold. Best epoch được chọn là 8–17 ở 9 fold (ngoại lệ fold 6: 32). Val AUC-ROC thì khác: đỉnh của nó nằm ở epoch 8–46 (fold 3: epoch 46, fold 9: epoch 40), nên overfit thể hiện rõ ở loss (hiệu chuẩn xác suất) hơn là ở chất lượng xếp hạng.
 3. **"Best auc-roc" không phải AUC cao nhất của fold.** Paper chỉ cập nhật checkpoint khi *cả* val loss và val AUC cùng cải thiện, nên epoch được chọn có thể không trùng đỉnh AUC (ví dụ fold 1: AUC lên ~0.635 ở epoch ~22 nhưng model lưu ở epoch 14 với 0.6275).
-4. **Mất ổn định cuối quá trình train.** Fold 2 (epoch 46–49) và fold 4 (epoch 44–47) có val loss nhảy lên 0.37–0.38 rồi hạ lại. Không ảnh hưởng vì checkpoint tốt đã lưu từ sớm.
+4. **Val loss nhảy đột ngột ở một epoch.** Bốn fold có bước nhảy hơn 0.03 trong một epoch: fold 4 (epoch 45: 0.333 → 0.387), fold 9 (epoch 40: 0.385 → 0.442), fold 2 (epoch 48: 0.319 → 0.375) và fold 8 (epoch 48: 0.444 → 0.879, lớn nhất). Không ảnh hưởng vì checkpoint được chọn nằm ở epoch sớm hơn nhiều.
 5. **Thời gian train trong log là cộng dồn:** khoảng 190s mỗi fold (fold 10 hiển thị 1919s).
-6. **Số antigen:** mỗi fold 179 + 20 = 199, trong khi paper nói 200 antigen. Các file csv của tác giả liệt kê đủ 200 antigen (180 + 20); so mã PDB thì file pkl công bố thiếu đúng một antigen là **3FCS**, các antigen còn lại và 45 antigen test đều khớp. Lý do thiếu không được ghi trong repo; ảnh hưởng không đáng kể.
+6. **Số antigen:** các fold gồm 179 train + 20 val (fold 10: 180 + 19), tổng 199, trong khi paper nói 200 antigen. Các file csv của tác giả liệt kê đủ 200 antigen (180 + 20); so mã PDB thì file pkl công bố thiếu đúng một antigen là **3FCS**, các antigen còn lại và 45 antigen test đều khớp. Lý do thiếu không được ghi trong repo; ảnh hưởng không đáng kể.
 7. **Bản vá `set` trong `train.py`:** bản gốc dùng `list(set(X) - set(X_test))` nên thứ tự mẫu train không xác định; bản vá giữ thứ tự gốc. Tập mẫu train vẫn như nhau, chỉ thứ tự khác.
 
 ## 5. Gợi ý cho báo cáo
@@ -62,3 +63,5 @@ Val AUC trung bình ≈ **0.68**.
 - Kết luận: *reproduce thành công, lệch ≤ 0.01 do tính ngẫu nhiên*.
 - Muốn chặt hơn: thêm `torch.manual_seed(...)` (split fold đã cố định bằng seed 30 trong code gốc) và chạy nhiều lần với seed khác nhau, báo cáo mean ± std.
 - Phần thảo luận có thể dùng: val AUC thấp hơn test và nhiễu theo fold (tập val nhỏ), overfit sớm, cơ chế lưu checkpoint theo hai metric.
+
+> Lưu ý: file này phân tích lần train lại đầu tiên (notebook 01). Kết quả đa seed (8 lần train) và các so sánh chặt hơn nằm ở `reports/analysis_en.md` (mục 6) và thư mục `results/02_multiseed/`.

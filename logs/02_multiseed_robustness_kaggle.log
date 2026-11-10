@@ -1,0 +1,216 @@
+9.0s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.0s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.0s 3 0.00s - to python to disable frozen modules.
+9.0s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.6s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.6s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.6s 7 0.00s - to python to disable frozen modules.
+9.6s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.8s 9 Cloning into 'EpiGraph'...
+11.0s 10 Cloning into 'EpiGraph'...
+11.0s 11 
+11.0s 12 Cloning into 'EpiGraph'...
+31.8s 13 ['/kaggle/input/datasets/hientrang08/epigraph-data/epigraph-data/epitope3d_test_data.pkl', '/kaggle/input/datasets/hientrang08/epigraph-data/epigraph-data/epitope3d_train_data.pkl']
+36.8s 14 Writing /kaggle/working/src/patch_upstream.py
+36.8s 15 Writing /kaggle/working/src/train_seeded.py
+36.8s 16 Writing /kaggle/working/src/eval_ensemble.py
+36.9s 17 Writing /kaggle/working/src/aggregate.py
+37.0s 18 upstream patched OK: /kaggle/working/EpiGraph
+85.8s 19 [/kaggle/working/EpiGraph/checkpoint] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+85.8s 20 auc_roc  0.7250   95% CI [0.655, 0.780]   single-model mean 0.7087 ± 0.0143
+85.8s 21 auc_pr   0.2324   95% CI [0.180, 0.293]   single-model mean 0.2142 ± 0.0135
+85.8s 22 f1       0.2874   95% CI [0.219, 0.338]   single-model mean 0.2722 ± 0.0097
+85.8s 23 bacc     0.6244   95% CI [0.574, 0.672]   single-model mean 0.6141 ± 0.0121
+85.8s 24 mcc      0.1926   95% CI [0.123, 0.252]   single-model mean 0.1749 ± 0.0105
+86.0s 25 [/kaggle/working/EpiGraph/checkpoint] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+86.0s 26 auc_roc  0.7250   95% CI [0.655, 0.780]   single-model mean 0.7087 ± 0.0143
+86.0s 27 auc_pr   0.2324   95% CI [0.180, 0.293]   single-model mean 0.2142 ± 0.0135
+86.0s 28 f1       0.2874   95% CI [0.219, 0.338]   single-model mean 0.2722 ± 0.0097
+86.0s 29 bacc     0.6244   95% CI [0.574, 0.672]   single-model mean 0.6141 ± 0.0121
+86.0s 30 mcc      0.1926   95% CI [0.123, 0.252]   single-model mean 0.1749 ± 0.0105
+2055.6s 31 [/kaggle/working/runs/init_s1/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+2055.6s 32 auc_roc  0.7286   95% CI [0.657, 0.783]   single-model mean 0.7159 ± 0.0073
+2055.6s 33 auc_pr   0.2146   95% CI [0.170, 0.271]   single-model mean 0.2089 ± 0.0073
+2055.6s 34 f1       0.2708   95% CI [0.204, 0.321]   single-model mean 0.2682 ± 0.0100
+2055.6s 35 bacc     0.6155   95% CI [0.563, 0.662]   single-model mean 0.6140 ± 0.0086
+2055.6s 36 mcc      0.1714   95% CI [0.104, 0.232]   single-model mean 0.1685 ± 0.0131
+2055.8s 37 [/kaggle/working/runs/init_s1/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+2055.8s 38 auc_roc  0.7286   95% CI [0.657, 0.783]   single-model mean 0.7159 ± 0.0073
+2055.8s 39 auc_pr   0.2146   95% CI [0.170, 0.271]   single-model mean 0.2089 ± 0.0073
+2055.8s 40 f1       0.2708   95% CI [0.204, 0.321]   single-model mean 0.2682 ± 0.0100
+2055.8s 41 bacc     0.6155   95% CI [0.563, 0.662]   single-model mean 0.6140 ± 0.0086
+2055.8s 42 mcc      0.1714   95% CI [0.104, 0.232]   single-model mean 0.1685 ± 0.0131
+2057.3s 43 init_s1: train 32.4 min | AUC-ROC 0.7286 AUC-PR 0.2146 F1 0.2708 BACC 0.6155 MCC 0.1714
+4031.0s 44 [/kaggle/working/runs/init_s2/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+4031.0s 45 auc_roc  0.7211   95% CI [0.648, 0.776]   single-model mean 0.7060 ± 0.0159
+4031.0s 46 auc_pr   0.2112   95% CI [0.168, 0.269]   single-model mean 0.2023 ± 0.0101
+4031.0s 47 f1       0.2697   95% CI [0.206, 0.318]   single-model mean 0.2579 ± 0.0146
+4031.0s 48 bacc     0.6139   95% CI [0.566, 0.661]   single-model mean 0.6043 ± 0.0117
+4031.0s 49 mcc      0.1702   95% CI [0.103, 0.230]   single-model mean 0.1557 ± 0.0196
+4031.2s 50 [/kaggle/working/runs/init_s2/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+4031.2s 51 auc_roc  0.7211   95% CI [0.648, 0.776]   single-model mean 0.7060 ± 0.0159
+4031.2s 52 auc_pr   0.2112   95% CI [0.168, 0.269]   single-model mean 0.2023 ± 0.0101
+4031.2s 53 f1       0.2697   95% CI [0.206, 0.318]   single-model mean 0.2579 ± 0.0146
+4031.2s 54 bacc     0.6139   95% CI [0.566, 0.661]   single-model mean 0.6043 ± 0.0117
+4031.2s 55 mcc      0.1702   95% CI [0.103, 0.230]   single-model mean 0.1557 ± 0.0196
+4032.7s 56 init_s2: train 32.5 min | AUC-ROC 0.7211 AUC-PR 0.2112 F1 0.2697 BACC 0.6139 MCC 0.1702
+5990.0s 57 [/kaggle/working/runs/init_s3/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+5990.0s 58 auc_roc  0.7219   95% CI [0.650, 0.778]   single-model mean 0.7036 ± 0.0176
+5990.0s 59 auc_pr   0.2142   95% CI [0.169, 0.270]   single-model mean 0.2001 ± 0.0133
+5990.0s 60 f1       0.2877   95% CI [0.223, 0.339]   single-model mean 0.2661 ± 0.0193
+5990.0s 61 bacc     0.6263   95% CI [0.578, 0.672]   single-model mean 0.6106 ± 0.0168
+5990.0s 62 mcc      0.1928   95% CI [0.129, 0.254]   single-model mean 0.1664 ± 0.0234
+5990.2s 63 [/kaggle/working/runs/init_s3/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+5990.2s 64 auc_roc  0.7219   95% CI [0.650, 0.778]   single-model mean 0.7036 ± 0.0176
+5990.2s 65 auc_pr   0.2142   95% CI [0.169, 0.270]   single-model mean 0.2001 ± 0.0133
+5990.2s 66 f1       0.2877   95% CI [0.223, 0.339]   single-model mean 0.2661 ± 0.0193
+5990.2s 67 bacc     0.6263   95% CI [0.578, 0.672]   single-model mean 0.6106 ± 0.0168
+5990.2s 68 mcc      0.1928   95% CI [0.129, 0.254]   single-model mean 0.1664 ± 0.0234
+5991.6s 69 init_s3: train 32.2 min | AUC-ROC 0.7219 AUC-PR 0.2142 F1 0.2877 BACC 0.6263 MCC 0.1928
+7946.2s 70 [/kaggle/working/runs/init_s4/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+7946.2s 71 auc_roc  0.7319   95% CI [0.661, 0.786]   single-model mean 0.7093 ± 0.0196
+7946.2s 72 auc_pr   0.2157   95% CI [0.172, 0.266]   single-model mean 0.2026 ± 0.0172
+7946.2s 73 f1       0.2912   95% CI [0.225, 0.342]   single-model mean 0.2739 ± 0.0149
+7946.2s 74 bacc     0.6267   95% CI [0.579, 0.672]   single-model mean 0.6161 ± 0.0148
+7946.2s 75 mcc      0.1973   95% CI [0.131, 0.255]   single-model mean 0.1764 ± 0.0186
+7946.4s 76 [/kaggle/working/runs/init_s4/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+7946.4s 77 auc_roc  0.7319   95% CI [0.661, 0.786]   single-model mean 0.7093 ± 0.0196
+7946.4s 78 auc_pr   0.2157   95% CI [0.172, 0.266]   single-model mean 0.2026 ± 0.0172
+7946.4s 79 f1       0.2912   95% CI [0.225, 0.342]   single-model mean 0.2739 ± 0.0149
+7946.4s 80 bacc     0.6267   95% CI [0.579, 0.672]   single-model mean 0.6161 ± 0.0148
+7946.4s 81 mcc      0.1973   95% CI [0.131, 0.255]   single-model mean 0.1764 ± 0.0186
+7947.7s 82 init_s4: train 32.2 min | AUC-ROC 0.7319 AUC-PR 0.2157 F1 0.2912 BACC 0.6267 MCC 0.1973
+9906.6s 83 [/kaggle/working/runs/init_s5/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+9906.6s 84 auc_roc  0.7287   95% CI [0.657, 0.785]   single-model mean 0.7116 ± 0.0147
+9906.6s 85 auc_pr   0.2201   95% CI [0.177, 0.274]   single-model mean 0.2074 ± 0.0099
+9906.6s 86 f1       0.2836   95% CI [0.217, 0.334]   single-model mean 0.2731 ± 0.0150
+9906.6s 87 bacc     0.6240   95% CI [0.570, 0.671]   single-model mean 0.6172 ± 0.0125
+9906.6s 88 mcc      0.1876   95% CI [0.120, 0.249]   single-model mean 0.1747 ± 0.0194
+9906.8s 89 [/kaggle/working/runs/init_s5/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+9906.8s 90 auc_roc  0.7287   95% CI [0.657, 0.785]   single-model mean 0.7116 ± 0.0147
+9906.8s 91 auc_pr   0.2201   95% CI [0.177, 0.274]   single-model mean 0.2074 ± 0.0099
+9906.8s 92 f1       0.2836   95% CI [0.217, 0.334]   single-model mean 0.2731 ± 0.0150
+9906.8s 93 bacc     0.6240   95% CI [0.570, 0.671]   single-model mean 0.6172 ± 0.0125
+9906.8s 94 mcc      0.1876   95% CI [0.120, 0.249]   single-model mean 0.1747 ± 0.0194
+9908.1s 95 init_s5: train 32.3 min | AUC-ROC 0.7287 AUC-PR 0.2201 F1 0.2836 BACC 0.6240 MCC 0.1876
+11863.2s 96 [/kaggle/working/runs/split_s31/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+11863.2s 97 auc_roc  0.7313   95% CI [0.659, 0.784]   single-model mean 0.7147 ± 0.0108
+11863.2s 98 auc_pr   0.2304   95% CI [0.181, 0.285]   single-model mean 0.2118 ± 0.0173
+11863.2s 99 f1       0.2795   95% CI [0.208, 0.334]   single-model mean 0.2742 ± 0.0097
+11863.2s 100 bacc     0.6145   95% CI [0.561, 0.661]   single-model mean 0.6123 ± 0.0072
+11863.2s 101 mcc      0.1840   95% CI [0.108, 0.245]   single-model mean 0.1773 ± 0.0119
+11863.4s 102 [/kaggle/working/runs/split_s31/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+11863.4s 103 auc_roc  0.7313   95% CI [0.659, 0.784]   single-model mean 0.7147 ± 0.0108
+11863.4s 104 auc_pr   0.2304   95% CI [0.181, 0.285]   single-model mean 0.2118 ± 0.0173
+11863.4s 105 f1       0.2795   95% CI [0.208, 0.334]   single-model mean 0.2742 ± 0.0097
+11863.4s 106 bacc     0.6145   95% CI [0.561, 0.661]   single-model mean 0.6123 ± 0.0072
+11863.4s 107 mcc      0.1840   95% CI [0.108, 0.245]   single-model mean 0.1773 ± 0.0119
+11864.7s 108 split_s31: train 32.2 min | AUC-ROC 0.7313 AUC-PR 0.2304 F1 0.2795 BACC 0.6145 MCC 0.1840
+13824.9s 109 [/kaggle/working/runs/split_s32/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+13824.9s 110 auc_roc  0.7226   95% CI [0.647, 0.777]   single-model mean 0.7001 ± 0.0331
+13824.9s 111 auc_pr   0.2070   95% CI [0.163, 0.259]   single-model mean 0.1930 ± 0.0152
+13824.9s 112 f1       0.2723   95% CI [0.202, 0.327]   single-model mean 0.2559 ± 0.0279
+13824.9s 113 bacc     0.6123   95% CI [0.562, 0.658]   single-model mean 0.6034 ± 0.0222
+13824.9s 114 mcc      0.1742   95% CI [0.103, 0.236]   single-model mean 0.1579 ± 0.0216
+13825.1s 115 [/kaggle/working/runs/split_s32/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+13825.1s 116 auc_roc  0.7226   95% CI [0.647, 0.777]   single-model mean 0.7001 ± 0.0331
+13825.1s 117 auc_pr   0.2070   95% CI [0.163, 0.259]   single-model mean 0.1930 ± 0.0152
+13825.1s 118 f1       0.2723   95% CI [0.202, 0.327]   single-model mean 0.2559 ± 0.0279
+13825.1s 119 bacc     0.6123   95% CI [0.562, 0.658]   single-model mean 0.6034 ± 0.0222
+13825.1s 120 mcc      0.1742   95% CI [0.103, 0.236]   single-model mean 0.1579 ± 0.0216
+13826.4s 121 split_s32: train 32.3 min | AUC-ROC 0.7226 AUC-PR 0.2070 F1 0.2723 BACC 0.6123 MCC 0.1742
+15797.5s 122 [/kaggle/working/runs/split_s33/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+15797.5s 123 auc_roc  0.7277   95% CI [0.656, 0.784]   single-model mean 0.7096 ± 0.0193
+15797.5s 124 auc_pr   0.2203   95% CI [0.172, 0.277]   single-model mean 0.2085 ± 0.0157
+15797.5s 125 f1       0.2828   95% CI [0.218, 0.335]   single-model mean 0.2704 ± 0.0150
+15797.5s 126 bacc     0.6241   95% CI [0.574, 0.671]   single-model mean 0.6135 ± 0.0152
+15797.5s 127 mcc      0.1866   95% CI [0.118, 0.246]   single-model mean 0.1724 ± 0.0177
+15797.7s 128 [/kaggle/working/runs/split_s33/models] 10 models, 45 antigens, 7747 surface residues, positive rate 0.100
+15797.7s 129 auc_roc  0.7277   95% CI [0.656, 0.784]   single-model mean 0.7096 ± 0.0193
+15797.7s 130 auc_pr   0.2203   95% CI [0.172, 0.277]   single-model mean 0.2085 ± 0.0157
+15797.7s 131 f1       0.2828   95% CI [0.218, 0.335]   single-model mean 0.2704 ± 0.0150
+15797.7s 132 bacc     0.6241   95% CI [0.574, 0.671]   single-model mean 0.6135 ± 0.0152
+15797.7s 133 mcc      0.1866   95% CI [0.118, 0.246]   single-model mean 0.1724 ± 0.0177
+15798.8s 134 split_s33: train 32.5 min | AUC-ROC 0.7277 AUC-PR 0.2203 F1 0.2828 BACC 0.6241 MCC 0.1866
+15799.6s 135 # Multi-seed robustness summary (auto-generated by src/aggregate.py)
+15799.6s 136 
+15799.6s 137 ## Author checkpoints on the test set (45 antigens, 7747 surface residues, 10.0% epitope)
+15799.6s 138 
+15799.6s 139 | Metric | Paper | Ensemble (10 models) | 95% bootstrap CI over antigens | Single-model mean ± std |
+15799.6s 140 |---|---|---|---|---|
+15799.6s 141 | AUC-ROC | 0.73 | 0.725 | [0.655, 0.780] | 0.709 ± 0.014 |
+15799.6s 142 | AUC-PR | 0.23 | 0.232 | [0.180, 0.293] | 0.214 ± 0.013 |
+15799.6s 143 | F1 | 0.29 | 0.287 | [0.219, 0.338] | 0.272 ± 0.010 |
+15799.6s 144 | BACC | 0.62 | 0.624 | [0.574, 0.672] | 0.614 ± 0.012 |
+15799.6s 145 | MCC | 0.19 | 0.193 | [0.123, 0.252] | 0.175 ± 0.010 |
+15799.6s 146 
+15799.6s 147 Per-antigen AUC-ROC (ensemble): mean 0.624, median 0.643 over 45 antigens.
+15799.6s 148 
+15799.6s 149 ## Retrained models
+15799.6s 150 
+15799.6s 151 ### Experiment A - weight-initialisation seeds only (fold split fixed, seed 30)
+15799.6s 152 
+15799.6s 153 | Run | AUC-ROC | AUC-PR | F1 | BACC | MCC |
+15799.6s 154 |---|---|---|---|---|---|
+15799.6s 155 | init_s1 | 0.729 | 0.215 | 0.271 | 0.615 | 0.171 |
+15799.6s 156 | init_s2 | 0.721 | 0.211 | 0.270 | 0.614 | 0.170 |
+15799.6s 157 | init_s3 | 0.722 | 0.214 | 0.288 | 0.626 | 0.193 |
+15799.6s 158 | init_s4 | 0.732 | 0.216 | 0.291 | 0.627 | 0.197 |
+15799.6s 159 | init_s5 | 0.729 | 0.220 | 0.284 | 0.624 | 0.188 |
+15799.6s 160 | **mean ± std** | **0.726 ± 0.005** | **0.215 ± 0.003** | **0.281 ± 0.010** | **0.621 ± 0.006** | **0.184 ± 0.012** |
+15799.6s 161 | min – max | 0.721 – 0.732 | 0.211 – 0.220 | 0.270 – 0.291 | 0.614 – 0.627 | 0.170 – 0.197 |
+15799.6s 162 | 95% t-interval of the mean (n=5) | [0.721, 0.732] | [0.211, 0.219] | [0.268, 0.293] | [0.614, 0.629] | [0.168, 0.199] |
+15799.6s 163 | Paper value | 0.73 | 0.23 | 0.29 | 0.62 | 0.19 |
+15799.6s 164 | Paper value within interval (±0.005 rounding)? | inside | OUTSIDE | inside | inside | inside |
+15799.6s 165 
+15799.6s 166 Single (non-ensembled) models, pooled over all folds of the group:
+15799.6s 167 
+15799.6s 168 | Metric | mean ± std over models | ensemble mean | ensemble gain |
+15799.6s 169 |---|---|---|---|
+15799.6s 170 | AUC-ROC | 0.709 ± 0.016 (n=50) | 0.726 | +0.017 |
+15799.6s 171 | AUC-PR | 0.204 ± 0.012 (n=50) | 0.215 | +0.011 |
+15799.6s 172 | F1 | 0.268 ± 0.016 (n=50) | 0.281 | +0.013 |
+15799.6s 173 | BACC | 0.612 ± 0.013 (n=50) | 0.621 | +0.009 |
+15799.6s 174 | MCC | 0.168 ± 0.020 (n=50) | 0.184 | +0.016 |
+15799.6s 175 
+15799.6s 176 Validation side: mean best val AUC per run = 0.675 ± 0.004; best epoch median 14 (range 5–33, n=50 folds).
+15799.6s 177 
+15799.6s 178 ### Experiment B - fold split and initialisation both re-randomised
+15799.6s 179 
+15799.6s 180 | Run | AUC-ROC | AUC-PR | F1 | BACC | MCC |
+15799.6s 181 |---|---|---|---|---|---|
+15799.6s 182 | split_s31 | 0.731 | 0.230 | 0.280 | 0.614 | 0.184 |
+15799.6s 183 | split_s32 | 0.723 | 0.207 | 0.272 | 0.612 | 0.174 |
+15799.6s 184 | split_s33 | 0.728 | 0.220 | 0.283 | 0.624 | 0.187 |
+15799.6s 185 | **mean ± std** | **0.727 ± 0.004** | **0.219 ± 0.012** | **0.278 ± 0.005** | **0.617 ± 0.006** | **0.182 ± 0.007** |
+15799.6s 186 | min – max | 0.723 – 0.731 | 0.207 – 0.230 | 0.272 – 0.283 | 0.612 – 0.624 | 0.174 – 0.187 |
+15799.6s 187 | 95% t-interval of the mean (n=3) | [0.716, 0.738] | [0.190, 0.248] | [0.265, 0.291] | [0.601, 0.633] | [0.165, 0.198] |
+15799.6s 188 | Paper value | 0.73 | 0.23 | 0.29 | 0.62 | 0.19 |
+15799.6s 189 | Paper value within interval (±0.005 rounding)? | inside | inside | inside | inside | inside |
+15799.6s 190 
+15799.6s 191 Single (non-ensembled) models, pooled over all folds of the group:
+15799.6s 192 
+15799.6s 193 | Metric | mean ± std over models | ensemble mean | ensemble gain |
+15799.6s 194 |---|---|---|---|
+15799.6s 195 | AUC-ROC | 0.708 ± 0.023 (n=30) | 0.727 | +0.019 |
+15799.6s 196 | AUC-PR | 0.204 ± 0.018 (n=30) | 0.219 | +0.015 |
+15799.6s 197 | F1 | 0.267 ± 0.020 (n=30) | 0.278 | +0.011 |
+15799.6s 198 | BACC | 0.610 ± 0.016 (n=30) | 0.617 | +0.007 |
+15799.6s 199 | MCC | 0.169 ± 0.019 (n=30) | 0.182 | +0.012 |
+15799.6s 200 
+15799.6s 201 Validation side: mean best val AUC per run = 0.672 ± 0.009; best epoch median 15 (range 2–29, n=30 folds).
+15799.6s 202 
+15799.6s 203 ## Retrained vs. author checkpoints (ensemble AUC-ROC)
+15799.6s 204 
+15799.6s 205 - Experiment A: mean 0.726 vs. author checkpoints 0.725 (difference +0.001).
+15799.6s 206 - Experiment B: mean 0.727 vs. author checkpoints 0.725 (difference +0.002).
+15799.6s 207 
+15799.9s 208 -rw-r--r-- 1 root root 2831504 Nov 10 15:19 results.zip
+15802.7s 209 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+15802.7s 210 cells[i][c] = re.sub('\\\\\|', '|', cell)
+15802.9s 211 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+15802.9s 212 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+15803.7s 213 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+15803.7s 214 [NbConvertApp] Writing 47609 bytes to __notebook__.ipynb
+15806.4s 215 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+15807.0s 216 [NbConvertApp] Writing 407812 bytes to __results__.html

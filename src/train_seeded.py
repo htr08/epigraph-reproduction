@@ -16,7 +16,7 @@ Usage (all other arguments are forwarded to train.py):
         --model_save_dir runs/init_s1/models
 
 Note: even with identical seeds, GPU runs are not bit-for-bit reproducible, because
-scatter/atomic-add kernels used by GATConv are non-deterministic. Seeds make runs
+GPU scatter/atomic-add kernels used in graph convolutions can be non-deterministic. Seeds make runs
 *comparable* (same initialisation, same split), not identical.
 """
 import argparse
