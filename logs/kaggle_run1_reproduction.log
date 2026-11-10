@@ -1,0 +1,2632 @@
+7.8s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.8s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.8s 3 0.00s - to python to disable frozen modules.
+7.8s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.4s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.4s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.4s 7 0.00s - to python to disable frozen modules.
+8.4s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.6s 9 Cloning into 'EpiGraph'...
+9.8s 10 Cloning into 'EpiGraph'...
+9.8s 11 
+9.8s 12 Cloning into 'EpiGraph'...
+25.1s 13 pkl tim thay: ['/kaggle/input/datasets/hientrang08/epigraph-data/epigraph-data/epitope3d_test_data.pkl', '/kaggle/input/datasets/hientrang08/epigraph-data/epigraph-data/epitope3d_train_data.pkl']
+30.4s 14 ['model.py', '.git', 'README.md', 'epitope3d_train_data.pkl', 'csv files', 'Custom_PDB', 'evaluate.py', 'pretrained.py', 'Data_processing_example.ipynb', 'Example_PDB', 'train.py', 'checkpoint', 'epitope3d_test_data.pkl', 'conda_env.yaml', 'esm_embedding.py', 'inference_customPDB.py', 'inference.py']
+30.4s 15 checkpoint: ['Best_GAT_11_2.pt', 'Best_GAT_13_6.pt', 'Best_GAT_14_9.pt', 'Best_GAT_15_0.pt', 'Best_GAT_16_1.pt', 'Best_GAT_16_3.pt', 'Best_GAT_17_8.pt', 'Best_GAT_21_7.pt', 'Best_GAT_28_5.pt', 'Best_GAT_8_4.pt']
+33.0s 16 [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/64.4 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━[0m [32m61.4/64.4 kB[0m [31m2.5 MB/s[0m eta [36m0:00:01[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m64.4/64.4 kB[0m [31m1.4 MB/s[0m eta [36m0:00:00[0m
+33.2s 17 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.3 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.3/1.3 MB[0m [31m10.7 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m1.3/1.3 MB[0m [31m20.3 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.3/1.3 MB[0m [31m15.3 MB/s[0m eta [36m0:00:00[0m
+36.6s 18 [?25hOK
+36.6s 19 24:        node_attrs, edge_index = data['node_attrs'], data.edge_index
+36.6s 20 26:        x = self.conv_in(node_attrs, edge_index)
+36.7s 21 54:        sd = {k.replace('lin_src', 'lin'): v for k, v in sd.items() if 'lin_dst' not in k}
+36.8s 22 79:    X_train = [d for i, d in enumerate(X) if i < test_sta or i > test_end]
+78.0s 23 roc_auc 0.73
+78.1s 24 roc_pr 0.23
+78.3s 25 f1 score : 0.29
+78.4s 26 BACC score : 0.62
+78.5s 27 MCC score : 0.19
+90.2s 28 device cuda
+91.0s 29 KFold(n_splits=10, random_state=None, shuffle=False)
+91.1s 30 test_index : 0 ~ 19
+91.1s 31 len X_test : 20
+91.1s 32 len X_train : 179
+95.8s 33 1th epoch,
+95.8s 34 training loss: 0.49673
+95.8s 35 val loss: 0.34429
+95.8s 36 val auc-roc: 0.48881
+95.8s 37 epoch time: 4.728
+99.5s 38 2th epoch,
+99.5s 39 training loss: 0.33985
+99.5s 40 val loss: 0.33912
+99.5s 41 val auc-roc: 0.52438
+99.5s 42 epoch time: 3.628
+103.1s 43 3th epoch,
+103.1s 44 training loss: 0.32605
+103.1s 45 val loss: 0.33464
+103.1s 46 val auc-roc: 0.55488
+103.1s 47 epoch time: 3.651
+106.8s 48 4th epoch,
+106.8s 49 training loss: 0.32289
+106.8s 50 val loss: 0.33242
+106.8s 51 val auc-roc: 0.56839
+106.8s 52 epoch time: 3.629
+110.4s 53 5th epoch,
+110.4s 54 training loss: 0.31933
+110.4s 55 val loss: 0.33094
+110.4s 56 val auc-roc: 0.57804
+110.4s 57 epoch time: 3.659
+114.1s 58 6th epoch,
+114.1s 59 training loss: 0.31635
+114.1s 60 val loss: 0.32981
+114.1s 61 val auc-roc: 0.58916
+114.1s 62 epoch time: 3.678
+117.7s 63 7th epoch,
+117.7s 64 training loss: 0.31350
+117.7s 65 val loss: 0.32891
+117.7s 66 val auc-roc: 0.59976
+117.7s 67 epoch time: 3.651
+121.4s 68 8th epoch,
+121.4s 69 training loss: 0.31080
+121.4s 70 val loss: 0.32823
+121.4s 71 val auc-roc: 0.60822
+121.4s 72 epoch time: 3.674
+125.1s 73 9th epoch,
+125.1s 74 training loss: 0.30826
+125.1s 75 val loss: 0.32773
+125.1s 76 val auc-roc: 0.61486
+125.1s 77 epoch time: 3.668
+128.7s 78 10th epoch,
+128.7s 79 training loss: 0.30588
+128.7s 80 val loss: 0.32737
+128.7s 81 val auc-roc: 0.61925
+128.7s 82 epoch time: 3.674
+132.4s 83 11th epoch,
+132.4s 84 training loss: 0.30364
+132.4s 85 val loss: 0.32712
+132.4s 86 val auc-roc: 0.62202
+132.4s 87 epoch time: 3.680
+136.1s 88 12th epoch,
+136.1s 89 training loss: 0.30153
+136.1s 90 val loss: 0.32696
+136.1s 91 val auc-roc: 0.62415
+136.1s 92 epoch time: 3.683
+139.8s 93 13th epoch,
+139.8s 94 training loss: 0.29954
+139.8s 95 val loss: 0.32686
+139.8s 96 val auc-roc: 0.62594
+139.8s 97 epoch time: 3.672
+143.5s 98 14th epoch,
+143.5s 99 training loss: 0.29763
+143.5s 100 val loss: 0.32683
+143.5s 101 val auc-roc: 0.62754
+143.5s 102 epoch time: 3.690
+147.2s 103 15th epoch,
+147.2s 104 training loss: 0.29580
+147.2s 105 val loss: 0.32686
+147.2s 106 val auc-roc: 0.62901
+147.2s 107 epoch time: 3.694
+150.9s 108 16th epoch,
+150.9s 109 training loss: 0.29403
+150.9s 110 val loss: 0.32694
+150.9s 111 val auc-roc: 0.63079
+150.9s 112 epoch time: 3.712
+154.6s 113 17th epoch,
+154.6s 114 training loss: 0.29229
+154.6s 115 val loss: 0.32707
+154.6s 116 val auc-roc: 0.63204
+154.6s 117 epoch time: 3.724
+158.3s 118 18th epoch,
+158.3s 119 training loss: 0.29058
+158.3s 120 val loss: 0.32724
+158.3s 121 val auc-roc: 0.63315
+158.3s 122 epoch time: 3.725
+162.1s 123 19th epoch,
+162.1s 124 training loss: 0.28887
+162.1s 125 val loss: 0.32745
+162.1s 126 val auc-roc: 0.63369
+162.1s 127 epoch time: 3.730
+165.8s 128 20th epoch,
+165.8s 129 training loss: 0.28718
+165.8s 130 val loss: 0.32770
+165.8s 131 val auc-roc: 0.63419
+165.8s 132 epoch time: 3.738
+169.6s 133 21th epoch,
+169.6s 134 training loss: 0.28548
+169.6s 135 val loss: 0.32798
+169.6s 136 val auc-roc: 0.63466
+169.6s 137 epoch time: 3.763
+173.3s 138 22th epoch,
+173.3s 139 training loss: 0.28377
+173.3s 140 val loss: 0.32829
+173.3s 141 val auc-roc: 0.63512
+173.3s 142 epoch time: 3.775
+177.1s 143 23th epoch,
+177.1s 144 training loss: 0.28204
+177.1s 145 val loss: 0.32865
+177.1s 146 val auc-roc: 0.63475
+177.1s 147 epoch time: 3.762
+180.9s 148 24th epoch,
+180.9s 149 training loss: 0.28030
+180.9s 150 val loss: 0.32905
+180.9s 151 val auc-roc: 0.63415
+180.9s 152 epoch time: 3.791
+184.7s 153 25th epoch,
+184.7s 154 training loss: 0.27853
+184.7s 155 val loss: 0.32950
+184.7s 156 val auc-roc: 0.63333
+184.7s 157 epoch time: 3.787
+188.5s 158 26th epoch,
+188.5s 159 training loss: 0.27674
+188.5s 160 val loss: 0.33001
+188.5s 161 val auc-roc: 0.63280
+188.5s 162 epoch time: 3.801
+192.3s 163 27th epoch,
+192.3s 164 training loss: 0.27492
+192.3s 165 val loss: 0.33057
+192.3s 166 val auc-roc: 0.63232
+192.3s 167 epoch time: 3.818
+196.1s 168 28th epoch,
+196.1s 169 training loss: 0.27306
+196.1s 170 val loss: 0.33119
+196.1s 171 val auc-roc: 0.63206
+196.1s 172 epoch time: 3.820
+199.9s 173 29th epoch,
+199.9s 174 training loss: 0.27117
+199.9s 175 val loss: 0.33188
+199.9s 176 val auc-roc: 0.63168
+199.9s 177 epoch time: 3.816
+203.8s 178 30th epoch,
+203.8s 179 training loss: 0.26925
+203.8s 180 val loss: 0.33261
+203.8s 181 val auc-roc: 0.63096
+203.8s 182 epoch time: 3.840
+207.6s 183 31th epoch,
+207.6s 184 training loss: 0.26729
+207.6s 185 val loss: 0.33339
+207.6s 186 val auc-roc: 0.63020
+207.6s 187 epoch time: 3.835
+211.5s 188 32th epoch,
+211.5s 189 training loss: 0.26531
+211.5s 190 val loss: 0.33421
+211.5s 191 val auc-roc: 0.62878
+211.5s 192 epoch time: 3.875
+215.4s 193 33th epoch,
+215.4s 194 training loss: 0.26330
+215.4s 195 val loss: 0.33505
+215.4s 196 val auc-roc: 0.62716
+215.4s 197 epoch time: 3.867
+219.3s 198 34th epoch,
+219.3s 199 training loss: 0.26126
+219.3s 200 val loss: 0.33592
+219.3s 201 val auc-roc: 0.62553
+219.3s 202 epoch time: 3.882
+223.1s 203 35th epoch,
+223.1s 204 training loss: 0.25920
+223.1s 205 val loss: 0.33681
+223.1s 206 val auc-roc: 0.62416
+223.1s 207 epoch time: 3.902
+227.0s 208 36th epoch,
+227.0s 209 training loss: 0.25713
+227.0s 210 val loss: 0.33774
+227.0s 211 val auc-roc: 0.62304
+227.0s 212 epoch time: 3.869
+230.9s 213 37th epoch,
+230.9s 214 training loss: 0.25505
+230.9s 215 val loss: 0.33872
+230.9s 216 val auc-roc: 0.62184
+230.9s 217 epoch time: 3.894
+234.8s 218 38th epoch,
+234.8s 219 training loss: 0.25298
+234.8s 220 val loss: 0.33975
+234.8s 221 val auc-roc: 0.62134
+234.8s 222 epoch time: 3.905
+238.7s 223 39th epoch,
+238.7s 224 training loss: 0.25092
+238.7s 225 val loss: 0.34094
+238.7s 226 val auc-roc: 0.62129
+238.7s 227 epoch time: 3.888
+242.6s 228 40th epoch,
+242.6s 229 training loss: 0.24889
+242.6s 230 val loss: 0.34232
+242.6s 231 val auc-roc: 0.62129
+242.6s 232 epoch time: 3.897
+246.5s 233 41th epoch,
+246.5s 234 training loss: 0.24690
+246.5s 235 val loss: 0.34401
+246.5s 236 val auc-roc: 0.62121
+246.5s 237 epoch time: 3.893
+250.3s 238 42th epoch,
+250.3s 239 training loss: 0.24495
+250.3s 240 val loss: 0.34606
+250.3s 241 val auc-roc: 0.62111
+250.3s 242 epoch time: 3.885
+254.2s 243 43th epoch,
+254.2s 244 training loss: 0.24305
+254.2s 245 val loss: 0.34848
+254.2s 246 val auc-roc: 0.62066
+254.2s 247 epoch time: 3.890
+258.1s 248 44th epoch,
+258.1s 249 training loss: 0.24119
+258.1s 250 val loss: 0.35126
+258.1s 251 val auc-roc: 0.62088
+258.1s 252 epoch time: 3.881
+262.0s 253 45th epoch,
+262.0s 254 training loss: 0.23939
+262.0s 255 val loss: 0.35441
+262.0s 256 val auc-roc: 0.62056
+262.0s 257 epoch time: 3.871
+265.9s 258 46th epoch,
+265.9s 259 training loss: 0.23768
+265.9s 260 val loss: 0.35781
+265.9s 261 val auc-roc: 0.61984
+265.9s 262 epoch time: 3.868
+269.7s 263 47th epoch,
+269.7s 264 training loss: 0.23607
+269.7s 265 val loss: 0.36158
+269.7s 266 val auc-roc: 0.61931
+269.7s 267 epoch time: 3.854
+273.6s 268 48th epoch,
+273.6s 269 training loss: 0.23459
+273.6s 270 val loss: 0.36577
+273.6s 271 val auc-roc: 0.61951
+273.6s 272 epoch time: 3.859
+277.4s 273 49th epoch,
+277.4s 274 training loss: 0.23333
+277.4s 275 val loss: 0.37018
+277.4s 276 val auc-roc: 0.61941
+277.4s 277 epoch time: 3.857
+281.3s 278 50th epoch,
+281.3s 279 training loss: 0.23241
+281.3s 280 val loss: 0.37500
+281.3s 281 val auc-roc: 0.62069
+281.3s 282 epoch time: 3.886
+281.4s 283 ----------
+281.4s 284 Train Finished.
+281.4s 285 Training time: 190.33s
+281.4s 286 The best epoch: 14
+281.4s 287 The best val loss: 0.32683229446411133
+281.4s 288 The best auc-roc: 0.6275360606855055
+281.4s 289 test_index : 20 ~ 39
+281.4s 290 len X_test : 20
+281.4s 291 len X_train : 179
+285.2s 292 1th epoch,
+285.2s 293 training loss: 0.41446
+285.2s 294 val loss: 0.29449
+285.2s 295 val auc-roc: 0.55270
+285.2s 296 epoch time: 3.810
+289.0s 297 2th epoch,
+289.0s 298 training loss: 0.34141
+289.0s 299 val loss: 0.29228
+289.0s 300 val auc-roc: 0.61566
+289.0s 301 epoch time: 3.814
+292.8s 302 3th epoch,
+292.8s 303 training loss: 0.33199
+292.8s 304 val loss: 0.28717
+292.8s 305 val auc-roc: 0.62616
+292.8s 306 epoch time: 3.829
+296.6s 307 4th epoch,
+296.6s 308 training loss: 0.32718
+296.6s 309 val loss: 0.28593
+296.6s 310 val auc-roc: 0.63833
+296.6s 311 epoch time: 3.822
+300.5s 312 5th epoch,
+300.5s 313 training loss: 0.32344
+300.5s 314 val loss: 0.28381
+300.5s 315 val auc-roc: 0.65156
+300.5s 316 epoch time: 3.815
+304.3s 317 6th epoch,
+304.3s 318 training loss: 0.31976
+304.3s 319 val loss: 0.28238
+304.3s 320 val auc-roc: 0.66471
+304.3s 321 epoch time: 3.831
+308.1s 322 7th epoch,
+308.1s 323 training loss: 0.31636
+308.1s 324 val loss: 0.28091
+308.1s 325 val auc-roc: 0.67652
+308.1s 326 epoch time: 3.822
+312.0s 327 8th epoch,
+312.0s 328 training loss: 0.31314
+312.0s 329 val loss: 0.27965
+312.0s 330 val auc-roc: 0.68601
+312.0s 331 epoch time: 3.827
+315.7s 332 9th epoch,
+315.7s 333 training loss: 0.31013
+315.7s 334 val loss: 0.27857
+315.7s 335 val auc-roc: 0.69396
+315.7s 336 epoch time: 3.813
+319.6s 337 10th epoch,
+319.6s 338 training loss: 0.30734
+319.6s 339 val loss: 0.27768
+319.6s 340 val auc-roc: 0.69881
+319.6s 341 epoch time: 3.820
+323.4s 342 11th epoch,
+323.4s 343 training loss: 0.30479
+323.4s 344 val loss: 0.27700
+323.4s 345 val auc-roc: 0.70251
+323.4s 346 epoch time: 3.829
+327.2s 347 12th epoch,
+327.2s 348 training loss: 0.30246
+327.2s 349 val loss: 0.27651
+327.2s 350 val auc-roc: 0.70454
+327.2s 351 epoch time: 3.816
+331.1s 352 13th epoch,
+331.1s 353 training loss: 0.30031
+331.1s 354 val loss: 0.27620
+331.1s 355 val auc-roc: 0.70442
+331.1s 356 epoch time: 3.822
+334.9s 357 14th epoch,
+334.9s 358 training loss: 0.29831
+334.9s 359 val loss: 0.27602
+334.9s 360 val auc-roc: 0.70385
+334.9s 361 epoch time: 3.838
+338.7s 362 15th epoch,
+338.7s 363 training loss: 0.29641
+338.7s 364 val loss: 0.27595
+338.7s 365 val auc-roc: 0.70174
+338.7s 366 epoch time: 3.829
+342.5s 367 16th epoch,
+342.5s 368 training loss: 0.29458
+342.5s 369 val loss: 0.27597
+342.5s 370 val auc-roc: 0.69962
+342.5s 371 epoch time: 3.839
+346.4s 372 17th epoch,
+346.4s 373 training loss: 0.29278
+346.4s 374 val loss: 0.27605
+346.4s 375 val auc-roc: 0.69817
+346.4s 376 epoch time: 3.830
+350.2s 377 18th epoch,
+350.2s 378 training loss: 0.29100
+350.2s 379 val loss: 0.27617
+350.2s 380 val auc-roc: 0.69667
+350.2s 381 epoch time: 3.829
+354.1s 382 19th epoch,
+354.1s 383 training loss: 0.28922
+354.1s 384 val loss: 0.27632
+354.1s 385 val auc-roc: 0.69501
+354.1s 386 epoch time: 3.836
+357.9s 387 20th epoch,
+357.9s 388 training loss: 0.28743
+357.9s 389 val loss: 0.27651
+357.9s 390 val auc-roc: 0.69399
+357.9s 391 epoch time: 3.829
+361.7s 392 21th epoch,
+361.7s 393 training loss: 0.28561
+361.7s 394 val loss: 0.27673
+361.7s 395 val auc-roc: 0.69277
+361.7s 396 epoch time: 3.839
+365.5s 397 22th epoch,
+365.5s 398 training loss: 0.28377
+365.5s 399 val loss: 0.27699
+365.5s 400 val auc-roc: 0.69155
+365.5s 401 epoch time: 3.835
+369.4s 402 23th epoch,
+369.4s 403 training loss: 0.28189
+369.4s 404 val loss: 0.27728
+369.4s 405 val auc-roc: 0.68946
+369.4s 406 epoch time: 3.834
+373.2s 407 24th epoch,
+373.2s 408 training loss: 0.27999
+373.2s 409 val loss: 0.27762
+373.2s 410 val auc-roc: 0.68756
+373.2s 411 epoch time: 3.845
+377.1s 412 25th epoch,
+377.1s 413 training loss: 0.27807
+377.1s 414 val loss: 0.27801
+377.1s 415 val auc-roc: 0.68568
+377.1s 416 epoch time: 3.832
+380.9s 417 26th epoch,
+380.9s 418 training loss: 0.27612
+380.9s 419 val loss: 0.27847
+380.9s 420 val auc-roc: 0.68398
+380.9s 421 epoch time: 3.831
+384.7s 422 27th epoch,
+384.7s 423 training loss: 0.27414
+384.7s 424 val loss: 0.27901
+384.7s 425 val auc-roc: 0.68235
+384.7s 426 epoch time: 3.825
+388.5s 427 28th epoch,
+388.5s 428 training loss: 0.27212
+388.5s 429 val loss: 0.27960
+388.5s 430 val auc-roc: 0.68090
+388.5s 431 epoch time: 3.815
+392.4s 432 29th epoch,
+392.4s 433 training loss: 0.27008
+392.4s 434 val loss: 0.28028
+392.4s 435 val auc-roc: 0.67915
+392.4s 436 epoch time: 3.837
+396.4s 437 30th epoch,
+396.4s 438 training loss: 0.26801
+396.4s 439 val loss: 0.28105
+396.4s 440 val auc-roc: 0.67792
+396.4s 441 epoch time: 4.007
+400.2s 442 31th epoch,
+400.2s 443 training loss: 0.26592
+400.2s 444 val loss: 0.28194
+400.2s 445 val auc-roc: 0.67677
+400.2s 446 epoch time: 3.817
+404.1s 447 32th epoch,
+404.1s 448 training loss: 0.26380
+404.1s 449 val loss: 0.28297
+404.1s 450 val auc-roc: 0.67554
+404.1s 451 epoch time: 3.831
+407.8s 452 33th epoch,
+407.8s 453 training loss: 0.26168
+407.8s 454 val loss: 0.28420
+407.8s 455 val auc-roc: 0.67413
+407.8s 456 epoch time: 3.819
+411.7s 457 34th epoch,
+411.7s 458 training loss: 0.25955
+411.7s 459 val loss: 0.28568
+411.7s 460 val auc-roc: 0.67193
+411.7s 461 epoch time: 3.854
+415.5s 462 35th epoch,
+415.5s 463 training loss: 0.25743
+415.5s 464 val loss: 0.28744
+415.5s 465 val auc-roc: 0.66964
+415.5s 466 epoch time: 3.823
+419.4s 467 36th epoch,
+419.4s 468 training loss: 0.25534
+419.4s 469 val loss: 0.28949
+419.4s 470 val auc-roc: 0.66622
+419.4s 471 epoch time: 3.821
+423.2s 472 37th epoch,
+423.2s 473 training loss: 0.25326
+423.2s 474 val loss: 0.29194
+423.2s 475 val auc-roc: 0.66198
+423.2s 476 epoch time: 3.838
+427.0s 477 38th epoch,
+427.0s 478 training loss: 0.25124
+427.0s 479 val loss: 0.29482
+427.0s 480 val auc-roc: 0.65770
+427.0s 481 epoch time: 3.828
+430.8s 482 39th epoch,
+430.8s 483 training loss: 0.24929
+430.8s 484 val loss: 0.29796
+430.8s 485 val auc-roc: 0.65326
+430.8s 486 epoch time: 3.829
+434.7s 487 40th epoch,
+434.7s 488 training loss: 0.24744
+434.7s 489 val loss: 0.30172
+434.7s 490 val auc-roc: 0.64852
+434.7s 491 epoch time: 3.834
+438.5s 492 41th epoch,
+438.5s 493 training loss: 0.24571
+438.5s 494 val loss: 0.30572
+438.5s 495 val auc-roc: 0.64230
+438.5s 496 epoch time: 3.826
+442.3s 497 42th epoch,
+442.3s 498 training loss: 0.24411
+442.3s 499 val loss: 0.31046
+442.3s 500 val auc-roc: 0.63482
+442.3s 501 epoch time: 3.845
+446.2s 502 43th epoch,
+446.2s 503 training loss: 0.24274
+446.2s 504 val loss: 0.31571
+446.2s 505 val auc-roc: 0.62645
+446.2s 506 epoch time: 3.834
+450.0s 507 44th epoch,
+450.0s 508 training loss: 0.24183
+450.0s 509 val loss: 0.32133
+450.0s 510 val auc-roc: 0.61684
+450.0s 511 epoch time: 3.835
+453.9s 512 45th epoch,
+453.9s 513 training loss: 0.24163
+453.9s 514 val loss: 0.32727
+453.9s 515 val auc-roc: 0.60796
+453.9s 516 epoch time: 3.848
+457.7s 517 46th epoch,
+457.7s 518 training loss: 0.24313
+457.7s 519 val loss: 0.32969
+457.7s 520 val auc-roc: 0.60138
+457.7s 521 epoch time: 3.828
+461.6s 522 47th epoch,
+461.6s 523 training loss: 0.24848
+461.6s 524 val loss: 0.31923
+461.6s 525 val auc-roc: 0.59675
+461.6s 526 epoch time: 3.835
+465.3s 527 48th epoch,
+465.3s 528 training loss: 0.27152
+465.3s 529 val loss: 0.37451
+465.3s 530 val auc-roc: 0.60733
+465.3s 531 epoch time: 3.820
+469.2s 532 49th epoch,
+469.2s 533 training loss: 0.29721
+469.2s 534 val loss: 0.33047
+469.2s 535 val auc-roc: 0.62399
+469.2s 536 epoch time: 3.825
+473.0s 537 50th epoch,
+473.0s 538 training loss: 0.25423
+473.0s 539 val loss: 0.29910
+473.0s 540 val auc-roc: 0.62568
+473.0s 541 epoch time: 3.845
+473.0s 542 ----------
+473.0s 543 Train Finished.
+473.0s 544 Training time: 382.01s
+473.0s 545 The best epoch: 12
+473.0s 546 The best val loss: 0.2765145003795624
+473.0s 547 The best auc-roc: 0.7045398844203913
+473.1s 548 test_index : 40 ~ 59
+473.1s 549 len X_test : 20
+473.1s 550 len X_train : 179
+476.9s 551 1th epoch,
+476.9s 552 training loss: 0.46832
+476.9s 553 val loss: 0.28747
+476.9s 554 val auc-roc: 0.49000
+476.9s 555 epoch time: 3.863
+480.8s 556 2th epoch,
+480.8s 557 training loss: 0.34591
+480.8s 558 val loss: 0.28730
+480.8s 559 val auc-roc: 0.51058
+480.8s 560 epoch time: 3.859
+484.6s 561 3th epoch,
+484.6s 562 training loss: 0.33229
+484.6s 563 val loss: 0.29176
+484.6s 564 val auc-roc: 0.53506
+484.6s 565 epoch time: 3.851
+488.5s 566 4th epoch,
+488.5s 567 training loss: 0.32822
+488.5s 568 val loss: 0.28732
+488.5s 569 val auc-roc: 0.55816
+488.5s 570 epoch time: 3.834
+492.3s 571 5th epoch,
+492.3s 572 training loss: 0.32447
+492.3s 573 val loss: 0.28679
+492.3s 574 val auc-roc: 0.57669
+492.3s 575 epoch time: 3.852
+496.2s 576 6th epoch,
+496.2s 577 training loss: 0.32120
+496.2s 578 val loss: 0.28503
+496.2s 579 val auc-roc: 0.59100
+496.2s 580 epoch time: 3.829
+500.0s 581 7th epoch,
+500.0s 582 training loss: 0.31816
+500.0s 583 val loss: 0.28357
+500.0s 584 val auc-roc: 0.60051
+500.0s 585 epoch time: 3.832
+503.9s 586 8th epoch,
+503.9s 587 training loss: 0.31537
+503.9s 588 val loss: 0.28199
+503.9s 589 val auc-roc: 0.60772
+503.9s 590 epoch time: 3.847
+507.7s 591 9th epoch,
+507.7s 592 training loss: 0.31279
+507.7s 593 val loss: 0.28043
+507.7s 594 val auc-roc: 0.61317
+507.7s 595 epoch time: 3.835
+511.5s 596 10th epoch,
+511.5s 597 training loss: 0.31038
+511.5s 598 val loss: 0.27894
+511.5s 599 val auc-roc: 0.61846
+511.5s 600 epoch time: 3.856
+515.4s 601 11th epoch,
+515.4s 602 training loss: 0.30812
+515.4s 603 val loss: 0.27757
+515.4s 604 val auc-roc: 0.62373
+515.4s 605 epoch time: 3.847
+519.2s 606 12th epoch,
+519.2s 607 training loss: 0.30598
+519.2s 608 val loss: 0.27637
+519.2s 609 val auc-roc: 0.62918
+519.2s 610 epoch time: 3.842
+523.1s 611 13th epoch,
+523.1s 612 training loss: 0.30394
+523.1s 613 val loss: 0.27541
+523.1s 614 val auc-roc: 0.63375
+523.1s 615 epoch time: 3.858
+526.9s 616 14th epoch,
+526.9s 617 training loss: 0.30197
+526.9s 618 val loss: 0.27467
+526.9s 619 val auc-roc: 0.63695
+526.9s 620 epoch time: 3.859
+530.8s 621 15th epoch,
+530.8s 622 training loss: 0.30006
+530.8s 623 val loss: 0.27415
+530.8s 624 val auc-roc: 0.64120
+530.8s 625 epoch time: 3.859
+534.7s 626 16th epoch,
+534.7s 627 training loss: 0.29820
+534.7s 628 val loss: 0.27386
+534.7s 629 val auc-roc: 0.64555
+534.7s 630 epoch time: 3.862
+538.5s 631 17th epoch,
+538.5s 632 training loss: 0.29638
+538.5s 633 val loss: 0.27378
+538.5s 634 val auc-roc: 0.65002
+538.5s 635 epoch time: 3.853
+542.4s 636 18th epoch,
+542.4s 637 training loss: 0.29459
+542.4s 638 val loss: 0.27389
+542.4s 639 val auc-roc: 0.65412
+542.4s 640 epoch time: 3.872
+546.2s 641 19th epoch,
+546.2s 642 training loss: 0.29281
+546.2s 643 val loss: 0.27419
+546.2s 644 val auc-roc: 0.65779
+546.2s 645 epoch time: 3.857
+550.1s 646 20th epoch,
+550.1s 647 training loss: 0.29104
+550.1s 648 val loss: 0.27465
+550.1s 649 val auc-roc: 0.66112
+550.1s 650 epoch time: 3.862
+553.9s 651 21th epoch,
+553.9s 652 training loss: 0.28927
+553.9s 653 val loss: 0.27528
+553.9s 654 val auc-roc: 0.66407
+553.9s 655 epoch time: 3.845
+557.8s 656 22th epoch,
+557.8s 657 training loss: 0.28747
+557.8s 658 val loss: 0.27607
+557.8s 659 val auc-roc: 0.66713
+557.8s 660 epoch time: 3.830
+561.6s 661 23th epoch,
+561.6s 662 training loss: 0.28565
+561.6s 663 val loss: 0.27703
+561.6s 664 val auc-roc: 0.66990
+561.6s 665 epoch time: 3.843
+565.4s 666 24th epoch,
+565.4s 667 training loss: 0.28379
+565.4s 668 val loss: 0.27817
+565.4s 669 val auc-roc: 0.67245
+565.4s 670 epoch time: 3.842
+569.3s 671 25th epoch,
+569.3s 672 training loss: 0.28190
+569.3s 673 val loss: 0.27949
+569.3s 674 val auc-roc: 0.67444
+569.3s 675 epoch time: 3.831
+573.2s 676 26th epoch,
+573.2s 677 training loss: 0.27996
+573.2s 678 val loss: 0.28098
+573.2s 679 val auc-roc: 0.67625
+573.2s 680 epoch time: 3.858
+577.0s 681 27th epoch,
+577.0s 682 training loss: 0.27798
+577.0s 683 val loss: 0.28259
+577.0s 684 val auc-roc: 0.67774
+577.0s 685 epoch time: 3.839
+580.9s 686 28th epoch,
+580.9s 687 training loss: 0.27597
+580.9s 688 val loss: 0.28434
+580.9s 689 val auc-roc: 0.67872
+580.9s 690 epoch time: 3.847
+584.7s 691 29th epoch,
+584.7s 692 training loss: 0.27392
+584.7s 693 val loss: 0.28618
+584.7s 694 val auc-roc: 0.67981
+584.7s 695 epoch time: 3.874
+588.5s 696 30th epoch,
+588.5s 697 training loss: 0.27185
+588.5s 698 val loss: 0.28810
+588.5s 699 val auc-roc: 0.68083
+588.5s 700 epoch time: 3.836
+592.4s 701 31th epoch,
+592.4s 702 training loss: 0.26976
+592.4s 703 val loss: 0.29004
+592.4s 704 val auc-roc: 0.68165
+592.4s 705 epoch time: 3.849
+596.2s 706 32th epoch,
+596.2s 707 training loss: 0.26764
+596.2s 708 val loss: 0.29198
+596.2s 709 val auc-roc: 0.68262
+596.2s 710 epoch time: 3.837
+600.1s 711 33th epoch,
+600.1s 712 training loss: 0.26552
+600.1s 713 val loss: 0.29392
+600.1s 714 val auc-roc: 0.68320
+600.1s 715 epoch time: 3.850
+603.9s 716 34th epoch,
+603.9s 717 training loss: 0.26340
+603.9s 718 val loss: 0.29574
+603.9s 719 val auc-roc: 0.68301
+603.9s 720 epoch time: 3.876
+607.8s 721 35th epoch,
+607.8s 722 training loss: 0.26127
+607.8s 723 val loss: 0.29746
+607.8s 724 val auc-roc: 0.68279
+607.8s 725 epoch time: 3.860
+611.7s 726 36th epoch,
+611.7s 727 training loss: 0.25917
+611.7s 728 val loss: 0.29898
+611.7s 729 val auc-roc: 0.68253
+611.7s 730 epoch time: 3.869
+615.6s 731 37th epoch,
+615.6s 732 training loss: 0.25710
+615.6s 733 val loss: 0.30037
+615.6s 734 val auc-roc: 0.68198
+615.6s 735 epoch time: 3.854
+619.4s 736 38th epoch,
+619.4s 737 training loss: 0.25506
+619.4s 738 val loss: 0.30167
+619.4s 739 val auc-roc: 0.68188
+619.4s 740 epoch time: 3.856
+623.2s 741 39th epoch,
+623.2s 742 training loss: 0.25307
+623.2s 743 val loss: 0.30292
+623.2s 744 val auc-roc: 0.68217
+623.2s 745 epoch time: 3.865
+627.1s 746 40th epoch,
+627.1s 747 training loss: 0.25109
+627.1s 748 val loss: 0.30427
+627.1s 749 val auc-roc: 0.68248
+627.1s 750 epoch time: 3.843
+631.0s 751 41th epoch,
+631.0s 752 training loss: 0.24913
+631.0s 753 val loss: 0.30568
+631.0s 754 val auc-roc: 0.68276
+631.0s 755 epoch time: 3.849
+634.8s 756 42th epoch,
+634.8s 757 training loss: 0.24716
+634.8s 758 val loss: 0.30722
+634.8s 759 val auc-roc: 0.68303
+634.8s 760 epoch time: 3.845
+638.6s 761 43th epoch,
+638.6s 762 training loss: 0.24521
+638.6s 763 val loss: 0.30891
+638.6s 764 val auc-roc: 0.68329
+638.6s 765 epoch time: 3.827
+642.5s 766 44th epoch,
+642.5s 767 training loss: 0.24327
+642.5s 768 val loss: 0.31074
+642.5s 769 val auc-roc: 0.68328
+642.5s 770 epoch time: 3.842
+646.3s 771 45th epoch,
+646.3s 772 training loss: 0.24138
+646.3s 773 val loss: 0.31274
+646.3s 774 val auc-roc: 0.68331
+646.3s 775 epoch time: 3.825
+650.1s 776 46th epoch,
+650.1s 777 training loss: 0.23956
+650.1s 778 val loss: 0.31499
+650.1s 779 val auc-roc: 0.68343
+650.1s 780 epoch time: 3.834
+654.0s 781 47th epoch,
+654.0s 782 training loss: 0.23781
+654.0s 783 val loss: 0.31790
+654.0s 784 val auc-roc: 0.68287
+654.0s 785 epoch time: 3.852
+657.8s 786 48th epoch,
+657.8s 787 training loss: 0.23627
+657.8s 788 val loss: 0.32141
+657.8s 789 val auc-roc: 0.68204
+657.8s 790 epoch time: 3.836
+661.6s 791 49th epoch,
+661.6s 792 training loss: 0.23506
+661.6s 793 val loss: 0.32630
+661.6s 794 val auc-roc: 0.68118
+661.6s 795 epoch time: 3.846
+665.5s 796 50th epoch,
+665.5s 797 training loss: 0.23464
+665.5s 798 val loss: 0.33535
+665.5s 799 val auc-roc: 0.68061
+665.5s 800 epoch time: 3.842
+665.5s 801 ----------
+665.5s 802 Train Finished.
+665.5s 803 Training time: 574.49s
+665.5s 804 The best epoch: 17
+665.5s 805 The best val loss: 0.2737790048122406
+665.5s 806 The best auc-roc: 0.6500214294349127
+665.5s 807 test_index : 60 ~ 79
+665.5s 808 len X_test : 20
+665.5s 809 len X_train : 179
+669.4s 810 1th epoch,
+669.4s 811 training loss: 0.38863
+669.4s 812 val loss: 0.33569
+669.4s 813 val auc-roc: 0.52684
+669.4s 814 epoch time: 3.855
+673.3s 815 2th epoch,
+673.3s 816 training loss: 0.33587
+673.3s 817 val loss: 0.32489
+673.3s 818 val auc-roc: 0.56553
+673.3s 819 epoch time: 3.866
+677.1s 820 3th epoch,
+677.1s 821 training loss: 0.32927
+677.1s 822 val loss: 0.32093
+677.1s 823 val auc-roc: 0.58984
+677.1s 824 epoch time: 3.860
+681.0s 825 4th epoch,
+681.0s 826 training loss: 0.32499
+681.0s 827 val loss: 0.31834
+681.0s 828 val auc-roc: 0.61295
+681.0s 829 epoch time: 3.865
+684.8s 830 5th epoch,
+684.8s 831 training loss: 0.32170
+684.8s 832 val loss: 0.31578
+684.8s 833 val auc-roc: 0.63026
+684.9s 834 epoch time: 3.864
+688.7s 835 6th epoch,
+688.7s 836 training loss: 0.31842
+688.7s 837 val loss: 0.31355
+688.7s 838 val auc-roc: 0.65002
+688.7s 839 epoch time: 3.871
+692.6s 840 7th epoch,
+692.6s 841 training loss: 0.31536
+692.6s 842 val loss: 0.31148
+692.6s 843 val auc-roc: 0.66491
+692.6s 844 epoch time: 3.875
+696.4s 845 8th epoch,
+696.4s 846 training loss: 0.31246
+696.4s 847 val loss: 0.30958
+696.4s 848 val auc-roc: 0.67745
+696.4s 849 epoch time: 3.863
+700.3s 850 9th epoch,
+700.3s 851 training loss: 0.30975
+700.3s 852 val loss: 0.30786
+700.3s 853 val auc-roc: 0.68632
+700.3s 854 epoch time: 3.855
+704.2s 855 10th epoch,
+704.2s 856 training loss: 0.30722
+704.2s 857 val loss: 0.30630
+704.2s 858 val auc-roc: 0.69358
+704.2s 859 epoch time: 3.855
+708.0s 860 11th epoch,
+708.0s 861 training loss: 0.30486
+708.0s 862 val loss: 0.30493
+708.0s 863 val auc-roc: 0.69997
+708.0s 864 epoch time: 3.859
+711.9s 865 12th epoch,
+711.9s 866 training loss: 0.30266
+711.9s 867 val loss: 0.30374
+711.9s 868 val auc-roc: 0.70396
+711.9s 869 epoch time: 3.860
+715.8s 870 13th epoch,
+715.8s 871 training loss: 0.30056
+715.8s 872 val loss: 0.30273
+715.8s 873 val auc-roc: 0.70784
+715.8s 874 epoch time: 3.862
+719.6s 875 14th epoch,
+719.6s 876 training loss: 0.29854
+719.6s 877 val loss: 0.30188
+719.6s 878 val auc-roc: 0.71022
+719.6s 879 epoch time: 3.858
+723.5s 880 15th epoch,
+723.5s 881 training loss: 0.29657
+723.5s 882 val loss: 0.30119
+723.5s 883 val auc-roc: 0.71235
+723.5s 884 epoch time: 3.888
+727.4s 885 16th epoch,
+727.4s 886 training loss: 0.29461
+727.4s 887 val loss: 0.30063
+727.4s 888 val auc-roc: 0.71329
+727.4s 889 epoch time: 3.876
+731.5s 890 17th epoch,
+731.5s 891 training loss: 0.29267
+731.5s 892 val loss: 0.30019
+731.5s 893 val auc-roc: 0.71302
+731.5s 894 epoch time: 4.084
+735.3s 895 18th epoch,
+735.3s 896 training loss: 0.29071
+735.3s 897 val loss: 0.29987
+735.3s 898 val auc-roc: 0.71252
+735.3s 899 epoch time: 3.860
+739.2s 900 19th epoch,
+739.2s 901 training loss: 0.28875
+739.2s 902 val loss: 0.29966
+739.2s 903 val auc-roc: 0.71161
+739.2s 904 epoch time: 3.874
+743.0s 905 20th epoch,
+743.0s 906 training loss: 0.28676
+743.0s 907 val loss: 0.29954
+743.0s 908 val auc-roc: 0.71084
+743.0s 909 epoch time: 3.860
+746.9s 910 21th epoch,
+746.9s 911 training loss: 0.28475
+746.9s 912 val loss: 0.29953
+746.9s 913 val auc-roc: 0.70952
+746.9s 914 epoch time: 3.850
+750.8s 915 22th epoch,
+750.8s 916 training loss: 0.28271
+750.8s 917 val loss: 0.29961
+750.8s 918 val auc-roc: 0.70761
+750.8s 919 epoch time: 3.848
+754.6s 920 23th epoch,
+754.6s 921 training loss: 0.28064
+754.6s 922 val loss: 0.29979
+754.6s 923 val auc-roc: 0.70580
+754.6s 924 epoch time: 3.869
+758.5s 925 24th epoch,
+758.5s 926 training loss: 0.27853
+758.5s 927 val loss: 0.30006
+758.5s 928 val auc-roc: 0.70475
+758.5s 929 epoch time: 3.847
+762.4s 930 25th epoch,
+762.4s 931 training loss: 0.27637
+762.4s 932 val loss: 0.30042
+762.4s 933 val auc-roc: 0.70362
+762.4s 934 epoch time: 3.858
+766.2s 935 26th epoch,
+766.2s 936 training loss: 0.27417
+766.2s 937 val loss: 0.30088
+766.2s 938 val auc-roc: 0.70311
+766.2s 939 epoch time: 3.844
+770.0s 940 27th epoch,
+770.0s 941 training loss: 0.27195
+770.0s 942 val loss: 0.30143
+770.0s 943 val auc-roc: 0.70295
+770.0s 944 epoch time: 3.849
+773.9s 945 28th epoch,
+773.9s 946 training loss: 0.26969
+773.9s 947 val loss: 0.30205
+773.9s 948 val auc-roc: 0.70285
+773.9s 949 epoch time: 3.846
+777.7s 950 29th epoch,
+777.7s 951 training loss: 0.26740
+777.7s 952 val loss: 0.30276
+777.7s 953 val auc-roc: 0.70296
+777.7s 954 epoch time: 3.847
+781.6s 955 30th epoch,
+781.6s 956 training loss: 0.26511
+781.6s 957 val loss: 0.30358
+781.6s 958 val auc-roc: 0.70298
+781.6s 959 epoch time: 3.843
+785.4s 960 31th epoch,
+785.4s 961 training loss: 0.26282
+785.4s 962 val loss: 0.30449
+785.4s 963 val auc-roc: 0.70308
+785.4s 964 epoch time: 3.842
+789.2s 965 32th epoch,
+789.2s 966 training loss: 0.26055
+789.2s 967 val loss: 0.30556
+789.2s 968 val auc-roc: 0.70274
+789.2s 969 epoch time: 3.854
+793.1s 970 33th epoch,
+793.1s 971 training loss: 0.25835
+793.1s 972 val loss: 0.30688
+793.1s 973 val auc-roc: 0.70226
+793.1s 974 epoch time: 3.873
+797.0s 975 34th epoch,
+797.0s 976 training loss: 0.25623
+797.0s 977 val loss: 0.30850
+797.0s 978 val auc-roc: 0.70203
+797.0s 979 epoch time: 3.864
+800.9s 980 35th epoch,
+800.9s 981 training loss: 0.25422
+800.9s 982 val loss: 0.31032
+800.9s 983 val auc-roc: 0.70221
+800.9s 984 epoch time: 3.859
+804.7s 985 36th epoch,
+804.7s 986 training loss: 0.25229
+804.7s 987 val loss: 0.31229
+804.7s 988 val auc-roc: 0.70212
+804.7s 989 epoch time: 3.855
+808.6s 990 37th epoch,
+808.6s 991 training loss: 0.25042
+808.6s 992 val loss: 0.31469
+808.6s 993 val auc-roc: 0.70155
+808.6s 994 epoch time: 3.850
+812.4s 995 38th epoch,
+812.4s 996 training loss: 0.24867
+812.4s 997 val loss: 0.31700
+812.4s 998 val auc-roc: 0.70084
+812.4s 999 epoch time: 3.879
+816.3s 1000 39th epoch,
+816.3s 1001 training loss: 0.24700
+816.3s 1002 val loss: 0.31935
+816.3s 1003 val auc-roc: 0.69942
+816.3s 1004 epoch time: 3.856
+820.2s 1005 40th epoch,
+820.2s 1006 training loss: 0.24537
+820.2s 1007 val loss: 0.32091
+820.2s 1008 val auc-roc: 0.69762
+820.2s 1009 epoch time: 3.860
+824.0s 1010 41th epoch,
+824.0s 1011 training loss: 0.24368
+824.0s 1012 val loss: 0.32138
+824.0s 1013 val auc-roc: 0.69511
+824.0s 1014 epoch time: 3.879
+827.9s 1015 42th epoch,
+827.9s 1016 training loss: 0.24208
+827.9s 1017 val loss: 0.32144
+827.9s 1018 val auc-roc: 0.69133
+827.9s 1019 epoch time: 3.865
+831.8s 1020 43th epoch,
+831.8s 1021 training loss: 0.24097
+831.8s 1022 val loss: 0.32250
+831.8s 1023 val auc-roc: 0.68596
+831.8s 1024 epoch time: 3.892
+835.6s 1025 44th epoch,
+835.6s 1026 training loss: 0.24200
+835.6s 1027 val loss: 0.33294
+835.6s 1028 val auc-roc: 0.68006
+835.6s 1029 epoch time: 3.858
+839.5s 1030 45th epoch,
+839.5s 1031 training loss: 0.25154
+839.5s 1032 val loss: 0.38667
+839.5s 1033 val auc-roc: 0.68361
+839.5s 1034 epoch time: 3.874
+843.4s 1035 46th epoch,
+843.4s 1036 training loss: 0.27987
+843.4s 1037 val loss: 0.33090
+843.4s 1038 val auc-roc: 0.67390
+843.4s 1039 epoch time: 3.849
+847.2s 1040 47th epoch,
+847.2s 1041 training loss: 0.26600
+847.2s 1042 val loss: 0.34531
+847.2s 1043 val auc-roc: 0.69608
+847.2s 1044 epoch time: 3.854
+851.1s 1045 48th epoch,
+851.1s 1046 training loss: 0.25149
+851.1s 1047 val loss: 0.31675
+851.1s 1048 val auc-roc: 0.69781
+851.1s 1049 epoch time: 3.852
+854.9s 1050 49th epoch,
+854.9s 1051 training loss: 0.24075
+854.9s 1052 val loss: 0.31845
+854.9s 1053 val auc-roc: 0.69808
+854.9s 1054 epoch time: 3.885
+858.8s 1055 50th epoch,
+858.8s 1056 training loss: 0.23916
+858.8s 1057 val loss: 0.32449
+858.8s 1058 val auc-roc: 0.69502
+858.8s 1059 epoch time: 3.847
+858.8s 1060 ----------
+858.8s 1061 Train Finished.
+858.8s 1062 Training time: 767.80s
+858.8s 1063 The best epoch: 16
+858.8s 1064 The best val loss: 0.30062949657440186
+858.8s 1065 The best auc-roc: 0.7132858421945846
+858.8s 1066 test_index : 80 ~ 99
+858.8s 1067 len X_test : 20
+858.8s 1068 len X_train : 179
+862.7s 1069 1th epoch,
+862.7s 1070 training loss: 0.38576
+862.7s 1071 val loss: 0.39750
+862.7s 1072 val auc-roc: 0.58854
+862.7s 1073 epoch time: 3.861
+866.6s 1074 2th epoch,
+866.6s 1075 training loss: 0.32233
+866.6s 1076 val loss: 0.36345
+866.6s 1077 val auc-roc: 0.63464
+866.6s 1078 epoch time: 3.851
+870.4s 1079 3th epoch,
+870.4s 1080 training loss: 0.31609
+870.4s 1081 val loss: 0.36379
+870.4s 1082 val auc-roc: 0.65006
+870.4s 1083 epoch time: 3.843
+874.3s 1084 4th epoch,
+874.3s 1085 training loss: 0.31142
+874.3s 1086 val loss: 0.35966
+874.3s 1087 val auc-roc: 0.66261
+874.3s 1088 epoch time: 3.874
+878.1s 1089 5th epoch,
+878.1s 1090 training loss: 0.30829
+878.1s 1091 val loss: 0.35783
+878.1s 1092 val auc-roc: 0.67259
+878.1s 1093 epoch time: 3.849
+882.0s 1094 6th epoch,
+882.0s 1095 training loss: 0.30498
+882.0s 1096 val loss: 0.35555
+882.0s 1097 val auc-roc: 0.67990
+882.0s 1098 epoch time: 3.855
+885.8s 1099 7th epoch,
+885.8s 1100 training loss: 0.30196
+885.8s 1101 val loss: 0.35378
+885.8s 1102 val auc-roc: 0.68517
+885.8s 1103 epoch time: 3.853
+889.7s 1104 8th epoch,
+889.7s 1105 training loss: 0.29910
+889.7s 1106 val loss: 0.35239
+889.7s 1107 val auc-roc: 0.68588
+889.7s 1108 epoch time: 3.856
+893.5s 1109 9th epoch,
+893.5s 1110 training loss: 0.29642
+893.5s 1111 val loss: 0.35140
+893.5s 1112 val auc-roc: 0.68638
+893.5s 1113 epoch time: 3.871
+897.4s 1114 10th epoch,
+897.4s 1115 training loss: 0.29394
+897.4s 1116 val loss: 0.35084
+897.4s 1117 val auc-roc: 0.68517
+897.4s 1118 epoch time: 3.866
+901.3s 1119 11th epoch,
+901.3s 1120 training loss: 0.29167
+901.3s 1121 val loss: 0.35070
+901.3s 1122 val auc-roc: 0.68233
+901.3s 1123 epoch time: 3.878
+905.2s 1124 12th epoch,
+905.2s 1125 training loss: 0.28957
+905.2s 1126 val loss: 0.35093
+905.2s 1127 val auc-roc: 0.67807
+905.2s 1128 epoch time: 3.871
+909.1s 1129 13th epoch,
+909.1s 1130 training loss: 0.28761
+909.1s 1131 val loss: 0.35147
+909.1s 1132 val auc-roc: 0.67292
+909.1s 1133 epoch time: 3.863
+912.9s 1134 14th epoch,
+912.9s 1135 training loss: 0.28574
+912.9s 1136 val loss: 0.35227
+912.9s 1137 val auc-roc: 0.66749
+912.9s 1138 epoch time: 3.859
+916.8s 1139 15th epoch,
+916.8s 1140 training loss: 0.28394
+916.8s 1141 val loss: 0.35330
+916.8s 1142 val auc-roc: 0.66183
+916.8s 1143 epoch time: 3.862
+920.6s 1144 16th epoch,
+920.6s 1145 training loss: 0.28217
+920.6s 1146 val loss: 0.35455
+920.6s 1147 val auc-roc: 0.65609
+920.6s 1148 epoch time: 3.861
+924.5s 1149 17th epoch,
+924.5s 1150 training loss: 0.28041
+924.5s 1151 val loss: 0.35600
+924.5s 1152 val auc-roc: 0.64900
+924.5s 1153 epoch time: 3.855
+928.3s 1154 18th epoch,
+928.3s 1155 training loss: 0.27866
+928.3s 1156 val loss: 0.35764
+928.3s 1157 val auc-roc: 0.64178
+928.3s 1158 epoch time: 3.839
+932.2s 1159 19th epoch,
+932.2s 1160 training loss: 0.27691
+932.2s 1161 val loss: 0.35949
+932.2s 1162 val auc-roc: 0.63483
+932.2s 1163 epoch time: 3.865
+936.0s 1164 20th epoch,
+936.0s 1165 training loss: 0.27515
+936.0s 1166 val loss: 0.36154
+936.0s 1167 val auc-roc: 0.62796
+936.0s 1168 epoch time: 3.853
+939.9s 1169 21th epoch,
+939.9s 1170 training loss: 0.27339
+939.9s 1171 val loss: 0.36380
+939.9s 1172 val auc-roc: 0.62068
+939.9s 1173 epoch time: 3.863
+943.8s 1174 22th epoch,
+943.8s 1175 training loss: 0.27161
+943.8s 1176 val loss: 0.36626
+943.8s 1177 val auc-roc: 0.61398
+943.8s 1178 epoch time: 3.885
+947.6s 1179 23th epoch,
+947.6s 1180 training loss: 0.26983
+947.6s 1181 val loss: 0.36895
+947.6s 1182 val auc-roc: 0.60846
+947.6s 1183 epoch time: 3.868
+951.5s 1184 24th epoch,
+951.5s 1185 training loss: 0.26804
+951.5s 1186 val loss: 0.37186
+951.5s 1187 val auc-roc: 0.60233
+951.5s 1188 epoch time: 3.892
+955.4s 1189 25th epoch,
+955.4s 1190 training loss: 0.26624
+955.4s 1191 val loss: 0.37502
+955.4s 1192 val auc-roc: 0.59584
+955.4s 1193 epoch time: 3.869
+959.3s 1194 26th epoch,
+959.3s 1195 training loss: 0.26444
+959.3s 1196 val loss: 0.37842
+959.3s 1197 val auc-roc: 0.58944
+959.3s 1198 epoch time: 3.864
+963.1s 1199 27th epoch,
+963.1s 1200 training loss: 0.26263
+963.2s 1201 val loss: 0.38208
+963.2s 1202 val auc-roc: 0.58347
+963.2s 1203 epoch time: 3.880
+967.0s 1204 28th epoch,
+967.0s 1205 training loss: 0.26082
+967.0s 1206 val loss: 0.38600
+967.0s 1207 val auc-roc: 0.57778
+967.0s 1208 epoch time: 3.865
+970.9s 1209 29th epoch,
+970.9s 1210 training loss: 0.25900
+970.9s 1211 val loss: 0.39018
+970.9s 1212 val auc-roc: 0.57283
+970.9s 1213 epoch time: 3.874
+974.8s 1214 30th epoch,
+974.8s 1215 training loss: 0.25719
+974.8s 1216 val loss: 0.39464
+974.8s 1217 val auc-roc: 0.56877
+974.8s 1218 epoch time: 3.872
+978.8s 1219 31th epoch,
+978.8s 1220 training loss: 0.25538
+978.8s 1221 val loss: 0.39937
+978.8s 1222 val auc-roc: 0.56640
+978.8s 1223 epoch time: 4.050
+982.7s 1224 32th epoch,
+982.7s 1225 training loss: 0.25358
+982.7s 1226 val loss: 0.40436
+982.7s 1227 val auc-roc: 0.56456
+982.7s 1228 epoch time: 3.887
+986.6s 1229 33th epoch,
+986.6s 1230 training loss: 0.25178
+986.6s 1231 val loss: 0.40963
+986.6s 1232 val auc-roc: 0.56283
+986.6s 1233 epoch time: 3.864
+990.4s 1234 34th epoch,
+990.4s 1235 training loss: 0.24999
+990.4s 1236 val loss: 0.41518
+990.4s 1237 val auc-roc: 0.56131
+990.4s 1238 epoch time: 3.865
+994.3s 1239 35th epoch,
+994.3s 1240 training loss: 0.24821
+994.3s 1241 val loss: 0.42103
+994.3s 1242 val auc-roc: 0.56094
+994.3s 1243 epoch time: 3.864
+998.2s 1244 36th epoch,
+998.2s 1245 training loss: 0.24643
+998.2s 1246 val loss: 0.42719
+998.2s 1247 val auc-roc: 0.56069
+998.2s 1248 epoch time: 3.856
+1002.0s 1249 37th epoch,
+1002.0s 1250 training loss: 0.24467
+1002.0s 1251 val loss: 0.43370
+1002.0s 1252 val auc-roc: 0.56095
+1002.0s 1253 epoch time: 3.875
+1005.9s 1254 38th epoch,
+1005.9s 1255 training loss: 0.24291
+1005.9s 1256 val loss: 0.44059
+1005.9s 1257 val auc-roc: 0.56169
+1005.9s 1258 epoch time: 3.868
+1009.7s 1259 39th epoch,
+1009.7s 1260 training loss: 0.24116
+1009.7s 1261 val loss: 0.44791
+1009.7s 1262 val auc-roc: 0.56223
+1009.7s 1263 epoch time: 3.864
+1013.6s 1264 40th epoch,
+1013.6s 1265 training loss: 0.23941
+1013.6s 1266 val loss: 0.45572
+1013.6s 1267 val auc-roc: 0.56295
+1013.6s 1268 epoch time: 3.886
+1017.5s 1269 41th epoch,
+1017.5s 1270 training loss: 0.23767
+1017.5s 1271 val loss: 0.46407
+1017.5s 1272 val auc-roc: 0.56394
+1017.5s 1273 epoch time: 3.880
+1021.4s 1274 42th epoch,
+1021.4s 1275 training loss: 0.23593
+1021.4s 1276 val loss: 0.47302
+1021.4s 1277 val auc-roc: 0.56548
+1021.4s 1278 epoch time: 3.889
+1025.3s 1279 43th epoch,
+1025.3s 1280 training loss: 0.23420
+1025.3s 1281 val loss: 0.48261
+1025.3s 1282 val auc-roc: 0.56640
+1025.3s 1283 epoch time: 3.864
+1029.1s 1284 44th epoch,
+1029.1s 1285 training loss: 0.23247
+1029.1s 1286 val loss: 0.49290
+1029.1s 1287 val auc-roc: 0.56712
+1029.1s 1288 epoch time: 3.868
+1033.0s 1289 45th epoch,
+1033.0s 1290 training loss: 0.23075
+1033.0s 1291 val loss: 0.50392
+1033.0s 1292 val auc-roc: 0.56789
+1033.0s 1293 epoch time: 3.894
+1036.9s 1294 46th epoch,
+1036.9s 1295 training loss: 0.22903
+1036.9s 1296 val loss: 0.51568
+1036.9s 1297 val auc-roc: 0.56869
+1036.9s 1298 epoch time: 3.881
+1040.8s 1299 47th epoch,
+1040.8s 1300 training loss: 0.22731
+1040.8s 1301 val loss: 0.52816
+1040.8s 1302 val auc-roc: 0.56945
+1040.8s 1303 epoch time: 3.879
+1044.7s 1304 48th epoch,
+1044.7s 1305 training loss: 0.22561
+1044.7s 1306 val loss: 0.54139
+1044.7s 1307 val auc-roc: 0.57003
+1044.7s 1308 epoch time: 3.884
+1048.6s 1309 49th epoch,
+1048.6s 1310 training loss: 0.22392
+1048.6s 1311 val loss: 0.55528
+1048.6s 1312 val auc-roc: 0.57054
+1048.6s 1313 epoch time: 3.865
+1052.4s 1314 50th epoch,
+1052.4s 1315 training loss: 0.22224
+1052.4s 1316 val loss: 0.56984
+1052.4s 1317 val auc-roc: 0.57096
+1052.4s 1318 epoch time: 3.879
+1052.4s 1319 ----------
+1052.4s 1320 Train Finished.
+1052.4s 1321 Training time: 961.42s
+1052.4s 1322 The best epoch: 9
+1052.4s 1323 The best val loss: 0.35140135884284973
+1052.4s 1324 The best auc-roc: 0.6863813293139099
+1052.5s 1325 test_index : 100 ~ 119
+1052.5s 1326 len X_test : 20
+1052.5s 1327 len X_train : 179
+1056.3s 1328 1th epoch,
+1056.3s 1329 training loss: 0.46703
+1056.3s 1330 val loss: 0.31321
+1056.3s 1331 val auc-roc: 0.59876
+1056.3s 1332 epoch time: 3.806
+1060.1s 1333 2th epoch,
+1060.1s 1334 training loss: 0.33737
+1060.1s 1335 val loss: 0.30898
+1060.1s 1336 val auc-roc: 0.62342
+1060.1s 1337 epoch time: 3.791
+1063.9s 1338 3th epoch,
+1063.9s 1339 training loss: 0.32626
+1063.9s 1340 val loss: 0.30843
+1063.9s 1341 val auc-roc: 0.63620
+1063.9s 1342 epoch time: 3.813
+1067.7s 1343 4th epoch,
+1067.7s 1344 training loss: 0.32342
+1067.7s 1345 val loss: 0.30574
+1067.7s 1346 val auc-roc: 0.65311
+1067.7s 1347 epoch time: 3.793
+1071.5s 1348 5th epoch,
+1071.5s 1349 training loss: 0.32043
+1071.5s 1350 val loss: 0.30427
+1071.5s 1351 val auc-roc: 0.66106
+1071.5s 1352 epoch time: 3.827
+1075.3s 1353 6th epoch,
+1075.3s 1354 training loss: 0.31784
+1075.3s 1355 val loss: 0.30243
+1075.3s 1356 val auc-roc: 0.66738
+1075.3s 1357 epoch time: 3.797
+1079.1s 1358 7th epoch,
+1079.1s 1359 training loss: 0.31535
+1079.1s 1360 val loss: 0.30066
+1079.1s 1361 val auc-roc: 0.67344
+1079.1s 1362 epoch time: 3.815
+1082.9s 1363 8th epoch,
+1082.9s 1364 training loss: 0.31299
+1082.9s 1365 val loss: 0.29890
+1082.9s 1366 val auc-roc: 0.68063
+1082.9s 1367 epoch time: 3.823
+1086.8s 1368 9th epoch,
+1086.8s 1369 training loss: 0.31075
+1086.8s 1370 val loss: 0.29721
+1086.8s 1371 val auc-roc: 0.68795
+1086.8s 1372 epoch time: 3.806
+1090.6s 1373 10th epoch,
+1090.6s 1374 training loss: 0.30860
+1090.6s 1375 val loss: 0.29559
+1090.6s 1376 val auc-roc: 0.69514
+1090.6s 1377 epoch time: 3.813
+1094.4s 1378 11th epoch,
+1094.4s 1379 training loss: 0.30655
+1094.4s 1380 val loss: 0.29403
+1094.4s 1381 val auc-roc: 0.70182
+1094.4s 1382 epoch time: 3.827
+1098.2s 1383 12th epoch,
+1098.2s 1384 training loss: 0.30457
+1098.2s 1385 val loss: 0.29255
+1098.2s 1386 val auc-roc: 0.70777
+1098.2s 1387 epoch time: 3.816
+1102.0s 1388 13th epoch,
+1102.0s 1389 training loss: 0.30268
+1102.0s 1390 val loss: 0.29114
+1102.0s 1391 val auc-roc: 0.71332
+1102.0s 1392 epoch time: 3.841
+1105.9s 1393 14th epoch,
+1105.9s 1394 training loss: 0.30084
+1105.9s 1395 val loss: 0.28980
+1105.9s 1396 val auc-roc: 0.71865
+1105.9s 1397 epoch time: 3.815
+1109.7s 1398 15th epoch,
+1109.7s 1399 training loss: 0.29907
+1109.7s 1400 val loss: 0.28854
+1109.7s 1401 val auc-roc: 0.72381
+1109.7s 1402 epoch time: 3.807
+1113.5s 1403 16th epoch,
+1113.5s 1404 training loss: 0.29734
+1113.5s 1405 val loss: 0.28736
+1113.5s 1406 val auc-roc: 0.72873
+1113.5s 1407 epoch time: 3.818
+1117.3s 1408 17th epoch,
+1117.3s 1409 training loss: 0.29565
+1117.3s 1410 val loss: 0.28627
+1117.3s 1411 val auc-roc: 0.73332
+1117.3s 1412 epoch time: 3.822
+1121.1s 1413 18th epoch,
+1121.1s 1414 training loss: 0.29400
+1121.1s 1415 val loss: 0.28525
+1121.1s 1416 val auc-roc: 0.73722
+1121.1s 1417 epoch time: 3.816
+1125.0s 1418 19th epoch,
+1125.0s 1419 training loss: 0.29236
+1125.0s 1420 val loss: 0.28430
+1125.0s 1421 val auc-roc: 0.74071
+1125.0s 1422 epoch time: 3.827
+1128.8s 1423 20th epoch,
+1128.8s 1424 training loss: 0.29072
+1128.8s 1425 val loss: 0.28344
+1128.8s 1426 val auc-roc: 0.74361
+1128.8s 1427 epoch time: 3.818
+1132.6s 1428 21th epoch,
+1132.6s 1429 training loss: 0.28909
+1132.6s 1430 val loss: 0.28265
+1132.6s 1431 val auc-roc: 0.74608
+1132.6s 1432 epoch time: 3.814
+1136.4s 1433 22th epoch,
+1136.4s 1434 training loss: 0.28746
+1136.4s 1435 val loss: 0.28194
+1136.4s 1436 val auc-roc: 0.74794
+1136.4s 1437 epoch time: 3.806
+1140.2s 1438 23th epoch,
+1140.2s 1439 training loss: 0.28580
+1140.2s 1440 val loss: 0.28131
+1140.2s 1441 val auc-roc: 0.74911
+1140.2s 1442 epoch time: 3.795
+1144.0s 1443 24th epoch,
+1144.0s 1444 training loss: 0.28413
+1144.0s 1445 val loss: 0.28075
+1144.0s 1446 val auc-roc: 0.75024
+1144.0s 1447 epoch time: 3.815
+1147.8s 1448 25th epoch,
+1147.8s 1449 training loss: 0.28243
+1147.8s 1450 val loss: 0.28025
+1147.8s 1451 val auc-roc: 0.75110
+1147.8s 1452 epoch time: 3.812
+1151.6s 1453 26th epoch,
+1151.6s 1454 training loss: 0.28070
+1151.6s 1455 val loss: 0.27982
+1151.6s 1456 val auc-roc: 0.75211
+1151.6s 1457 epoch time: 3.811
+1155.4s 1458 27th epoch,
+1155.4s 1459 training loss: 0.27893
+1155.4s 1460 val loss: 0.27943
+1155.4s 1461 val auc-roc: 0.75409
+1155.4s 1462 epoch time: 3.828
+1159.5s 1463 28th epoch,
+1159.5s 1464 training loss: 0.27712
+1159.5s 1465 val loss: 0.27908
+1159.5s 1466 val auc-roc: 0.75542
+1159.5s 1467 epoch time: 4.021
+1163.3s 1468 29th epoch,
+1163.3s 1469 training loss: 0.27527
+1163.3s 1470 val loss: 0.27878
+1163.3s 1471 val auc-roc: 0.75700
+1163.3s 1472 epoch time: 3.836
+1167.2s 1473 30th epoch,
+1167.2s 1474 training loss: 0.27338
+1167.2s 1475 val loss: 0.27853
+1167.2s 1476 val auc-roc: 0.75800
+1167.2s 1477 epoch time: 3.826
+1171.0s 1478 31th epoch,
+1171.0s 1479 training loss: 0.27146
+1171.0s 1480 val loss: 0.27837
+1171.0s 1481 val auc-roc: 0.75877
+1171.0s 1482 epoch time: 3.833
+1174.8s 1483 32th epoch,
+1174.8s 1484 training loss: 0.26950
+1174.8s 1485 val loss: 0.27832
+1174.8s 1486 val auc-roc: 0.76075
+1174.8s 1487 epoch time: 3.807
+1178.6s 1488 33th epoch,
+1178.6s 1489 training loss: 0.26751
+1178.6s 1490 val loss: 0.27841
+1178.6s 1491 val auc-roc: 0.76082
+1178.6s 1492 epoch time: 3.799
+1182.4s 1493 34th epoch,
+1182.4s 1494 training loss: 0.26548
+1182.4s 1495 val loss: 0.27854
+1182.4s 1496 val auc-roc: 0.76149
+1182.4s 1497 epoch time: 3.814
+1186.2s 1498 35th epoch,
+1186.2s 1499 training loss: 0.26344
+1186.2s 1500 val loss: 0.27885
+1186.2s 1501 val auc-roc: 0.76124
+1186.2s 1502 epoch time: 3.807
+1190.0s 1503 36th epoch,
+1190.0s 1504 training loss: 0.26136
+1190.0s 1505 val loss: 0.27939
+1190.0s 1506 val auc-roc: 0.76061
+1190.0s 1507 epoch time: 3.820
+1193.8s 1508 37th epoch,
+1193.8s 1509 training loss: 0.25926
+1193.8s 1510 val loss: 0.28011
+1193.8s 1511 val auc-roc: 0.76045
+1193.8s 1512 epoch time: 3.817
+1197.6s 1513 38th epoch,
+1197.6s 1514 training loss: 0.25716
+1197.6s 1515 val loss: 0.28102
+1197.6s 1516 val auc-roc: 0.76025
+1197.6s 1517 epoch time: 3.811
+1201.5s 1518 39th epoch,
+1201.5s 1519 training loss: 0.25505
+1201.5s 1520 val loss: 0.28216
+1201.5s 1521 val auc-roc: 0.75952
+1201.5s 1522 epoch time: 3.846
+1205.3s 1523 40th epoch,
+1205.3s 1524 training loss: 0.25292
+1205.3s 1525 val loss: 0.28331
+1205.3s 1526 val auc-roc: 0.75922
+1205.3s 1527 epoch time: 3.826
+1209.1s 1528 41th epoch,
+1209.1s 1529 training loss: 0.25082
+1209.1s 1530 val loss: 0.28463
+1209.1s 1531 val auc-roc: 0.75874
+1209.1s 1532 epoch time: 3.803
+1212.9s 1533 42th epoch,
+1212.9s 1534 training loss: 0.24872
+1212.9s 1535 val loss: 0.28612
+1212.9s 1536 val auc-roc: 0.75768
+1212.9s 1537 epoch time: 3.803
+1216.7s 1538 43th epoch,
+1216.7s 1539 training loss: 0.24665
+1216.7s 1540 val loss: 0.28789
+1216.7s 1541 val auc-roc: 0.75621
+1216.7s 1542 epoch time: 3.807
+1220.6s 1543 44th epoch,
+1220.6s 1544 training loss: 0.24458
+1220.6s 1545 val loss: 0.28959
+1220.6s 1546 val auc-roc: 0.75526
+1220.6s 1547 epoch time: 3.806
+1224.3s 1548 45th epoch,
+1224.3s 1549 training loss: 0.24253
+1224.3s 1550 val loss: 0.29146
+1224.3s 1551 val auc-roc: 0.75394
+1224.3s 1552 epoch time: 3.830
+1228.2s 1553 46th epoch,
+1228.2s 1554 training loss: 0.24049
+1228.2s 1555 val loss: 0.29361
+1228.2s 1556 val auc-roc: 0.75216
+1228.2s 1557 epoch time: 3.818
+1232.0s 1558 47th epoch,
+1232.0s 1559 training loss: 0.23845
+1232.0s 1560 val loss: 0.29597
+1232.0s 1561 val auc-roc: 0.75035
+1232.0s 1562 epoch time: 3.816
+1235.8s 1563 48th epoch,
+1235.8s 1564 training loss: 0.23643
+1235.8s 1565 val loss: 0.29862
+1235.8s 1566 val auc-roc: 0.74869
+1235.8s 1567 epoch time: 3.827
+1239.6s 1568 49th epoch,
+1239.6s 1569 training loss: 0.23444
+1239.6s 1570 val loss: 0.30113
+1239.6s 1571 val auc-roc: 0.74719
+1239.6s 1572 epoch time: 3.809
+1243.5s 1573 50th epoch,
+1243.5s 1574 training loss: 0.23247
+1243.5s 1575 val loss: 0.30358
+1243.5s 1576 val auc-roc: 0.74550
+1243.5s 1577 epoch time: 3.824
+1243.5s 1578 ----------
+1243.5s 1579 Train Finished.
+1243.5s 1580 Training time: 1152.45s
+1243.5s 1581 The best epoch: 32
+1243.5s 1582 The best val loss: 0.27832284569740295
+1243.5s 1583 The best auc-roc: 0.7607545156628205
+1243.5s 1584 test_index : 120 ~ 139
+1243.5s 1585 len X_test : 20
+1243.5s 1586 len X_train : 179
+1247.3s 1587 1th epoch,
+1247.3s 1588 training loss: 0.39301
+1247.3s 1589 val loss: 0.31719
+1247.3s 1590 val auc-roc: 0.48702
+1247.3s 1591 epoch time: 3.830
+1251.2s 1592 2th epoch,
+1251.2s 1593 training loss: 0.33519
+1251.2s 1594 val loss: 0.30700
+1251.2s 1595 val auc-roc: 0.57462
+1251.2s 1596 epoch time: 3.819
+1255.0s 1597 3th epoch,
+1255.0s 1598 training loss: 0.32811
+1255.0s 1599 val loss: 0.30269
+1255.0s 1600 val auc-roc: 0.61913
+1255.0s 1601 epoch time: 3.837
+1258.8s 1602 4th epoch,
+1258.8s 1603 training loss: 0.32257
+1258.8s 1604 val loss: 0.30178
+1258.8s 1605 val auc-roc: 0.64413
+1258.8s 1606 epoch time: 3.820
+1262.6s 1607 5th epoch,
+1262.6s 1608 training loss: 0.31841
+1262.6s 1609 val loss: 0.30027
+1262.6s 1610 val auc-roc: 0.65013
+1262.6s 1611 epoch time: 3.828
+1266.5s 1612 6th epoch,
+1266.5s 1613 training loss: 0.31423
+1266.5s 1614 val loss: 0.29966
+1266.5s 1615 val auc-roc: 0.65345
+1266.5s 1616 epoch time: 3.829
+1270.5s 1617 7th epoch,
+1270.5s 1618 training loss: 0.31041
+1270.5s 1619 val loss: 0.29917
+1270.5s 1620 val auc-roc: 0.65485
+1270.5s 1621 epoch time: 4.026
+1274.3s 1622 8th epoch,
+1274.3s 1623 training loss: 0.30680
+1274.3s 1624 val loss: 0.29896
+1274.3s 1625 val auc-roc: 0.65708
+1274.3s 1626 epoch time: 3.809
+1278.1s 1627 9th epoch,
+1278.1s 1628 training loss: 0.30343
+1278.1s 1629 val loss: 0.29898
+1278.1s 1630 val auc-roc: 0.65665
+1278.1s 1631 epoch time: 3.804
+1281.9s 1632 10th epoch,
+1281.9s 1633 training loss: 0.30029
+1281.9s 1634 val loss: 0.29919
+1281.9s 1635 val auc-roc: 0.65657
+1281.9s 1636 epoch time: 3.804
+1285.7s 1637 11th epoch,
+1285.7s 1638 training loss: 0.29738
+1285.7s 1639 val loss: 0.29954
+1285.7s 1640 val auc-roc: 0.65432
+1285.7s 1641 epoch time: 3.796
+1289.5s 1642 12th epoch,
+1289.5s 1643 training loss: 0.29466
+1289.5s 1644 val loss: 0.30002
+1289.5s 1645 val auc-roc: 0.65254
+1289.5s 1646 epoch time: 3.801
+1293.3s 1647 13th epoch,
+1293.3s 1648 training loss: 0.29209
+1293.3s 1649 val loss: 0.30064
+1293.3s 1650 val auc-roc: 0.65108
+1293.3s 1651 epoch time: 3.834
+1297.1s 1652 14th epoch,
+1297.1s 1653 training loss: 0.28964
+1297.1s 1654 val loss: 0.30141
+1297.1s 1655 val auc-roc: 0.65023
+1297.1s 1656 epoch time: 3.809
+1301.0s 1657 15th epoch,
+1301.0s 1658 training loss: 0.28728
+1301.0s 1659 val loss: 0.30234
+1301.0s 1660 val auc-roc: 0.64888
+1301.0s 1661 epoch time: 3.831
+1304.8s 1662 16th epoch,
+1304.8s 1663 training loss: 0.28498
+1304.8s 1664 val loss: 0.30342
+1304.8s 1665 val auc-roc: 0.64721
+1304.8s 1666 epoch time: 3.821
+1308.6s 1667 17th epoch,
+1308.6s 1668 training loss: 0.28274
+1308.6s 1669 val loss: 0.30463
+1308.6s 1670 val auc-roc: 0.64572
+1308.6s 1671 epoch time: 3.806
+1312.5s 1672 18th epoch,
+1312.5s 1673 training loss: 0.28054
+1312.5s 1674 val loss: 0.30594
+1312.5s 1675 val auc-roc: 0.64457
+1312.5s 1676 epoch time: 3.822
+1316.2s 1677 19th epoch,
+1316.2s 1678 training loss: 0.27838
+1316.2s 1679 val loss: 0.30734
+1316.2s 1680 val auc-roc: 0.64352
+1316.2s 1681 epoch time: 3.817
+1320.1s 1682 20th epoch,
+1320.1s 1683 training loss: 0.27624
+1320.1s 1684 val loss: 0.30881
+1320.1s 1685 val auc-roc: 0.64216
+1320.1s 1686 epoch time: 3.822
+1323.9s 1687 21th epoch,
+1323.9s 1688 training loss: 0.27413
+1323.9s 1689 val loss: 0.31033
+1323.9s 1690 val auc-roc: 0.64032
+1323.9s 1691 epoch time: 3.837
+1327.7s 1692 22th epoch,
+1327.7s 1693 training loss: 0.27203
+1327.7s 1694 val loss: 0.31190
+1327.7s 1695 val auc-roc: 0.63838
+1327.7s 1696 epoch time: 3.823
+1331.6s 1697 23th epoch,
+1331.6s 1698 training loss: 0.26996
+1331.6s 1699 val loss: 0.31350
+1331.6s 1700 val auc-roc: 0.63642
+1331.6s 1701 epoch time: 3.829
+1335.4s 1702 24th epoch,
+1335.4s 1703 training loss: 0.26789
+1335.4s 1704 val loss: 0.31512
+1335.4s 1705 val auc-roc: 0.63426
+1335.4s 1706 epoch time: 3.826
+1339.2s 1707 25th epoch,
+1339.2s 1708 training loss: 0.26584
+1339.2s 1709 val loss: 0.31675
+1339.2s 1710 val auc-roc: 0.63244
+1339.2s 1711 epoch time: 3.821
+1343.0s 1712 26th epoch,
+1343.0s 1713 training loss: 0.26381
+1343.0s 1714 val loss: 0.31837
+1343.0s 1715 val auc-roc: 0.62995
+1343.0s 1716 epoch time: 3.827
+1346.9s 1717 27th epoch,
+1346.9s 1718 training loss: 0.26179
+1346.9s 1719 val loss: 0.32002
+1346.9s 1720 val auc-roc: 0.62813
+1346.9s 1721 epoch time: 3.812
+1350.7s 1722 28th epoch,
+1350.7s 1723 training loss: 0.25979
+1350.7s 1724 val loss: 0.32167
+1350.7s 1725 val auc-roc: 0.62695
+1350.7s 1726 epoch time: 3.808
+1354.5s 1727 29th epoch,
+1354.5s 1728 training loss: 0.25781
+1354.5s 1729 val loss: 0.32331
+1354.5s 1730 val auc-roc: 0.62561
+1354.5s 1731 epoch time: 3.818
+1358.3s 1732 30th epoch,
+1358.3s 1733 training loss: 0.25584
+1358.3s 1734 val loss: 0.32500
+1358.3s 1735 val auc-roc: 0.62486
+1358.3s 1736 epoch time: 3.809
+1362.1s 1737 31th epoch,
+1362.1s 1738 training loss: 0.25388
+1362.1s 1739 val loss: 0.32673
+1362.1s 1740 val auc-roc: 0.62402
+1362.1s 1741 epoch time: 3.818
+1365.9s 1742 32th epoch,
+1365.9s 1743 training loss: 0.25194
+1365.9s 1744 val loss: 0.32852
+1365.9s 1745 val auc-roc: 0.62304
+1365.9s 1746 epoch time: 3.817
+1369.8s 1747 33th epoch,
+1369.8s 1748 training loss: 0.25001
+1369.8s 1749 val loss: 0.33041
+1369.8s 1750 val auc-roc: 0.62231
+1369.8s 1751 epoch time: 3.820
+1373.5s 1752 34th epoch,
+1373.5s 1753 training loss: 0.24809
+1373.5s 1754 val loss: 0.33239
+1373.5s 1755 val auc-roc: 0.62193
+1373.5s 1756 epoch time: 3.821
+1377.4s 1757 35th epoch,
+1377.4s 1758 training loss: 0.24618
+1377.4s 1759 val loss: 0.33452
+1377.4s 1760 val auc-roc: 0.62172
+1377.4s 1761 epoch time: 3.812
+1381.2s 1762 36th epoch,
+1381.2s 1763 training loss: 0.24427
+1381.2s 1764 val loss: 0.33685
+1381.2s 1765 val auc-roc: 0.62166
+1381.2s 1766 epoch time: 3.841
+1385.0s 1767 37th epoch,
+1385.0s 1768 training loss: 0.24235
+1385.0s 1769 val loss: 0.33940
+1385.0s 1770 val auc-roc: 0.62171
+1385.0s 1771 epoch time: 3.816
+1388.9s 1772 38th epoch,
+1388.9s 1773 training loss: 0.24044
+1388.9s 1774 val loss: 0.34221
+1388.9s 1775 val auc-roc: 0.62185
+1388.9s 1776 epoch time: 3.812
+1392.6s 1777 39th epoch,
+1392.6s 1778 training loss: 0.23853
+1392.6s 1779 val loss: 0.34531
+1392.6s 1780 val auc-roc: 0.62206
+1392.6s 1781 epoch time: 3.826
+1396.5s 1782 40th epoch,
+1396.5s 1783 training loss: 0.23660
+1396.5s 1784 val loss: 0.34872
+1396.5s 1785 val auc-roc: 0.62244
+1396.5s 1786 epoch time: 3.819
+1400.3s 1787 41th epoch,
+1400.3s 1788 training loss: 0.23468
+1400.3s 1789 val loss: 0.35247
+1400.3s 1790 val auc-roc: 0.62315
+1400.3s 1791 epoch time: 3.815
+1404.1s 1792 42th epoch,
+1404.1s 1793 training loss: 0.23275
+1404.1s 1794 val loss: 0.35663
+1404.1s 1795 val auc-roc: 0.62401
+1404.1s 1796 epoch time: 3.827
+1408.0s 1797 43th epoch,
+1408.0s 1798 training loss: 0.23082
+1408.0s 1799 val loss: 0.36126
+1408.0s 1800 val auc-roc: 0.62456
+1408.0s 1801 epoch time: 3.826
+1411.8s 1802 44th epoch,
+1411.8s 1803 training loss: 0.22889
+1411.8s 1804 val loss: 0.36637
+1411.8s 1805 val auc-roc: 0.62549
+1411.8s 1806 epoch time: 3.820
+1415.6s 1807 45th epoch,
+1415.6s 1808 training loss: 0.22696
+1415.6s 1809 val loss: 0.37194
+1415.6s 1810 val auc-roc: 0.62640
+1415.6s 1811 epoch time: 3.823
+1419.4s 1812 46th epoch,
+1419.4s 1813 training loss: 0.22503
+1419.4s 1814 val loss: 0.37813
+1419.4s 1815 val auc-roc: 0.62763
+1419.4s 1816 epoch time: 3.803
+1423.2s 1817 47th epoch,
+1423.2s 1818 training loss: 0.22310
+1423.2s 1819 val loss: 0.38502
+1423.2s 1820 val auc-roc: 0.62908
+1423.2s 1821 epoch time: 3.832
+1427.1s 1822 48th epoch,
+1427.1s 1823 training loss: 0.22117
+1427.1s 1824 val loss: 0.39263
+1427.1s 1825 val auc-roc: 0.63044
+1427.1s 1826 epoch time: 3.813
+1430.9s 1827 49th epoch,
+1430.9s 1828 training loss: 0.21926
+1430.9s 1829 val loss: 0.40110
+1430.9s 1830 val auc-roc: 0.63187
+1430.9s 1831 epoch time: 3.806
+1434.6s 1832 50th epoch,
+1434.6s 1833 training loss: 0.21735
+1434.6s 1834 val loss: 0.41010
+1434.6s 1835 val auc-roc: 0.63335
+1434.6s 1836 epoch time: 3.815
+1434.7s 1837 ----------
+1434.7s 1838 Train Finished.
+1434.7s 1839 Training time: 1343.65s
+1434.7s 1840 The best epoch: 8
+1434.7s 1841 The best val loss: 0.29895707964897156
+1434.7s 1842 The best auc-roc: 0.6570839542090104
+1434.7s 1843 test_index : 140 ~ 159
+1434.7s 1844 len X_test : 20
+1434.7s 1845 len X_train : 179
+1438.6s 1846 1th epoch,
+1438.6s 1847 training loss: 0.37900
+1438.6s 1848 val loss: 0.36303
+1438.6s 1849 val auc-roc: 0.57750
+1438.6s 1850 epoch time: 3.862
+1442.4s 1851 2th epoch,
+1442.4s 1852 training loss: 0.32953
+1442.4s 1853 val loss: 0.33909
+1442.4s 1854 val auc-roc: 0.60597
+1442.4s 1855 epoch time: 3.874
+1446.3s 1856 3th epoch,
+1446.3s 1857 training loss: 0.32264
+1446.3s 1858 val loss: 0.33874
+1446.3s 1859 val auc-roc: 0.61487
+1446.3s 1860 epoch time: 3.866
+1450.2s 1861 4th epoch,
+1450.2s 1862 training loss: 0.31781
+1450.2s 1863 val loss: 0.33634
+1450.2s 1864 val auc-roc: 0.62218
+1450.2s 1865 epoch time: 3.868
+1454.1s 1866 5th epoch,
+1454.1s 1867 training loss: 0.31405
+1454.1s 1868 val loss: 0.33502
+1454.1s 1869 val auc-roc: 0.62154
+1454.1s 1870 epoch time: 3.868
+1457.9s 1871 6th epoch,
+1457.9s 1872 training loss: 0.31047
+1457.9s 1873 val loss: 0.33376
+1457.9s 1874 val auc-roc: 0.62002
+1457.9s 1875 epoch time: 3.856
+1461.8s 1876 7th epoch,
+1461.8s 1877 training loss: 0.30711
+1461.8s 1878 val loss: 0.33265
+1461.8s 1879 val auc-roc: 0.62002
+1461.8s 1880 epoch time: 3.874
+1465.6s 1881 8th epoch,
+1465.6s 1882 training loss: 0.30389
+1465.6s 1883 val loss: 0.33167
+1465.6s 1884 val auc-roc: 0.62072
+1465.6s 1885 epoch time: 3.855
+1469.5s 1886 9th epoch,
+1469.5s 1887 training loss: 0.30081
+1469.5s 1888 val loss: 0.33090
+1469.5s 1889 val auc-roc: 0.62424
+1469.5s 1890 epoch time: 3.865
+1473.4s 1891 10th epoch,
+1473.4s 1892 training loss: 0.29790
+1473.4s 1893 val loss: 0.33038
+1473.4s 1894 val auc-roc: 0.62713
+1473.4s 1895 epoch time: 3.873
+1477.3s 1896 11th epoch,
+1477.3s 1897 training loss: 0.29517
+1477.3s 1898 val loss: 0.33012
+1477.3s 1899 val auc-roc: 0.62955
+1477.3s 1900 epoch time: 3.876
+1481.1s 1901 12th epoch,
+1481.1s 1902 training loss: 0.29263
+1481.1s 1903 val loss: 0.33012
+1481.1s 1904 val auc-roc: 0.63186
+1481.1s 1905 epoch time: 3.870
+1485.0s 1906 13th epoch,
+1485.0s 1907 training loss: 0.29027
+1485.0s 1908 val loss: 0.33031
+1485.0s 1909 val auc-roc: 0.63423
+1485.0s 1910 epoch time: 3.885
+1488.9s 1911 14th epoch,
+1488.9s 1912 training loss: 0.28805
+1488.9s 1913 val loss: 0.33061
+1488.9s 1914 val auc-roc: 0.63722
+1488.9s 1915 epoch time: 3.874
+1492.8s 1916 15th epoch,
+1492.8s 1917 training loss: 0.28593
+1492.8s 1918 val loss: 0.33098
+1492.8s 1919 val auc-roc: 0.64035
+1492.8s 1920 epoch time: 3.872
+1496.6s 1921 16th epoch,
+1496.6s 1922 training loss: 0.28388
+1496.6s 1923 val loss: 0.33140
+1496.6s 1924 val auc-roc: 0.64378
+1496.6s 1925 epoch time: 3.874
+1500.5s 1926 17th epoch,
+1500.5s 1927 training loss: 0.28188
+1500.5s 1928 val loss: 0.33182
+1500.5s 1929 val auc-roc: 0.64689
+1500.5s 1930 epoch time: 3.876
+1504.4s 1931 18th epoch,
+1504.4s 1932 training loss: 0.27991
+1504.4s 1933 val loss: 0.33227
+1504.4s 1934 val auc-roc: 0.64903
+1504.4s 1935 epoch time: 3.883
+1508.3s 1936 19th epoch,
+1508.3s 1937 training loss: 0.27795
+1508.3s 1938 val loss: 0.33274
+1508.3s 1939 val auc-roc: 0.65058
+1508.3s 1940 epoch time: 3.872
+1512.1s 1941 20th epoch,
+1512.1s 1942 training loss: 0.27600
+1512.1s 1943 val loss: 0.33323
+1512.1s 1944 val auc-roc: 0.65193
+1512.1s 1945 epoch time: 3.884
+1516.0s 1946 21th epoch,
+1516.0s 1947 training loss: 0.27405
+1516.0s 1948 val loss: 0.33378
+1516.0s 1949 val auc-roc: 0.65293
+1516.0s 1950 epoch time: 3.863
+1519.8s 1951 22th epoch,
+1519.8s 1952 training loss: 0.27210
+1519.8s 1953 val loss: 0.33440
+1519.8s 1954 val auc-roc: 0.65377
+1519.8s 1955 epoch time: 3.862
+1523.7s 1956 23th epoch,
+1523.7s 1957 training loss: 0.27013
+1523.7s 1958 val loss: 0.33508
+1523.7s 1959 val auc-roc: 0.65436
+1523.7s 1960 epoch time: 3.877
+1527.6s 1961 24th epoch,
+1527.6s 1962 training loss: 0.26815
+1527.6s 1963 val loss: 0.33584
+1527.6s 1964 val auc-roc: 0.65463
+1527.6s 1965 epoch time: 3.854
+1531.5s 1966 25th epoch,
+1531.5s 1967 training loss: 0.26616
+1531.5s 1968 val loss: 0.33666
+1531.5s 1969 val auc-roc: 0.65472
+1531.5s 1970 epoch time: 3.882
+1535.3s 1971 26th epoch,
+1535.3s 1972 training loss: 0.26415
+1535.3s 1973 val loss: 0.33758
+1535.3s 1974 val auc-roc: 0.65495
+1535.3s 1975 epoch time: 3.858
+1539.2s 1976 27th epoch,
+1539.2s 1977 training loss: 0.26211
+1539.2s 1978 val loss: 0.33860
+1539.2s 1979 val auc-roc: 0.65493
+1539.2s 1980 epoch time: 3.864
+1543.0s 1981 28th epoch,
+1543.0s 1982 training loss: 0.26003
+1543.0s 1983 val loss: 0.33974
+1543.0s 1984 val auc-roc: 0.65410
+1543.0s 1985 epoch time: 3.855
+1546.9s 1986 29th epoch,
+1546.9s 1987 training loss: 0.25792
+1546.9s 1988 val loss: 0.34098
+1546.9s 1989 val auc-roc: 0.65345
+1546.9s 1990 epoch time: 3.866
+1550.8s 1991 30th epoch,
+1550.8s 1992 training loss: 0.25578
+1550.8s 1993 val loss: 0.34239
+1550.8s 1994 val auc-roc: 0.65130
+1550.8s 1995 epoch time: 3.862
+1554.7s 1996 31th epoch,
+1554.7s 1997 training loss: 0.25360
+1554.7s 1998 val loss: 0.34390
+1554.7s 1999 val auc-roc: 0.64863
+1554.7s 2000 epoch time: 3.877
+1558.5s 2001 32th epoch,
+1558.5s 2002 training loss: 0.25144
+1558.5s 2003 val loss: 0.34548
+1558.5s 2004 val auc-roc: 0.64568
+1558.5s 2005 epoch time: 3.858
+1562.4s 2006 33th epoch,
+1562.4s 2007 training loss: 0.24927
+1562.4s 2008 val loss: 0.34706
+1562.4s 2009 val auc-roc: 0.64204
+1562.4s 2010 epoch time: 3.865
+1566.3s 2011 34th epoch,
+1566.3s 2012 training loss: 0.24713
+1566.3s 2013 val loss: 0.34904
+1566.3s 2014 val auc-roc: 0.63880
+1566.3s 2015 epoch time: 3.869
+1570.3s 2016 35th epoch,
+1570.3s 2017 training loss: 0.24496
+1570.3s 2018 val loss: 0.35114
+1570.3s 2019 val auc-roc: 0.63661
+1570.3s 2020 epoch time: 4.051
+1574.2s 2021 36th epoch,
+1574.2s 2022 training loss: 0.24279
+1574.2s 2023 val loss: 0.35372
+1574.2s 2024 val auc-roc: 0.63458
+1574.2s 2025 epoch time: 3.859
+1578.0s 2026 37th epoch,
+1578.0s 2027 training loss: 0.24062
+1578.0s 2028 val loss: 0.35665
+1578.0s 2029 val auc-roc: 0.63236
+1578.0s 2030 epoch time: 3.859
+1581.9s 2031 38th epoch,
+1581.9s 2032 training loss: 0.23845
+1581.9s 2033 val loss: 0.35994
+1581.9s 2034 val auc-roc: 0.62883
+1581.9s 2035 epoch time: 3.855
+1585.7s 2036 39th epoch,
+1585.7s 2037 training loss: 0.23633
+1585.7s 2038 val loss: 0.36375
+1585.7s 2039 val auc-roc: 0.62655
+1585.7s 2040 epoch time: 3.860
+1589.6s 2041 40th epoch,
+1589.6s 2042 training loss: 0.23426
+1589.6s 2043 val loss: 0.36804
+1589.6s 2044 val auc-roc: 0.62494
+1589.6s 2045 epoch time: 3.857
+1593.5s 2046 41th epoch,
+1593.5s 2047 training loss: 0.23225
+1593.5s 2048 val loss: 0.37297
+1593.5s 2049 val auc-roc: 0.62244
+1593.5s 2050 epoch time: 3.866
+1597.3s 2051 42th epoch,
+1597.3s 2052 training loss: 0.23036
+1597.3s 2053 val loss: 0.37843
+1597.3s 2054 val auc-roc: 0.62025
+1597.3s 2055 epoch time: 3.855
+1601.2s 2056 43th epoch,
+1601.2s 2057 training loss: 0.22867
+1601.2s 2058 val loss: 0.38446
+1601.2s 2059 val auc-roc: 0.61874
+1601.2s 2060 epoch time: 3.869
+1605.1s 2061 44th epoch,
+1605.1s 2062 training loss: 0.22733
+1605.1s 2063 val loss: 0.39107
+1605.1s 2064 val auc-roc: 0.61728
+1605.1s 2065 epoch time: 3.875
+1608.9s 2066 45th epoch,
+1608.9s 2067 training loss: 0.22669
+1608.9s 2068 val loss: 0.39858
+1608.9s 2069 val auc-roc: 0.61641
+1608.9s 2070 epoch time: 3.872
+1612.8s 2071 46th epoch,
+1612.8s 2072 training loss: 0.22792
+1612.8s 2073 val loss: 0.40913
+1612.8s 2074 val auc-roc: 0.61730
+1612.8s 2075 epoch time: 3.871
+1616.7s 2076 47th epoch,
+1616.7s 2077 training loss: 0.23606
+1616.7s 2078 val loss: 0.44437
+1616.7s 2079 val auc-roc: 0.61683
+1616.7s 2080 epoch time: 3.863
+1620.5s 2081 48th epoch,
+1620.5s 2082 training loss: 0.27481
+1620.5s 2083 val loss: 0.87937
+1620.5s 2084 val auc-roc: 0.60754
+1620.5s 2085 epoch time: 3.864
+1624.4s 2086 49th epoch,
+1624.4s 2087 training loss: 0.34272
+1624.4s 2088 val loss: 0.36867
+1624.4s 2089 val auc-roc: 0.60569
+1624.4s 2090 epoch time: 3.885
+1628.3s 2091 50th epoch,
+1628.3s 2092 training loss: 0.25651
+1628.3s 2093 val loss: 0.37870
+1628.3s 2094 val auc-roc: 0.62654
+1628.3s 2095 epoch time: 3.879
+1628.3s 2096 ----------
+1628.3s 2097 Train Finished.
+1628.3s 2098 Training time: 1537.28s
+1628.3s 2099 The best epoch: 11
+1628.3s 2100 The best val loss: 0.33011767268180847
+1628.3s 2101 The best auc-roc: 0.6295532042763705
+1628.3s 2102 test_index : 160 ~ 179
+1628.3s 2103 len X_test : 20
+1628.3s 2104 len X_train : 179
+1632.2s 2105 1th epoch,
+1632.2s 2106 training loss: 0.37484
+1632.2s 2107 val loss: 0.43903
+1632.2s 2108 val auc-roc: 0.44482
+1632.2s 2109 epoch time: 3.836
+1636.0s 2110 2th epoch,
+1636.0s 2111 training loss: 0.32284
+1636.0s 2112 val loss: 0.39908
+1636.0s 2113 val auc-roc: 0.56915
+1636.0s 2114 epoch time: 3.825
+1639.8s 2115 3th epoch,
+1639.8s 2116 training loss: 0.31465
+1639.8s 2117 val loss: 0.39859
+1639.8s 2118 val auc-roc: 0.60730
+1639.8s 2119 epoch time: 3.815
+1643.7s 2120 4th epoch,
+1643.7s 2121 training loss: 0.31042
+1643.7s 2122 val loss: 0.39238
+1643.7s 2123 val auc-roc: 0.63809
+1643.7s 2124 epoch time: 3.834
+1647.5s 2125 5th epoch,
+1647.5s 2126 training loss: 0.30666
+1647.5s 2127 val loss: 0.38975
+1647.5s 2128 val auc-roc: 0.65875
+1647.5s 2129 epoch time: 3.826
+1651.3s 2130 6th epoch,
+1651.3s 2131 training loss: 0.30323
+1651.3s 2132 val loss: 0.38678
+1651.3s 2133 val auc-roc: 0.67055
+1651.3s 2134 epoch time: 3.841
+1655.1s 2135 7th epoch,
+1655.1s 2136 training loss: 0.30000
+1655.1s 2137 val loss: 0.38452
+1655.1s 2138 val auc-roc: 0.68066
+1655.1s 2139 epoch time: 3.821
+1659.0s 2140 8th epoch,
+1659.0s 2141 training loss: 0.29697
+1659.0s 2142 val loss: 0.38286
+1659.0s 2143 val auc-roc: 0.68844
+1659.0s 2144 epoch time: 3.816
+1662.8s 2145 9th epoch,
+1662.8s 2146 training loss: 0.29411
+1662.8s 2147 val loss: 0.38171
+1662.8s 2148 val auc-roc: 0.69350
+1662.8s 2149 epoch time: 3.819
+1666.6s 2150 10th epoch,
+1666.6s 2151 training loss: 0.29139
+1666.6s 2152 val loss: 0.38106
+1666.6s 2153 val auc-roc: 0.69802
+1666.6s 2154 epoch time: 3.826
+1670.4s 2155 11th epoch,
+1670.4s 2156 training loss: 0.28879
+1670.4s 2157 val loss: 0.38090
+1670.4s 2158 val auc-roc: 0.70130
+1670.4s 2159 epoch time: 3.829
+1674.2s 2160 12th epoch,
+1674.2s 2161 training loss: 0.28630
+1674.2s 2162 val loss: 0.38116
+1674.2s 2163 val auc-roc: 0.70376
+1674.2s 2164 epoch time: 3.832
+1678.1s 2165 13th epoch,
+1678.1s 2166 training loss: 0.28388
+1678.1s 2167 val loss: 0.38175
+1678.1s 2168 val auc-roc: 0.70561
+1678.1s 2169 epoch time: 3.826
+1681.9s 2170 14th epoch,
+1681.9s 2171 training loss: 0.28153
+1681.9s 2172 val loss: 0.38252
+1681.9s 2173 val auc-roc: 0.70668
+1681.9s 2174 epoch time: 3.822
+1685.7s 2175 15th epoch,
+1685.7s 2176 training loss: 0.27923
+1685.7s 2177 val loss: 0.38327
+1685.7s 2178 val auc-roc: 0.70760
+1685.7s 2179 epoch time: 3.823
+1689.6s 2180 16th epoch,
+1689.6s 2181 training loss: 0.27697
+1689.6s 2182 val loss: 0.38400
+1689.6s 2183 val auc-roc: 0.70888
+1689.6s 2184 epoch time: 3.835
+1693.4s 2185 17th epoch,
+1693.4s 2186 training loss: 0.27475
+1693.4s 2187 val loss: 0.38490
+1693.4s 2188 val auc-roc: 0.71013
+1693.4s 2189 epoch time: 3.828
+1697.2s 2190 18th epoch,
+1697.2s 2191 training loss: 0.27252
+1697.2s 2192 val loss: 0.38558
+1697.2s 2193 val auc-roc: 0.71117
+1697.2s 2194 epoch time: 3.823
+1701.0s 2195 19th epoch,
+1701.0s 2196 training loss: 0.27029
+1701.0s 2197 val loss: 0.38643
+1701.0s 2198 val auc-roc: 0.71229
+1701.0s 2199 epoch time: 3.827
+1704.9s 2200 20th epoch,
+1704.9s 2201 training loss: 0.26804
+1704.9s 2202 val loss: 0.38721
+1704.9s 2203 val auc-roc: 0.71298
+1704.9s 2204 epoch time: 3.841
+1708.7s 2205 21th epoch,
+1708.7s 2206 training loss: 0.26576
+1708.7s 2207 val loss: 0.38834
+1708.7s 2208 val auc-roc: 0.71368
+1708.7s 2209 epoch time: 3.809
+1712.5s 2210 22th epoch,
+1712.5s 2211 training loss: 0.26345
+1712.5s 2212 val loss: 0.38967
+1712.5s 2213 val auc-roc: 0.71418
+1712.5s 2214 epoch time: 3.820
+1716.3s 2215 23th epoch,
+1716.3s 2216 training loss: 0.26112
+1716.3s 2217 val loss: 0.39107
+1716.3s 2218 val auc-roc: 0.71468
+1716.3s 2219 epoch time: 3.811
+1720.2s 2220 24th epoch,
+1720.2s 2221 training loss: 0.25875
+1720.2s 2222 val loss: 0.39284
+1720.2s 2223 val auc-roc: 0.71432
+1720.2s 2224 epoch time: 3.811
+1724.0s 2225 25th epoch,
+1724.0s 2226 training loss: 0.25637
+1724.0s 2227 val loss: 0.39492
+1724.0s 2228 val auc-roc: 0.71407
+1724.0s 2229 epoch time: 3.820
+1727.8s 2230 26th epoch,
+1727.8s 2231 training loss: 0.25399
+1727.8s 2232 val loss: 0.39749
+1727.8s 2233 val auc-roc: 0.71277
+1727.8s 2234 epoch time: 3.833
+1731.6s 2235 27th epoch,
+1731.6s 2236 training loss: 0.25163
+1731.6s 2237 val loss: 0.40064
+1731.6s 2238 val auc-roc: 0.71107
+1731.6s 2239 epoch time: 3.827
+1735.5s 2240 28th epoch,
+1735.5s 2241 training loss: 0.24929
+1735.5s 2242 val loss: 0.40462
+1735.5s 2243 val auc-roc: 0.70966
+1735.5s 2244 epoch time: 3.815
+1739.2s 2245 29th epoch,
+1739.2s 2246 training loss: 0.24699
+1739.2s 2247 val loss: 0.40979
+1739.2s 2248 val auc-roc: 0.70781
+1739.2s 2249 epoch time: 3.823
+1743.1s 2250 30th epoch,
+1743.1s 2251 training loss: 0.24478
+1743.1s 2252 val loss: 0.41545
+1743.1s 2253 val auc-roc: 0.70555
+1743.1s 2254 epoch time: 3.828
+1746.9s 2255 31th epoch,
+1746.9s 2256 training loss: 0.24263
+1746.9s 2257 val loss: 0.42140
+1746.9s 2258 val auc-roc: 0.70306
+1746.9s 2259 epoch time: 3.826
+1750.9s 2260 32th epoch,
+1750.9s 2261 training loss: 0.24060
+1750.9s 2262 val loss: 0.42833
+1750.9s 2263 val auc-roc: 0.70136
+1750.9s 2264 epoch time: 4.029
+1754.8s 2265 33th epoch,
+1754.8s 2266 training loss: 0.23873
+1754.8s 2267 val loss: 0.43409
+1754.8s 2268 val auc-roc: 0.69966
+1754.8s 2269 epoch time: 3.835
+1758.6s 2270 34th epoch,
+1758.6s 2271 training loss: 0.23701
+1758.6s 2272 val loss: 0.43967
+1758.6s 2273 val auc-roc: 0.69758
+1758.6s 2274 epoch time: 3.816
+1762.4s 2275 35th epoch,
+1762.4s 2276 training loss: 0.23564
+1762.4s 2277 val loss: 0.44507
+1762.4s 2278 val auc-roc: 0.69542
+1762.4s 2279 epoch time: 3.841
+1766.2s 2280 36th epoch,
+1766.2s 2281 training loss: 0.23503
+1766.2s 2282 val loss: 0.44814
+1766.2s 2283 val auc-roc: 0.69344
+1766.2s 2284 epoch time: 3.823
+1770.1s 2285 37th epoch,
+1770.1s 2286 training loss: 0.23636
+1770.1s 2287 val loss: 0.44255
+1770.1s 2288 val auc-roc: 0.69273
+1770.1s 2289 epoch time: 3.820
+1773.9s 2290 38th epoch,
+1773.9s 2291 training loss: 0.24510
+1773.9s 2292 val loss: 0.42611
+1773.9s 2293 val auc-roc: 0.69553
+1773.9s 2294 epoch time: 3.850
+1777.7s 2295 39th epoch,
+1777.7s 2296 training loss: 0.27140
+1777.7s 2297 val loss: 0.38525
+1777.7s 2298 val auc-roc: 0.70817
+1777.7s 2299 epoch time: 3.830
+1781.6s 2300 40th epoch,
+1781.6s 2301 training loss: 0.27711
+1781.6s 2302 val loss: 0.44207
+1781.6s 2303 val auc-roc: 0.71736
+1781.6s 2304 epoch time: 3.832
+1785.4s 2305 41th epoch,
+1785.4s 2306 training loss: 0.24252
+1785.4s 2307 val loss: 0.40209
+1785.4s 2308 val auc-roc: 0.70500
+1785.4s 2309 epoch time: 3.833
+1789.2s 2310 42th epoch,
+1789.2s 2311 training loss: 0.23481
+1789.2s 2312 val loss: 0.41011
+1789.2s 2313 val auc-roc: 0.70680
+1789.2s 2314 epoch time: 3.823
+1793.1s 2315 43th epoch,
+1793.1s 2316 training loss: 0.23118
+1793.1s 2317 val loss: 0.41137
+1793.1s 2318 val auc-roc: 0.70397
+1793.1s 2319 epoch time: 3.826
+1796.9s 2320 44th epoch,
+1796.9s 2321 training loss: 0.22885
+1796.9s 2322 val loss: 0.41723
+1796.9s 2323 val auc-roc: 0.70353
+1796.9s 2324 epoch time: 3.811
+1800.7s 2325 45th epoch,
+1800.7s 2326 training loss: 0.22666
+1800.7s 2327 val loss: 0.41954
+1800.7s 2328 val auc-roc: 0.70197
+1800.7s 2329 epoch time: 3.816
+1804.5s 2330 46th epoch,
+1804.5s 2331 training loss: 0.22488
+1804.5s 2332 val loss: 0.42437
+1804.5s 2333 val auc-roc: 0.70048
+1804.5s 2334 epoch time: 3.836
+1808.3s 2335 47th epoch,
+1808.3s 2336 training loss: 0.22326
+1808.3s 2337 val loss: 0.43009
+1808.3s 2338 val auc-roc: 0.69915
+1808.3s 2339 epoch time: 3.822
+1812.2s 2340 48th epoch,
+1812.2s 2341 training loss: 0.22168
+1812.2s 2342 val loss: 0.43513
+1812.2s 2343 val auc-roc: 0.69711
+1812.2s 2344 epoch time: 3.818
+1816.0s 2345 49th epoch,
+1816.0s 2346 training loss: 0.22017
+1816.0s 2347 val loss: 0.43968
+1816.0s 2348 val auc-roc: 0.69498
+1816.0s 2349 epoch time: 3.814
+1819.8s 2350 50th epoch,
+1819.8s 2351 training loss: 0.21872
+1819.8s 2352 val loss: 0.44383
+1819.8s 2353 val auc-roc: 0.69338
+1819.8s 2354 epoch time: 3.819
+1819.8s 2355 ----------
+1819.8s 2356 Train Finished.
+1819.8s 2357 Training time: 1728.79s
+1819.8s 2358 The best epoch: 11
+1819.8s 2359 The best val loss: 0.38089656829833984
+1819.8s 2360 The best auc-roc: 0.7013022639320313
+1819.8s 2361 test_index : 180 ~ 198
+1819.8s 2362 len X_test : 19
+1819.8s 2363 len X_train : 180
+1823.6s 2364 1th epoch,
+1823.6s 2365 training loss: 0.46907
+1823.6s 2366 val loss: 0.27292
+1823.6s 2367 val auc-roc: 0.60007
+1823.6s 2368 epoch time: 3.812
+1827.5s 2369 2th epoch,
+1827.5s 2370 training loss: 0.34230
+1827.5s 2371 val loss: 0.27329
+1827.5s 2372 val auc-roc: 0.60855
+1827.5s 2373 epoch time: 3.809
+1831.3s 2374 3th epoch,
+1831.3s 2375 training loss: 0.33152
+1831.3s 2376 val loss: 0.27509
+1831.3s 2377 val auc-roc: 0.60793
+1831.3s 2378 epoch time: 3.820
+1835.1s 2379 4th epoch,
+1835.1s 2380 training loss: 0.32738
+1835.1s 2381 val loss: 0.27264
+1835.1s 2382 val auc-roc: 0.60988
+1835.1s 2383 epoch time: 3.792
+1838.9s 2384 5th epoch,
+1838.9s 2385 training loss: 0.32394
+1838.9s 2386 val loss: 0.27192
+1838.9s 2387 val auc-roc: 0.61099
+1838.9s 2388 epoch time: 3.796
+1842.7s 2389 6th epoch,
+1842.7s 2390 training loss: 0.32079
+1842.7s 2391 val loss: 0.27072
+1842.7s 2392 val auc-roc: 0.61381
+1842.7s 2393 epoch time: 3.807
+1846.5s 2394 7th epoch,
+1846.5s 2395 training loss: 0.31781
+1846.5s 2396 val loss: 0.26967
+1846.5s 2397 val auc-roc: 0.61732
+1846.5s 2398 epoch time: 3.823
+1850.3s 2399 8th epoch,
+1850.3s 2400 training loss: 0.31497
+1850.3s 2401 val loss: 0.26871
+1850.3s 2402 val auc-roc: 0.62213
+1850.3s 2403 epoch time: 3.828
+1854.2s 2404 9th epoch,
+1854.2s 2405 training loss: 0.31228
+1854.2s 2406 val loss: 0.26783
+1854.2s 2407 val auc-roc: 0.62636
+1854.2s 2408 epoch time: 3.813
+1858.0s 2409 10th epoch,
+1858.0s 2410 training loss: 0.30971
+1858.0s 2411 val loss: 0.26704
+1858.0s 2412 val auc-roc: 0.63128
+1858.0s 2413 epoch time: 3.812
+1861.8s 2414 11th epoch,
+1861.8s 2415 training loss: 0.30727
+1861.8s 2416 val loss: 0.26634
+1861.8s 2417 val auc-roc: 0.63672
+1861.8s 2418 epoch time: 3.826
+1865.6s 2419 12th epoch,
+1865.6s 2420 training loss: 0.30493
+1865.6s 2421 val loss: 0.26575
+1865.6s 2422 val auc-roc: 0.64179
+1865.6s 2423 epoch time: 3.815
+1869.4s 2424 13th epoch,
+1869.4s 2425 training loss: 0.30270
+1869.4s 2426 val loss: 0.26527
+1869.4s 2427 val auc-roc: 0.64694
+1869.4s 2428 epoch time: 3.808
+1873.2s 2429 14th epoch,
+1873.2s 2430 training loss: 0.30054
+1873.2s 2431 val loss: 0.26490
+1873.2s 2432 val auc-roc: 0.65178
+1873.2s 2433 epoch time: 3.822
+1877.1s 2434 15th epoch,
+1877.1s 2435 training loss: 0.29846
+1877.1s 2436 val loss: 0.26464
+1877.1s 2437 val auc-roc: 0.65588
+1877.1s 2438 epoch time: 3.825
+1880.9s 2439 16th epoch,
+1880.9s 2440 training loss: 0.29644
+1880.9s 2441 val loss: 0.26449
+1880.9s 2442 val auc-roc: 0.65937
+1880.9s 2443 epoch time: 3.813
+1884.7s 2444 17th epoch,
+1884.7s 2445 training loss: 0.29446
+1884.7s 2446 val loss: 0.26443
+1884.7s 2447 val auc-roc: 0.66190
+1884.7s 2448 epoch time: 3.810
+1888.5s 2449 18th epoch,
+1888.5s 2450 training loss: 0.29251
+1888.5s 2451 val loss: 0.26445
+1888.5s 2452 val auc-roc: 0.66381
+1888.5s 2453 epoch time: 3.812
+1892.3s 2454 19th epoch,
+1892.3s 2455 training loss: 0.29058
+1892.3s 2456 val loss: 0.26452
+1892.3s 2457 val auc-roc: 0.66536
+1892.3s 2458 epoch time: 3.833
+1896.1s 2459 20th epoch,
+1896.1s 2460 training loss: 0.28866
+1896.1s 2461 val loss: 0.26463
+1896.1s 2462 val auc-roc: 0.66696
+1896.1s 2463 epoch time: 3.818
+1900.0s 2464 21th epoch,
+1900.0s 2465 training loss: 0.28675
+1900.0s 2466 val loss: 0.26475
+1900.0s 2467 val auc-roc: 0.66858
+1900.0s 2468 epoch time: 3.814
+1904.0s 2469 22th epoch,
+1904.0s 2470 training loss: 0.28484
+1904.0s 2471 val loss: 0.26488
+1904.0s 2472 val auc-roc: 0.67042
+1904.0s 2473 epoch time: 4.008
+1907.8s 2474 23th epoch,
+1907.8s 2475 training loss: 0.28293
+1907.8s 2476 val loss: 0.26502
+1907.8s 2477 val auc-roc: 0.67213
+1907.8s 2478 epoch time: 3.810
+1911.6s 2479 24th epoch,
+1911.6s 2480 training loss: 0.28101
+1911.6s 2481 val loss: 0.26519
+1911.6s 2482 val auc-roc: 0.67389
+1911.6s 2483 epoch time: 3.831
+1915.4s 2484 25th epoch,
+1915.4s 2485 training loss: 0.27908
+1915.4s 2486 val loss: 0.26540
+1915.4s 2487 val auc-roc: 0.67538
+1915.4s 2488 epoch time: 3.805
+1919.2s 2489 26th epoch,
+1919.2s 2490 training loss: 0.27714
+1919.2s 2491 val loss: 0.26564
+1919.2s 2492 val auc-roc: 0.67700
+1919.2s 2493 epoch time: 3.803
+1923.0s 2494 27th epoch,
+1923.0s 2495 training loss: 0.27519
+1923.0s 2496 val loss: 0.26593
+1923.0s 2497 val auc-roc: 0.67821
+1923.0s 2498 epoch time: 3.827
+1926.8s 2499 28th epoch,
+1926.8s 2500 training loss: 0.27322
+1926.8s 2501 val loss: 0.26628
+1926.8s 2502 val auc-roc: 0.67926
+1926.8s 2503 epoch time: 3.805
+1930.7s 2504 29th epoch,
+1930.7s 2505 training loss: 0.27124
+1930.7s 2506 val loss: 0.26671
+1930.7s 2507 val auc-roc: 0.68040
+1930.7s 2508 epoch time: 3.807
+1934.5s 2509 30th epoch,
+1934.5s 2510 training loss: 0.26925
+1934.5s 2511 val loss: 0.26722
+1934.5s 2512 val auc-roc: 0.68098
+1934.5s 2513 epoch time: 3.800
+1938.3s 2514 31th epoch,
+1938.3s 2515 training loss: 0.26725
+1938.3s 2516 val loss: 0.26783
+1938.3s 2517 val auc-roc: 0.68150
+1938.3s 2518 epoch time: 3.793
+1942.0s 2519 32th epoch,
+1942.0s 2520 training loss: 0.26524
+1942.0s 2521 val loss: 0.26858
+1942.0s 2522 val auc-roc: 0.68170
+1942.0s 2523 epoch time: 3.805
+1945.8s 2524 33th epoch,
+1945.8s 2525 training loss: 0.26322
+1945.8s 2526 val loss: 0.26948
+1945.8s 2527 val auc-roc: 0.68109
+1945.8s 2528 epoch time: 3.800
+1949.6s 2529 34th epoch,
+1949.6s 2530 training loss: 0.26119
+1949.6s 2531 val loss: 0.27056
+1949.6s 2532 val auc-roc: 0.68010
+1949.6s 2533 epoch time: 3.792
+1953.5s 2534 35th epoch,
+1953.5s 2535 training loss: 0.25915
+1953.5s 2536 val loss: 0.27185
+1953.5s 2537 val auc-roc: 0.67874
+1953.5s 2538 epoch time: 3.817
+1957.3s 2539 36th epoch,
+1957.3s 2540 training loss: 0.25712
+1957.3s 2541 val loss: 0.27338
+1957.3s 2542 val auc-roc: 0.67662
+1957.3s 2543 epoch time: 3.801
+1961.1s 2544 37th epoch,
+1961.1s 2545 training loss: 0.25508
+1961.1s 2546 val loss: 0.27518
+1961.1s 2547 val auc-roc: 0.67409
+1961.1s 2548 epoch time: 3.816
+1964.9s 2549 38th epoch,
+1964.9s 2550 training loss: 0.25306
+1964.9s 2551 val loss: 0.27727
+1964.9s 2552 val auc-roc: 0.67105
+1964.9s 2553 epoch time: 3.818
+1968.7s 2554 39th epoch,
+1968.7s 2555 training loss: 0.25105
+1968.7s 2556 val loss: 0.27965
+1968.7s 2557 val auc-roc: 0.66741
+1968.7s 2558 epoch time: 3.812
+1972.5s 2559 40th epoch,
+1972.5s 2560 training loss: 0.24906
+1972.5s 2561 val loss: 0.28232
+1972.5s 2562 val auc-roc: 0.66329
+1972.5s 2563 epoch time: 3.815
+1976.3s 2564 41th epoch,
+1976.3s 2565 training loss: 0.24709
+1976.3s 2566 val loss: 0.28528
+1976.3s 2567 val auc-roc: 0.65893
+1976.3s 2568 epoch time: 3.813
+1980.2s 2569 42th epoch,
+1980.2s 2570 training loss: 0.24516
+1980.2s 2571 val loss: 0.28852
+1980.2s 2572 val auc-roc: 0.65472
+1980.2s 2573 epoch time: 3.814
+1983.9s 2574 43th epoch,
+1983.9s 2575 training loss: 0.24327
+1983.9s 2576 val loss: 0.29203
+1983.9s 2577 val auc-roc: 0.65052
+1983.9s 2578 epoch time: 3.826
+1987.8s 2579 44th epoch,
+1987.8s 2580 training loss: 0.24142
+1987.8s 2581 val loss: 0.29579
+1987.8s 2582 val auc-roc: 0.64656
+1987.8s 2583 epoch time: 3.810
+1991.6s 2584 45th epoch,
+1991.6s 2585 training loss: 0.23964
+1991.6s 2586 val loss: 0.29981
+1991.6s 2587 val auc-roc: 0.64263
+1991.6s 2588 epoch time: 3.830
+1995.8s 2589 46th epoch,
+1995.8s 2590 training loss: 0.23795
+1995.8s 2591 val loss: 0.30404
+1995.8s 2592 val auc-roc: 0.63924
+1995.8s 2593 epoch time: 4.008
+1999.4s 2594 47th epoch,
+1999.4s 2595 training loss: 0.23637
+1999.4s 2596 val loss: 0.30849
+1999.4s 2597 val auc-roc: 0.63604
+1999.4s 2598 epoch time: 3.818
+2003.3s 2599 48th epoch,
+2003.3s 2600 training loss: 0.23496
+2003.3s 2601 val loss: 0.31314
+2003.3s 2602 val auc-roc: 0.63296
+2003.3s 2603 epoch time: 3.830
+2007.1s 2604 49th epoch,
+2007.1s 2605 training loss: 0.23383
+2007.1s 2606 val loss: 0.31789
+2007.1s 2607 val auc-roc: 0.62934
+2007.1s 2608 epoch time: 3.796
+2010.8s 2609 50th epoch,
+2010.8s 2610 training loss: 0.23321
+2010.8s 2611 val loss: 0.32265
+2010.8s 2612 val auc-roc: 0.62539
+2010.8s 2613 epoch time: 3.788
+2010.8s 2614 ----------
+2010.8s 2615 Train Finished.
+2010.8s 2616 Training time: 1919.84s
+2010.8s 2617 The best epoch: 17
+2010.8s 2618 The best val loss: 0.2644326388835907
+2010.8s 2619 The best auc-roc: 0.6618960658795346
+2027.5s 2620 roc_auc 0.72
+2027.6s 2621 roc_pr 0.22
+2027.8s 2622 f1 score : 0.29
+2027.9s 2623 BACC score : 0.63
+2027.9s 2624 MCC score : 0.19
+2031.5s 2625 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+2031.5s 2626 cells[i][c] = re.sub('\\\\\|', '|', cell)
+2031.7s 2627 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+2031.7s 2628 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+2032.5s 2629 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+2032.6s 2630 [NbConvertApp] Writing 97519 bytes to __notebook__.ipynb
+2034.9s 2631 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+2035.4s 2632 [NbConvertApp] Writing 343776 bytes to __results__.html

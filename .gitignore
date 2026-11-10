@@ -1,0 +1,11 @@
+# large / third-party / personal material stays local
+data/
+references/
+seminar/
+
+# generated
+runs/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
